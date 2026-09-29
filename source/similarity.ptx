@@ -60,12 +60,12 @@
 			</introduction>
 			<task>
 				<statement>
-					<p>Construct <m>\overline{AE}</m> and <m>\overline{EF}</m> such that <m>F</m> is the foot of the perpendicular from <m>E.</m> Reduce the ratio of the areas of <m>\triangle DEB</m> and <m>\triangle AED.</m></p>
+					<p>Construct <m>\overline{AE}</m> and <m>\overline{EF}</m> such that <m>F</m> is the foot of the perpendicular from <m>E</m> to <m>\overline{AB}.</m> Reduce the ratio of the areas of <m>\triangle DEB</m> and <m>\triangle AED.</m></p>
 				</statement>
 			</task>
 			<task>
 				<statement>
-					<p>Construct <m>\overline{DC}</m> and <m>\overline{DG}</m> such that <m>G</m> is the foot of the perpendicular from <m>D.</m> Reduce the ratio of the areas of <m>\triangle DEB</m> and <m>\triangle CDE.</m></p>
+					<p>Construct <m>\overline{DC}</m> and <m>\overline{DG}</m> such that <m>G</m> is the foot of the perpendicular from <m>D</m> to <m>\overline{BC}.</m> Reduce the ratio of the areas of <m>\triangle DEB</m> and <m>\triangle CDE.</m></p>
 				</statement>
 			</task>
 			<task>

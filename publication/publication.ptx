@@ -99,7 +99,7 @@
       exercise-inline="no"
       exercise-divisional="no"
       exercise-worksheet="no"
-      exercise-readingquestion="no" />
+      exercise-reading="no" />
     <css
       theme="denver"
       palette="leaves"
