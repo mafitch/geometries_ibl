@@ -84,7 +84,7 @@
 			<statement><p>Two triangles are <term>similar</term> if and only if corresponding angles are congruent and the ratio of corresponding sides is constant.</p></statement>
 		</definition>
 
-		<lemma xml:id="lemma-parallel-divides-proportionally">
+		<lemma>
 			<statement>
 				<p>A line parallel to one side of a triangle and intersecting the other two sides divides those sides proportionally.</p>
 			</statement>
@@ -97,22 +97,8 @@
 		</corollary>
 
 		<theorem>
-			<statement><p>Prove the converse of <xref ref="lemma-parallel-divides-proportionally"/>.</p></statement>
-		</theorem>
-
-		<theorem>
 			<title>Angle-Angle-Angle (AAA) Similarity</title>
-			<statement><p>Two triangles are similar if and only if they have three congruent angles.</p></statement>
-		</theorem>
-
-		<theorem>
-			<title>Side-Side-Side (SSS) Similarity</title>
-			<statement><p>Two triangles are similar if and only if the ratios of their corresponding sides are equal.</p></statement>
-		</theorem>
-
-		<theorem>
-			<title>Side-Angle-Side (SAS) Similarity</title>
-			<statement><p>Two triangles are similar if and only if they have two proportional sides and the included angles are congruent.</p></statement>
+			<statement><p>Two triangle are similar if and only if they have three congruent angles.</p></statement>
 		</theorem>
 	</subsection>
 
