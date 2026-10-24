@@ -24,7 +24,7 @@
 	<p>For this course all transformations will be transformations of the Euclidean plane.</p>
 
 	<exercise>
-		<introduction><p>Describe the effect of each of the following transformations by considering the effects on the region (area) with the following vertices. (0,0), (2,0), (3,5), (0,4). Hint: map the vertices, then map the lines connecting the vertices.</p></introduction>
+		<introduction><p>Describe the effect of each of the following transformations by considering the effects on the region (not just the border) with the following vertices. (0,0), (2,0), (3,5), (0,4). Hint: map the vertices, then map the lines connecting the vertices.</p></introduction>
 		<task>
 			<statement><p><m>T_1:(x,y) \mapsto (y,x)</m>.</p></statement>
 		</task>
@@ -66,12 +66,12 @@
 
 	<theorem>
 		<title>Isometries preserve colinearity</title>
-		<statement><p>For any isometry <m>T</m> if <m>A,</m> <m>B,</m> and <m>C</m> are colinear, then <m>T(A),</m> <m>T(B),</m> and <m>T(C)</m> are colinear.</p></statement>
+		<statement><p>For any isometry <m>T</m>, if <m>A,</m> <m>B,</m> and <m>C</m> are colinear, then <m>T(A),</m> <m>T(B),</m> and <m>T(C)</m> are colinear.</p></statement>
 	</theorem>
 
 	<corollary>
 		<title>Isometries preserve betweeness</title>
-		<statement><p>For any isometry <m>T</m> if <m>A-B-C</m> then <m>T(A)-T(B)-T(C).</m></p></statement>
+		<statement><p>For any isometry <m>T</m>, if <m>A-B-C</m> then <m>T(A)-T(B)-T(C).</m></p></statement>
 	</corollary>
 
 	<theorem>
@@ -79,19 +79,19 @@
 		<statement><p>For any isometry <m>T</m> and any three points <m>\triangle ABC \cong \triangle T(A)T(B)T(C).</m></p></statement>
 	</theorem>
 
-	<theorem>
+	<corollary>
 		<title>Isometries preserve angles</title>
-		<statement><p>For any isometry <m>T</m> and any three points <m>m\angle ABC = m\angle T(A)T(B)T(C).</m></p></statement>
-	</theorem>
+		<statement><p>For any isometry <m>T</m> and any three points <m>A</m>, <m>B</m>, and <m>C</m>, <m>\angle ABC \cong \angle T(A)T(B)T(C).</m></p></statement>
+	</corollary>
 
 	<theorem>
 		<title>Isometries preserve parallelism</title>
-		<statement><p>For any isometry <m>T</m> <m>\ell_1 \parallel \ell_2</m> if and only if <m>T(\ell_1) \parallel T(\ell_2).</m></p></statement>
+		<statement><p>For any isometry <m>T</m>, <m>\ell_1 \parallel \ell_2</m> if and only if <m>T(\ell_1) \parallel T(\ell_2).</m></p></statement>
 	</theorem>
 
 	<theorem>
 		<title>Isometries preserve circles</title>
-		<statement><p>For any isometry <m>T</m> circles are mapped to congruent circles.</p></statement>
+		<statement><p>For any isometry <m>T</m>, circles are mapped to congruent circles.</p></statement>
 	</theorem>
 
 </subsection>
@@ -111,36 +111,37 @@
 
 	<lemma>
 		<title>Similarity scales segments uniformly</title>
-		<statement><p>For any similarity <m>T,</m> <m>\|T(A)T(B)\|/\|AB\| =k.</m></p></statement>
+		<statement><p>For any similarity <m>T</m>, <m>\|T(A)T(B)\|/\|AB\| =k.</m></p></statement>
 	</lemma>
 
 	<theorem>
 		<title>Similarity preserves colinearity</title>
-		<statement><p>For any similarity <m>T</m> if <m>A,</m> <m>B,</m> and <m>C</m> are colinear, then <m>T(A),</m> <m>T(B),</m> and <m>T(C)</m> are colinear.</p></statement>
+		<statement><p>For any similarity <m>T</m>, if <m>A</m>, <m>B</m>, and <m>C</m> are colinear, then <m>T(A),</m> <m>T(B),</m> and <m>T(C)</m> are colinear.</p></statement>
 	</theorem>
 
 	<corollary>
 		<title>Similarity preserves betweeness</title>
-		<statement><p>For any similarity <m>T</m> if <m>A-B-C</m> then <m>T(A)-T(B)-T(C).</m></p></statement>
+		<statement><p>For any similarity <m>T</m>, if <m>A-B-C</m> then <m>T(A)-T(B)-T(C).</m></p></statement>
 	</corollary>
 
 	<theorem>
 		<title>Similarity preserves triangle similarity</title>
-		<statement><p>For any similarity <m>T</m> and any three points <m>\triangle ABC \sim \triangle T(A)T(B)T(C).</m></p></statement>
+		<statement><p>For any similarity <m>T</m> and any three points <m>A</m>, <m>B</m>, and <m>C</m>, <m>\triangle ABC \sim \triangle T(A)T(B)T(C).</m></p></statement>
 	</theorem>
 
 	<theorem>
 		<title>Similarity preserves angles</title>
-		<statement><p>For any similarity <m>T</m> and any three points <m>m\angle ABC = m\angle T(A)T(B)T(C).</m></p></statement>
+		<statement><p>For any similarity <m>T</m> and any three points <m>A</m>, <m>B</m>, and <m>C</m>, <m>\angle ABC \cong \angle T(A)T(B)T(C).</m></p></statement>
 	</theorem>
 
 	<theorem>
 		<title>Similarity preserves parallelism</title>
-		<statement><p>For any similarity <m>T</m> <m>\ell_1 \parallel \ell_2</m> if and only if <m>T(\ell_1) \parallel T(\ell_2).</m></p></statement>
+		<statement><p>For any similarity <m>T</m>, <m>\ell_1 \parallel \ell_2</m> if and only if <m>T(\ell_1) \parallel T(\ell_2).</m></p></statement>
 	</theorem>
 
 	<theorem>
-		<statement><p>For any similarity <m>T</m> circles are mapped to circles.</p></statement>
+		<title>Similarity preserves circles</title>
+		<statement><p>For any similarity <m>T</m>, circles are mapped to circles.</p></statement>
 	</theorem>
 
 	<lemma>
