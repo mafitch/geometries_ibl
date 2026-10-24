@@ -98,6 +98,7 @@
 
 		<theorem>
 			<statement><p>Prove the converse of <xref ref="lemma-parallel-divides-proportionally"/>.</p></statement>
+		</theorem>
 
 		<theorem>
 			<title>Angle-Angle-Angle (AAA) Similarity</title>
