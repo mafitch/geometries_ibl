@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Finite Geometries",
-  "body": " Finite Geometries   Intersect  Two lines intersect if and only if they share a point.    Parallel  Two lines are parallel if and only if they do not intersect.    Four Point Geometry  The four point geometry is defined by the following axioms and definitions.  There exist exactly four points.  Any two, distinct points have exactly one line on them.  Each line is on exactly two points.       Explore the four point geometry as follows.    Draw and label four points.    Use axiom 2 to draw as many lines as possible.    How many lines exist in this geometry?    Find a pair of parallel lines.    Can you find three lines that are pairwise parallel?    Can you find a point that is on three lines?    The four point geometry is an affine geometry. We are also interested in projective geometries.   Projective Geometry   A finite projective geometry satisfies the following conditions.  Any two, distinct points have exactly one line on them.  There are at least four points with no three on the same line.  Any two, distinct lines share at least one point.       Construct a projective geometry with exactly 4 points on every line.    "
+  "body": " Finite Geometries   Intersect  Two lines intersect if and only if they share a point.    Parallel  Two lines are parallel if and only if they do not intersect.    Four Point Geometry  The four point geometry is defined by the following axioms and definitions.  There exist exactly four points.  Any two, distinct points have exactly one line on them.  Each line is on exactly two points.       Explore the four point geometry as follows.    Draw and label four points.       Use axiom 2 to draw as many lines as possible.       How many lines exist in this geometry?   6     Find a pair of parallel lines.   , ,      Can you find three lines that are pairwise parallel?   No.     Can you find a point that is on three lines?   Any point.     The four point geometry is an affine geometry. We are also interested in projective geometries.   Projective Geometry   A finite projective geometry satisfies the following conditions.  Any two, distinct points have exactly one line on them.  There are at least four points with no three on the same line.  Any two, distinct lines share at least one point.       Construct a projective geometry with exactly 4 points on every line.    Place 9 points in a grid. Then, place four more points above, below, and to the left and right of the grid.   We want every line to contain exactly four points. So, we can draw the following lines.   We arrange the lines in this way to not violate axiom 3 of the Finite Projective Geometry. Then, notice we can repeat this pattern as follows.   Once again, we satisfy axiom 3. But, we cannot repeat this pattern again since we would be violating axiom 1. So, we have to come up with a different strategy to connect our top and rightmost points with the rest of the diagram such that we do not violate axiom 1. Instead of attaching the points along the verticals and horizontals, we can attack from the diagonals like so.   If we draw our lines this way, we still satisfy all the axioms. Now, notice we can repeat this same method of attachment on our topmost point.   Finally, we need to connect our 4 outermost dots to satisfy axiom 1.   We see that this final image satisfies the three axioms of the finite projective geometry:   Every two distinct points have exactly one line on them,    There are at least four points with no three on the same line,    Every two lines have at least one point on them both.   To see how we satisfy axiom 2, we can pick the centermost point, the topmost post, the rightmost point, and the left middle point of the grid. Further, as per the problem statement, each line has exactly four points on it.    "
 },
 {
   "id": "section-finite-geometries-2",
@@ -70,7 +70,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.1.4",
   "title": "",
-  "body": "  Explore the four point geometry as follows.    Draw and label four points.    Use axiom 2 to draw as many lines as possible.    How many lines exist in this geometry?    Find a pair of parallel lines.    Can you find three lines that are pairwise parallel?    Can you find a point that is on three lines?   "
+  "body": "  Explore the four point geometry as follows.    Draw and label four points.       Use axiom 2 to draw as many lines as possible.       How many lines exist in this geometry?   6     Find a pair of parallel lines.   , ,      Can you find three lines that are pairwise parallel?   No.     Can you find a point that is on three lines?   Any point.    "
 },
 {
   "id": "section-finite-geometries-6",
@@ -97,7 +97,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.1.6",
   "title": "",
-  "body": "  Construct a projective geometry with exactly 4 points on every line.   "
+  "body": "  Construct a projective geometry with exactly 4 points on every line.    Place 9 points in a grid. Then, place four more points above, below, and to the left and right of the grid.   We want every line to contain exactly four points. So, we can draw the following lines.   We arrange the lines in this way to not violate axiom 3 of the Finite Projective Geometry. Then, notice we can repeat this pattern as follows.   Once again, we satisfy axiom 3. But, we cannot repeat this pattern again since we would be violating axiom 1. So, we have to come up with a different strategy to connect our top and rightmost points with the rest of the diagram such that we do not violate axiom 1. Instead of attaching the points along the verticals and horizontals, we can attack from the diagonals like so.   If we draw our lines this way, we still satisfy all the axioms. Now, notice we can repeat this same method of attachment on our topmost point.   Finally, we need to connect our 4 outermost dots to satisfy axiom 1.   We see that this final image satisfies the three axioms of the finite projective geometry:   Every two distinct points have exactly one line on them,    There are at least four points with no three on the same line,    Every two lines have at least one point on them both.   To see how we satisfy axiom 2, we can pick the centermost point, the topmost post, the rightmost point, and the left middle point of the grid. Further, as per the problem statement, each line has exactly four points on it.   "
 },
 {
   "id": "section-completeness",
@@ -106,7 +106,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Completeness",
-  "body": " Completeness   Fano Geometry (attempt 1)    There exists at least one line.  There are exactly three points on every line.  Not all points are on the same line.       Use the definition above and the previous definitions of intersection and parallel to explore the Fano geometry as follows.    Draw a line using Geogebra.    Add a third point to the line.    Axiom 3 requires one more point. Draw one.    Must any more lines be added? If so, do so.    By continuing this process of adding required points and lines, determine how many lines are in this geometry.    Add the axiom: every point is on at least one line.    To your line with three points, and one point not on that line add any lines required by this new axiom.    Make sure these lines satisfy Axiom 2.    How many lines are in this geometry now?    May any more lines be added? If so, do so, and be sure all the axioms are satisfied.    How many lines are in this geometry?    What do the answers to , , and say about this attempt at constructing a geometry?    What is needed to fix the difficulty noted in the previous question?    "
+  "body": " Completeness   Fano Geometry (attempt 1)    There exists at least one line.  There are exactly three points on every line.  Not all points are on the same line.       Use the definition above and the previous definitions of intersection and parallel to explore the Fano geometry as follows.    Draw a line using Geogebra.    Add a third point to the line.    Axiom 3 requires one more point. Draw one.    Must any more lines be added? If so, do so.    By continuing this process of adding required points and lines, determine how many lines are in this geometry.    Following the instructions and the axioms, there is only one line in this geometry and four points, with one point outside of the line. There is nothing in the axioms that forces us to draw a line to connect the point outside of the line with the other points so this could be left as it is.     Add the axiom: every point is on at least one line.    To your line with three points, and one point not on that line add any lines required by this new axiom.    Make sure these lines satisfy Axiom 2.    How many lines are in this geometry now?    May any more lines be added? If so, do so, and be sure all the axioms are satisfied.    How many lines are in this geometry?    There are 2 lines.     What do the answers to , , and say about this attempt at constructing a geometry?    What is needed to fix the difficulty noted in the previous question?    "
 },
 {
   "id": "section-completeness-2",
@@ -124,7 +124,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.2.2",
   "title": "",
-  "body": "  Use the definition above and the previous definitions of intersection and parallel to explore the Fano geometry as follows.    Draw a line using Geogebra.    Add a third point to the line.    Axiom 3 requires one more point. Draw one.    Must any more lines be added? If so, do so.    By continuing this process of adding required points and lines, determine how many lines are in this geometry.    Add the axiom: every point is on at least one line.    To your line with three points, and one point not on that line add any lines required by this new axiom.    Make sure these lines satisfy Axiom 2.    How many lines are in this geometry now?    May any more lines be added? If so, do so, and be sure all the axioms are satisfied.    How many lines are in this geometry?    What do the answers to , , and say about this attempt at constructing a geometry?    What is needed to fix the difficulty noted in the previous question?   "
+  "body": "  Use the definition above and the previous definitions of intersection and parallel to explore the Fano geometry as follows.    Draw a line using Geogebra.    Add a third point to the line.    Axiom 3 requires one more point. Draw one.    Must any more lines be added? If so, do so.    By continuing this process of adding required points and lines, determine how many lines are in this geometry.    Following the instructions and the axioms, there is only one line in this geometry and four points, with one point outside of the line. There is nothing in the axioms that forces us to draw a line to connect the point outside of the line with the other points so this could be left as it is.     Add the axiom: every point is on at least one line.    To your line with three points, and one point not on that line add any lines required by this new axiom.    Make sure these lines satisfy Axiom 2.    How many lines are in this geometry now?    May any more lines be added? If so, do so, and be sure all the axioms are satisfied.    How many lines are in this geometry?    There are 2 lines.     What do the answers to , , and say about this attempt at constructing a geometry?    What is needed to fix the difficulty noted in the previous question?   "
 },
 {
   "id": "section-consistency",
@@ -133,7 +133,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Consistency",
-  "body": " Consistency   Nine Point Geometry  Use the following axioms and definitions of intersection and parallel as an alleged definition of the nine point geometry.   There exist exactly nine points.  There exist exactly nine lines.  Any two, distinct points have exactly one line on them.  Each line is on exactly three points.       Explore the alleged nine point geometry as follows.    Draw nine points using Geogebra.    Use Axiom 3 to draw all required lines.    How many lines did you construct?    Compare this answer to Axiom 2.    "
+  "body": " Consistency   Nine Point Geometry  Use the following axioms and definitions of intersection and parallel as an alleged definition of the nine point geometry.   There exist exactly nine points.  There exist exactly nine lines.  Any two, distinct points have exactly one line on them.  Each line is on exactly three points.       Explore the alleged nine point geometry as follows.    Draw nine points using Geogebra.    Use Axiom 3 to draw all required lines.       How many lines did you construct?   Using the formula for edges of a complete graph with n vertices: For nine points, this gives:      Compare this answer to Axiom 2.   Axiom two restricts us to nine lines.     "
 },
 {
   "id": "section-consistency-2",
@@ -151,7 +151,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.3.2",
   "title": "",
-  "body": "  Explore the alleged nine point geometry as follows.    Draw nine points using Geogebra.    Use Axiom 3 to draw all required lines.    How many lines did you construct?    Compare this answer to Axiom 2.   "
+  "body": "  Explore the alleged nine point geometry as follows.    Draw nine points using Geogebra.    Use Axiom 3 to draw all required lines.       How many lines did you construct?   Using the formula for edges of a complete graph with n vertices: For nine points, this gives:      Compare this answer to Axiom 2.   Axiom two restricts us to nine lines.    "
 },
 {
   "id": "section-summarize",
@@ -160,7 +160,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Explain and Apply",
-  "body": " Explain and Apply    Explain what completeness is and why it is important. Note, an explanation is not a proof, just a clarification for someone else.      Explain what consistency is and why it is important.      Modify the axioms for the Fano geometry so they are complete and consistent. You might use the Four Point Geometry axioms as a model.      Try to construct the Fano geometry with exactly seven points.      Modify the axioms of the Nine Point Geometry to be complete and consistent. You might use the Four Point Geometry axioms as a model.      How many lines are there in the Nine Point Geometry?      Modify the axioms of the Nine Point Geometry to be complete and consistent and so that they result in the same number of points and lines.    "
+  "body": " Explain and Apply    Explain what completeness is and why it is important. Note, an explanation is not a proof, just a clarification for someone else.      Explain what consistency is and why it is important.      Modify the axioms for the Fano geometry so they are complete and consistent. You might use the Four Point Geometry axioms as a model.    For Fano Geometry, we were given the axioms:  There exists at least one line.  There are exactly three points on every line.  Not all points are on the same line.  We shall modify them in the following manner: Axiom 3 shall be changed to: Any two points share a line. We shall also add an Axiom 4: There are at most 7 points.      Try to construct the Fano geometry with exactly seven points.      Modify the axioms of the Nine Point Geometry to be complete and consistent. You might use the Four Point Geometry axioms as a model.    (Michael Earnhart)   There exists exactly nine points.    Any two points have exactly one line on them.    Each line is on exactly three points.      (Cedric Deacon) For the Nine Point Geometry, we were given the following axioms:  There exist exactly nine points.  There exist exactly nine lines.  Any two, distinct points have exactly one line on them.  Each line is on exactly three points.    We shall modify these in the following manner: Axiom 3 shall be changed to: For every set of three points, two of those points share a line.      How many lines are there in the Nine Point Geometry?    This problem follows 1.4.5, where we are asked to modify the axioms of the Nine Point Geometry:   There exists exactly nine points,    There exists exactly nine lines,    Any two distinct points have exactly one line on them,    Each line is on exactly three points.   I followed the following modification to these axioms:   There exists exactly nine points,    Any two distinct points have exactly one line on them,    Each line is on exactly three points.    To visualize this geometry, we first place 9 points in a grid.   Next, draw 3 horizontal and 3 vertical lines like so to satisfy axiom 3.   Since we need to connect the corners to satisfy axiom 2, draw two diagonal lines.   But, the corners do not connect to the middle edges on the opposing sides. Notice that each corner is not adjacent to exactly two edges. So, we can draw lines that connect each corner to their nonadjacent edge points that will conveniently satisfy axioms 2 and 3.      Now, all axioms are satisfied. There are 12 lines in this depiction of the Nine Point Geometry.      Modify the axioms of the Nine Point Geometry to be complete and consistent and so that they result in the same number of points and lines.    "
 },
 {
   "id": "section-summarize-2",
@@ -187,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.4.3",
   "title": "",
-  "body": "  Modify the axioms for the Fano geometry so they are complete and consistent. You might use the Four Point Geometry axioms as a model.   "
+  "body": "  Modify the axioms for the Fano geometry so they are complete and consistent. You might use the Four Point Geometry axioms as a model.    For Fano Geometry, we were given the axioms:  There exists at least one line.  There are exactly three points on every line.  Not all points are on the same line.  We shall modify them in the following manner: Axiom 3 shall be changed to: Any two points share a line. We shall also add an Axiom 4: There are at most 7 points.   "
 },
 {
   "id": "section-summarize-5",
@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.4.5",
   "title": "",
-  "body": "  Modify the axioms of the Nine Point Geometry to be complete and consistent. You might use the Four Point Geometry axioms as a model.   "
+  "body": "  Modify the axioms of the Nine Point Geometry to be complete and consistent. You might use the Four Point Geometry axioms as a model.    (Michael Earnhart)   There exists exactly nine points.    Any two points have exactly one line on them.    Each line is on exactly three points.      (Cedric Deacon) For the Nine Point Geometry, we were given the following axioms:  There exist exactly nine points.  There exist exactly nine lines.  Any two, distinct points have exactly one line on them.  Each line is on exactly three points.    We shall modify these in the following manner: Axiom 3 shall be changed to: For every set of three points, two of those points share a line.   "
 },
 {
   "id": "section-summarize-7",
@@ -214,7 +214,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "1.4.6",
   "title": "",
-  "body": "  How many lines are there in the Nine Point Geometry?   "
+  "body": "  How many lines are there in the Nine Point Geometry?    This problem follows 1.4.5, where we are asked to modify the axioms of the Nine Point Geometry:   There exists exactly nine points,    There exists exactly nine lines,    Any two distinct points have exactly one line on them,    Each line is on exactly three points.   I followed the following modification to these axioms:   There exists exactly nine points,    Any two distinct points have exactly one line on them,    Each line is on exactly three points.    To visualize this geometry, we first place 9 points in a grid.   Next, draw 3 horizontal and 3 vertical lines like so to satisfy axiom 3.   Since we need to connect the corners to satisfy axiom 2, draw two diagonal lines.   But, the corners do not connect to the middle edges on the opposing sides. Notice that each corner is not adjacent to exactly two edges. So, we can draw lines that connect each corner to their nonadjacent edge points that will conveniently satisfy axioms 2 and 3.      Now, all axioms are satisfied. There are 12 lines in this depiction of the Nine Point Geometry.   "
 },
 {
   "id": "section-summarize-8",
@@ -232,7 +232,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Triangles",
-  "body": " Triangles   Basic Triangle Theorems  Note all theorems in this section can and should be proved without using the parallel postulate.   Vertical Angles  The opposing angles formed by the intersection of two lines are called vertical angles .    Congruent Angles  Two angles are congruent ( ) if and only if their measures are equal ( ).    Vertical Angle Congruence  Vertical angles are congruent.   means that the points and are colinear and is between and   Pasch's Axiom  If a line intersects a triangle at a point such that then must intersect or    Crossbar  If is a point in the interior of then ray intersects at a point such that    Congruent Line Segments  Two line segments are congruent ( ) if and only if their measures (length) are equal ( ).    Isosceles  A triangle is isosceles if and only if two sides are congruent.    Isosceles Triangle  In an isosceles triangle the angles opposite the equal sides are congruent.    Perpendicular Bisector  A point is on the perpendicular bisector of a segment if and only if it is equidistant from the endpoints.    Exterior Angle  The supplementary angle formed by extending one side of a triangle is called an exterior angle .    Diagram for following check point   A triangle with an exterior angle labeled    ptA=(0,0)  ptB=(3,0)  ptC=(1,2)  ptD=(4,0)  ptM=(2,1)  ptE=(4,2)         A  B  C   D  M  E                  Consider with exterior angle . On segment construct midpoint and draw Construct point such that . Finally construct Prove that .     Exterior Angle  The measure of an exterior angle of a triangle is greater than the measure of either of the opposing angles of the triangle.    Congruent Triangles  Two triangles are congruent if and only if all their sides and angles are congruent ( ).     Triangle Congruence Theorems  Determine if two triangles with two congruent sides and a congruent angle not between the two sides are congruent.   Angle-Side-Angle  Two triangles are congruent if and only if two corresponding angles and the side between them are congruent.    Angle-Angle-Side  Two triangles are congruent if and only if two corresponding angles and a side not between them are congruent.    Side-Side-Side  Two triangles are congruent if and only if all three corresponding sides are congruent.    Right Angle-Side-Side  Two right triangles are congruent if and only if two corresponding sides and a right angle not between those sides are congruent.    Converse of Isosceles Triangle  If two angles of a triangle are congruent then the sides opposite those angles are congruent.    Extended Inverse of Isosceles Triangle  If two sides of a triangle are not congruent then the angles opposite those sides are not congruent. Further the larger angle is opposite the longer side.    Triangle Inequality  The sum of the lengths of any two sides of a triangle is larger than the length of the other side.    "
+  "body": " Triangles   Basic Triangle Theorems  Note all theorems in this section can and should be proved without using the parallel postulate.   Vertical Angles  The opposing angles formed by the intersection of two lines are called vertical angles .    Congruent Angles  Two angles are congruent ( ) if and only if their measures are equal ( ).    Vertical Angle Congruence  Vertical angles are congruent.    Image required for the proof of Theorem 2-1-3.   Take the figure above. Because angles and form a linear pair, the supplement postulate indicates that  . We also know that and form a linear pair, so we know that  .  Thus, So, . Thus, . We can show by similar processes that , so the theorem is proven.    means that the points and are colinear and is between and   Pasch's Axiom  If a line intersects a triangle at a point such that then must intersect or   Assume there is some arbitrary triangle with a point D such that A-B-D, with a line that passes through point D. We apply the plane separation postulate using as our line and the fact that a plane contains at least three non-collinear points. By the plane separation postulate, we can create two sets {A,B} and {C}. By the plane separation postulate, this means that segment and intersect the line . Therefore, must intersect or .     Crossbar  If is a point in the interior of then ray intersects at a point such that    Congruent Line Segments  Two line segments are congruent ( ) if and only if their measures (length) are equal ( ).    Isosceles  A triangle is isosceles if and only if two sides are congruent.    Isosceles Triangle  In an isosceles triangle the angles opposite the equal sides are congruent.   Consider with .   Draw an angle bisector from to the base , meeting at point .    from the construction of .   by the reflexive property.   by the Side-Angle-Side congruence postulate.  Corresponding angles of congruent triangles are congruent, so . Therefore, the angles opposite the congruent sides of an isosceles triangle are congruent.     Perpendicular Bisector  A point is on the perpendicular bisector of a segment if and only if it is equidistant from the endpoints.   ( ) Let be a line segment. Construct a perpendicular bisector that intersects at a point so that . Place a point on this perpendicular bisector. By Axiom 1, we can construct unique line segments and . Since is a perpendicular bisector to , we have . By reflexivity, . In fact, since is a perpendicular bisector of , we know that . Hence, . By the SAS Postulate, is in a one-to-one correspondence to . So, and therefore , as desired.     Exterior Angle  The supplementary angle formed by extending one side of a triangle is called an exterior angle .    Diagram for following check point   A triangle with an exterior angle labeled    ptA=(0,0)  ptB=(3,0)  ptC=(1,2)  ptD=(4,0)  ptM=(2,1)  ptE=(4,2)         A  B  C   D  M  E                  Consider with exterior angle . On segment construct midpoint and draw Construct point such that . Finally construct Prove that .     Exterior Angle  The measure of an exterior angle of a triangle is greater than the measure of either of the opposing angles of the triangle.   Suppose we have . We can construct a ray from such that it goes through and intersects it at point , such that and is the midpoint of . Thus, .  By the Ruler Postulate, we then construct point on the ray such that , with as the midpoint of . Therefore, .   By the Vertical Angle Theorem, . Since and , it follows by SAS that Thus, By the Angle Addition Postulate, By Axiom 12, .     Congruent Triangles  Two triangles are congruent if and only if all their sides and angles are congruent ( ).     Triangle Congruence Theorems  Determine if two triangles with two congruent sides and a congruent angle not between the two sides are congruent.   Angle-Side-Angle  Two triangles are congruent if and only if two corresponding angles and the side between them are congruent.    Angle-Angle-Side  Two triangles are congruent if and only if two corresponding angles and a side not between them are congruent.   Suppose we have two triangles, and , with , , and . Assume, for contradiction, that . We want to construct an angle such that . Using Axiom 18, we can construct a crossbar from that intersects , constructing a point such that .  We now also have . By doing this, through angle-side-angle, the that we constructed is congruent to and we have . But is an exterior angle of , by the exterior angle theorem, and which contradicts the definition of congruent triangles.     Side-Side-Side  Two triangles are congruent if and only if all three corresponding sides are congruent.   ( ) Construct triangles and such that By the Angle Construction Postulate, we can construct a ray such that , where and are in separate half-planes separated by . Then, on ray , by the Ruler Postulate we can extend this ray and place a point such that . By Axiom 1, we can construct the line . Now, since , , and , we know that by the SAS Postulate. For the sake of simplicity, we will re-label as . So, we should have the following figure.   Essentially, we place on such that overlaps and overlaps . By axiom 1, we can construct the segment .   We observe the new triangles and . Since and , triangles and are isosceles. By the Isosceles Triangle Theorem, and .   Since lies in the interior of and lies in the interior of , by the Angle Addition Postulate, Using the fact that and , we see that So, we have that    ,     ,     .   By the SAS Postulate, .  ( ) Suppose . Then, by definition, their corresponding sides are congruent. So,      Right Angle-Side-Side  Two right triangles are congruent if and only if two corresponding sides and a right angle not between those sides are congruent.    Image required for the proof of right angle side side theorem   Take the above figure and suppose that line segments and to be congruent and the angles and to be congruent. Note that line segment is congruent to itself. Then, per the Isosceles Triangle Theorem, . Thus, by our congruences, we know that per Angle Angle Side congruence.     Converse of Isosceles Triangle  If two angles of a triangle are congruent then the sides opposite those angles are congruent.    Extended Inverse of Isosceles Triangle  If two sides of a triangle are not congruent then the angles opposite those sides are not congruent. Further the larger angle is opposite the longer side.    Triangle Inequality  The sum of the lengths of any two sides of a triangle is larger than the length of the other side.   Case 1: Where 1 side is longer than the others.  There exists some arbitrary triangle . Assume that is the longest side.  Subcase 1:  The length of is a non-negative number and is being added to the longest side . The sum will remain longer than the other side. then remains true.    Subcase 2:  Similar to Subcase 1.   Subcase 3:  Place a point D such that . We need to show that for the sum of the two sides to be greater than . By definition, is an isosceles triangle and by the Isosceles Triangle theorem, the angles opposite the equal sides are congruent. .    is an exterior angle to and by the exterior angle theorem, . is an exterior angle to , so . We know that which means but we also know that . Therefore, . By the extended inverse of isosceles triangle, .   this equation becomes . Since we know that this means which is what we wanted to prove.    Case 2: 2 or more sides are equal  This means for some where then for the sum of any two sides, which proves the theorem.     "
 },
 {
   "id": "def-vertical-angles",
@@ -259,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "2.1.3",
   "title": "Vertical Angle Congruence.",
-  "body": " Vertical Angle Congruence  Vertical angles are congruent.  "
+  "body": " Vertical Angle Congruence  Vertical angles are congruent.    Image required for the proof of Theorem 2-1-3.   Take the figure above. Because angles and form a linear pair, the supplement postulate indicates that  . We also know that and form a linear pair, so we know that  .  Thus, So, . Thus, . We can show by similar processes that , so the theorem is proven.   "
 },
 {
   "id": "section-triangles-2-7",
@@ -268,7 +268,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "2.1.4",
   "title": "Pasch’s Axiom.",
-  "body": " Pasch's Axiom  If a line intersects a triangle at a point such that then must intersect or  "
+  "body": " Pasch's Axiom  If a line intersects a triangle at a point such that then must intersect or   Assume there is some arbitrary triangle with a point D such that A-B-D, with a line that passes through point D. We apply the plane separation postulate using as our line and the fact that a plane contains at least three non-collinear points. By the plane separation postulate, we can create two sets {A,B} and {C}. By the plane separation postulate, this means that segment and intersect the line . Therefore, must intersect or .   "
 },
 {
   "id": "section-triangles-2-8",
@@ -304,7 +304,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "2.1.8",
   "title": "Isosceles Triangle.",
-  "body": " Isosceles Triangle  In an isosceles triangle the angles opposite the equal sides are congruent.  "
+  "body": " Isosceles Triangle  In an isosceles triangle the angles opposite the equal sides are congruent.   Consider with .   Draw an angle bisector from to the base , meeting at point .    from the construction of .   by the reflexive property.   by the Side-Angle-Side congruence postulate.  Corresponding angles of congruent triangles are congruent, so . Therefore, the angles opposite the congruent sides of an isosceles triangle are congruent.   "
 },
 {
   "id": "section-triangles-2-12",
@@ -313,7 +313,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "2.1.9",
   "title": "Perpendicular Bisector.",
-  "body": " Perpendicular Bisector  A point is on the perpendicular bisector of a segment if and only if it is equidistant from the endpoints.  "
+  "body": " Perpendicular Bisector  A point is on the perpendicular bisector of a segment if and only if it is equidistant from the endpoints.   ( ) Let be a line segment. Construct a perpendicular bisector that intersects at a point so that . Place a point on this perpendicular bisector. By Axiom 1, we can construct unique line segments and . Since is a perpendicular bisector to , we have . By reflexivity, . In fact, since is a perpendicular bisector of , we know that . Hence, . By the SAS Postulate, is in a one-to-one correspondence to . So, and therefore , as desired.   "
 },
 {
   "id": "section-triangles-2-13",
@@ -349,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "2.1.13",
   "title": "Exterior Angle.",
-  "body": " Exterior Angle  The measure of an exterior angle of a triangle is greater than the measure of either of the opposing angles of the triangle.  "
+  "body": " Exterior Angle  The measure of an exterior angle of a triangle is greater than the measure of either of the opposing angles of the triangle.   Suppose we have . We can construct a ray from such that it goes through and intersects it at point , such that and is the midpoint of . Thus, .  By the Ruler Postulate, we then construct point on the ray such that , with as the midpoint of . Therefore, .   By the Vertical Angle Theorem, . Since and , it follows by SAS that Thus, By the Angle Addition Postulate, By Axiom 12, .   "
 },
 {
   "id": "section-triangles-2-17",
@@ -385,7 +385,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "2.1.17",
   "title": "Angle-Angle-Side.",
-  "body": " Angle-Angle-Side  Two triangles are congruent if and only if two corresponding angles and a side not between them are congruent.  "
+  "body": " Angle-Angle-Side  Two triangles are congruent if and only if two corresponding angles and a side not between them are congruent.   Suppose we have two triangles, and , with , , and . Assume, for contradiction, that . We want to construct an angle such that . Using Axiom 18, we can construct a crossbar from that intersects , constructing a point such that .  We now also have . By doing this, through angle-side-angle, the that we constructed is congruent to and we have . But is an exterior angle of , by the exterior angle theorem, and which contradicts the definition of congruent triangles.   "
 },
 {
   "id": "section-triangles-3-5",
@@ -394,7 +394,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "2.1.18",
   "title": "Side-Side-Side.",
-  "body": " Side-Side-Side  Two triangles are congruent if and only if all three corresponding sides are congruent.  "
+  "body": " Side-Side-Side  Two triangles are congruent if and only if all three corresponding sides are congruent.   ( ) Construct triangles and such that By the Angle Construction Postulate, we can construct a ray such that , where and are in separate half-planes separated by . Then, on ray , by the Ruler Postulate we can extend this ray and place a point such that . By Axiom 1, we can construct the line . Now, since , , and , we know that by the SAS Postulate. For the sake of simplicity, we will re-label as . So, we should have the following figure.   Essentially, we place on such that overlaps and overlaps . By axiom 1, we can construct the segment .   We observe the new triangles and . Since and , triangles and are isosceles. By the Isosceles Triangle Theorem, and .   Since lies in the interior of and lies in the interior of , by the Angle Addition Postulate, Using the fact that and , we see that So, we have that    ,     ,     .   By the SAS Postulate, .  ( ) Suppose . Then, by definition, their corresponding sides are congruent. So,    "
 },
 {
   "id": "section-triangles-3-6",
@@ -403,7 +403,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "2.1.19",
   "title": "Right Angle-Side-Side.",
-  "body": " Right Angle-Side-Side  Two right triangles are congruent if and only if two corresponding sides and a right angle not between those sides are congruent.  "
+  "body": " Right Angle-Side-Side  Two right triangles are congruent if and only if two corresponding sides and a right angle not between those sides are congruent.    Image required for the proof of right angle side side theorem   Take the above figure and suppose that line segments and to be congruent and the angles and to be congruent. Note that line segment is congruent to itself. Then, per the Isosceles Triangle Theorem, . Thus, by our congruences, we know that per Angle Angle Side congruence.   "
 },
 {
   "id": "section-triangles-3-7",
@@ -430,7 +430,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "2.1.22",
   "title": "Triangle Inequality.",
-  "body": " Triangle Inequality  The sum of the lengths of any two sides of a triangle is larger than the length of the other side.  "
+  "body": " Triangle Inequality  The sum of the lengths of any two sides of a triangle is larger than the length of the other side.   Case 1: Where 1 side is longer than the others.  There exists some arbitrary triangle . Assume that is the longest side.  Subcase 1:  The length of is a non-negative number and is being added to the longest side . The sum will remain longer than the other side. then remains true.    Subcase 2:  Similar to Subcase 1.   Subcase 3:  Place a point D such that . We need to show that for the sum of the two sides to be greater than . By definition, is an isosceles triangle and by the Isosceles Triangle theorem, the angles opposite the equal sides are congruent. .    is an exterior angle to and by the exterior angle theorem, . is an exterior angle to , so . We know that which means but we also know that . Therefore, . By the extended inverse of isosceles triangle, .   this equation becomes . Since we know that this means which is what we wanted to prove.    Case 2: 2 or more sides are equal  This means for some where then for the sum of any two sides, which proves the theorem.   "
 },
 {
   "id": "section-parallel-postulate",
@@ -538,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Similarity",
-  "body": " Similarity   Preparation Theorems    For construct line such that and is on What is the relationship between the three angles at (smaller than a straight angle) to the angles of the triangle?     Triangle Angle Sum  The angle sum of the interior angles of a triangle is    Euclidean Exterior Angle  The measure of an exterior angle of a triangle is equal to the sum of the two opposing, interior angles.    Parallelogram  A quadrilateral is a parallelogram if and only if both opposing pairs of sides are parallel.    Opposite sides of a parallelogram are congruent.    If a transversal intersects three parallel lines in such a way as to divide itself into congruent segments, then any transversal of these parallel lines is also divided into congruent segments.     Explore Similarity Theorems   Altitude  A line segment is an altitude if it connects a vertex of a triangle to the foot of the perpendicular on the opposite side.    Construct a triangle and enough parallel lines to divide one side of the triangle into four equal parts. Into how many parts do these lines divide the other sides?    Triangle Area  The area of a triangle is equal to one half of the product of one side times the length of the altitude from the opposing vertex to that side.     Construct . Construct such that  , and     Construct and such that is the foot of the perpendicular from to Reduce the ratio of the areas of and      Construct and such that is the foot of the perpendicular from to Reduce the ratio of the areas of and      Prove area of is equal to the area of       Similarity Theorems   Similar Triangles  Two triangles are similar if and only if corresponding angles are congruent and the ratio of corresponding sides is constant.     A line parallel to one side of a triangle and intersecting the other two sides divides those sides proportionally.      A line parallel to one side of a triangle divides the triangle into two (whole and part), similar triangles.     Angle-Angle-Angle (AAA) Similarity  Two triangle are similar if and only if they have three congruent angles.     Extending Similarity    Construct a definition for similar quadrilaterals. Construct examples to show that your definition works.      Explain why similarity is not defined simply as \"all angles are congruent.\"     "
+  "body": " Similarity   Preparation Theorems    For construct line such that and is on What is the relationship between the three angles at (smaller than a straight angle) to the angles of the triangle?     Triangle Angle Sum  The angle sum of the interior angles of a triangle is    Euclidean Exterior Angle  The measure of an exterior angle of a triangle is equal to the sum of the two opposing, interior angles.    Parallelogram  A quadrilateral is a parallelogram if and only if both opposing pairs of sides are parallel.    Opposite sides of a parallelogram are congruent.    If a transversal intersects three parallel lines in such a way as to divide itself into congruent segments, then any transversal of these parallel lines is also divided into congruent segments.     Explore Similarity Theorems   Altitude  A line segment is an altitude if it connects a vertex of a triangle to the foot of the perpendicular on the opposite side.    Construct a triangle and enough parallel lines to divide one side of the triangle into four equal parts. Into how many parts do these lines divide the other sides?    Triangle Area  The area of a triangle is equal to one half of the product of one side times the length of the altitude from the opposing vertex to that side.     Construct . Construct such that  , and     Construct and such that is the foot of the perpendicular from to Reduce the ratio of the areas of and      Construct and such that is the foot of the perpendicular from to Reduce the ratio of the areas of and      Prove area of is equal to the area of       Similarity Theorems   Similar Triangles  Two triangles are similar if and only if corresponding angles are congruent and the ratio of corresponding sides is constant.     A line parallel to one side of a triangle and intersecting the other two sides divides those sides proportionally.      A line parallel to one side of a triangle divides the triangle into two (whole and part), similar triangles.     Prove the converse of .    Angle-Angle-Angle (AAA) Similarity  Two triangles are similar if and only if they have three congruent angles.    Side-Side-Side (SSS) Similarity  Two triangles are similar if and only if the ratios of their corresponding sides are equal.    Side-Angle-Side (SAS) Similarity  Two triangles are similar if and only if they have two proportional sides and the included angles are congruent.     Extending Similarity    Construct a definition for similar quadrilaterals. Construct examples to show that your definition works.      Explain why similarity is not defined simply as \"all angles are congruent.\"     "
 },
 {
   "id": "section-similarity-2-2",
@@ -640,9 +640,9 @@ var ptx_lunr_docs = [
   "body": " Similar Triangles  Two triangles are similar if and only if corresponding angles are congruent and the ratio of corresponding sides is constant.  "
 },
 {
-  "id": "section-similarity-4-3",
+  "id": "lemma-parallel-divides-proportionally",
   "level": "2",
-  "url": "section-similarity.html#section-similarity-4-3",
+  "url": "section-similarity.html#lemma-parallel-divides-proportionally",
   "type": "Lemma",
   "number": "3.2.12",
   "title": "",
@@ -663,15 +663,42 @@ var ptx_lunr_docs = [
   "url": "section-similarity.html#section-similarity-4-5",
   "type": "Theorem",
   "number": "3.2.14",
+  "title": "",
+  "body": " Prove the converse of .  "
+},
+{
+  "id": "section-similarity-4-6",
+  "level": "2",
+  "url": "section-similarity.html#section-similarity-4-6",
+  "type": "Theorem",
+  "number": "3.2.15",
   "title": "Angle-Angle-Angle (AAA) Similarity.",
-  "body": " Angle-Angle-Angle (AAA) Similarity  Two triangle are similar if and only if they have three congruent angles.  "
+  "body": " Angle-Angle-Angle (AAA) Similarity  Two triangles are similar if and only if they have three congruent angles.  "
+},
+{
+  "id": "section-similarity-4-7",
+  "level": "2",
+  "url": "section-similarity.html#section-similarity-4-7",
+  "type": "Theorem",
+  "number": "3.2.16",
+  "title": "Side-Side-Side (SSS) Similarity.",
+  "body": " Side-Side-Side (SSS) Similarity  Two triangles are similar if and only if the ratios of their corresponding sides are equal.  "
+},
+{
+  "id": "section-similarity-4-8",
+  "level": "2",
+  "url": "section-similarity.html#section-similarity-4-8",
+  "type": "Theorem",
+  "number": "3.2.17",
+  "title": "Side-Angle-Side (SAS) Similarity.",
+  "body": " Side-Angle-Side (SAS) Similarity  Two triangles are similar if and only if they have two proportional sides and the included angles are congruent.  "
 },
 {
   "id": "section-similarity-5-2",
   "level": "2",
   "url": "section-similarity.html#section-similarity-5-2",
   "type": "Checkpoint",
-  "number": "3.2.15",
+  "number": "3.2.18",
   "title": "",
   "body": "  Construct a definition for similar quadrilaterals. Construct examples to show that your definition works.   "
 },
@@ -680,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-similarity.html#section-similarity-5-3",
   "type": "Checkpoint",
-  "number": "3.2.16",
+  "number": "3.2.19",
   "title": "",
   "body": "  Explain why similarity is not defined simply as \"all angles are congruent.\"   "
 },
@@ -943,7 +970,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Transformation",
-  "body": " Transformation   If you see this statement, remind the instructor to revise this section to have more play before the proofs.    Planar Transformations   Transformation  A function is a transformation if and only if it is one-to-one and onto.    Planar Transformation  A transformation is a planar transformation if and only if it is from to   For this course all transformations will be transformations of the Euclidean plane.   Describe the effect of each of the following transformations by considering the effects on the region (area) with the following vertices. (0,0), (2,0), (3,5), (0,4). Hint: map the vertices, then map the lines connecting the vertices.   .    .    .    .      Isometry   Isometry  A transformation is an isometry if and only if    Determine which of the following transformations are isometries.            The composition of two isometries is an isometry.   Isometries preserve colinearity  For any isometry if  and are colinear, then  and are colinear.    Isometries preserve betweeness  For any isometry if then    Isometries preserve triangles  For any isometry and any three points    Isometries preserve angles  For any isometry and any three points    Isometries preserve parallelism  For any isometry  if and only if    Isometries preserve circles  For any isometry circles are mapped to congruent circles.     Dilations   Dilation  A transformation is a dilation if and only if it can be defined by a point and a ratio such that where and    Similarity  A transformation is a similarity if and only if it can be expressed as a composition of an isometry and a dilation.    Similarity scales segments uniformly  For any similarity     Similarity preserves colinearity  For any similarity if  and are colinear, then  and are colinear.    Similarity preserves betweeness  For any similarity if then    Similarity preserves triangle similarity  For any similarity and any three points    Similarity preserves angles  For any similarity and any three points    Similarity preserves parallelism  For any similarity  if and only if    For any similarity circles are mapped to circles.    Similarities are closed  The composition of two similarities is a similarity.    "
+  "body": " Transformation   If you see this statement, remind the instructor to revise this section to have more play before the proofs.    Planar Transformations   Transformation  A function is a transformation if and only if it is one-to-one and onto.    Planar Transformation  A transformation is a planar transformation if and only if it is from to   For this course all transformations will be transformations of the Euclidean plane.   Describe the effect of each of the following transformations by considering the effects on the region (not just the border) with the following vertices. (0,0), (2,0), (3,5), (0,4). Hint: map the vertices, then map the lines connecting the vertices.   .    .    .    .      Isometry   Isometry  A transformation is an isometry if and only if    Determine which of the following transformations are isometries.            The composition of two isometries is an isometry.   Isometries preserve colinearity  For any isometry , if  and are colinear, then  and are colinear.    Isometries preserve betweeness  For any isometry , if then    Isometries preserve triangles  For any isometry and any three points    Isometries preserve angles  For any isometry and any three points , , and ,    Isometries preserve parallelism  For any isometry , if and only if    Isometries preserve circles  For any isometry , circles are mapped to congruent circles.     Dilations   Dilation  A transformation is a dilation if and only if it can be defined by a point and a ratio such that where and    Similarity  A transformation is a similarity if and only if it can be expressed as a composition of an isometry and a dilation.    Similarity scales segments uniformly  For any similarity ,    Similarity preserves colinearity  For any similarity , if , , and are colinear, then  and are colinear.    Similarity preserves betweeness  For any similarity , if then    Similarity preserves triangle similarity  For any similarity and any three points , , and ,    Similarity preserves angles  For any similarity and any three points , , and ,    Similarity preserves parallelism  For any similarity , if and only if    Similarity preserves circles  For any similarity , circles are mapped to circles.    Similarities are closed  The composition of two similarities is a similarity.    "
 },
 {
   "id": "section-transformation-3-2",
@@ -970,7 +997,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "4.1.3",
   "title": "",
-  "body": " Describe the effect of each of the following transformations by considering the effects on the region (area) with the following vertices. (0,0), (2,0), (3,5), (0,4). Hint: map the vertices, then map the lines connecting the vertices.   .    .    .    .   "
+  "body": " Describe the effect of each of the following transformations by considering the effects on the region (not just the border) with the following vertices. (0,0), (2,0), (3,5), (0,4). Hint: map the vertices, then map the lines connecting the vertices.   .    .    .    .   "
 },
 {
   "id": "section-transformation-4-2",
@@ -1006,7 +1033,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "4.1.7",
   "title": "Isometries preserve colinearity.",
-  "body": " Isometries preserve colinearity  For any isometry if  and are colinear, then  and are colinear.  "
+  "body": " Isometries preserve colinearity  For any isometry , if  and are colinear, then  and are colinear.  "
 },
 {
   "id": "section-transformation-4-6",
@@ -1015,7 +1042,7 @@ var ptx_lunr_docs = [
   "type": "Corollary",
   "number": "4.1.8",
   "title": "Isometries preserve betweeness.",
-  "body": " Isometries preserve betweeness  For any isometry if then  "
+  "body": " Isometries preserve betweeness  For any isometry , if then  "
 },
 {
   "id": "section-transformation-4-7",
@@ -1030,10 +1057,10 @@ var ptx_lunr_docs = [
   "id": "section-transformation-4-8",
   "level": "2",
   "url": "section-transformation.html#section-transformation-4-8",
-  "type": "Theorem",
+  "type": "Corollary",
   "number": "4.1.10",
   "title": "Isometries preserve angles.",
-  "body": " Isometries preserve angles  For any isometry and any three points  "
+  "body": " Isometries preserve angles  For any isometry and any three points , , and ,  "
 },
 {
   "id": "section-transformation-4-9",
@@ -1042,7 +1069,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "4.1.11",
   "title": "Isometries preserve parallelism.",
-  "body": " Isometries preserve parallelism  For any isometry  if and only if  "
+  "body": " Isometries preserve parallelism  For any isometry , if and only if  "
 },
 {
   "id": "section-transformation-4-10",
@@ -1051,7 +1078,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "4.1.12",
   "title": "Isometries preserve circles.",
-  "body": " Isometries preserve circles  For any isometry circles are mapped to congruent circles.  "
+  "body": " Isometries preserve circles  For any isometry , circles are mapped to congruent circles.  "
 },
 {
   "id": "section-transformation-5-2",
@@ -1078,7 +1105,7 @@ var ptx_lunr_docs = [
   "type": "Lemma",
   "number": "4.1.15",
   "title": "Similarity scales segments uniformly.",
-  "body": " Similarity scales segments uniformly  For any similarity   "
+  "body": " Similarity scales segments uniformly  For any similarity ,  "
 },
 {
   "id": "section-transformation-5-5",
@@ -1087,7 +1114,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "4.1.16",
   "title": "Similarity preserves colinearity.",
-  "body": " Similarity preserves colinearity  For any similarity if  and are colinear, then  and are colinear.  "
+  "body": " Similarity preserves colinearity  For any similarity , if , , and are colinear, then  and are colinear.  "
 },
 {
   "id": "section-transformation-5-6",
@@ -1096,7 +1123,7 @@ var ptx_lunr_docs = [
   "type": "Corollary",
   "number": "4.1.17",
   "title": "Similarity preserves betweeness.",
-  "body": " Similarity preserves betweeness  For any similarity if then  "
+  "body": " Similarity preserves betweeness  For any similarity , if then  "
 },
 {
   "id": "section-transformation-5-7",
@@ -1105,7 +1132,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "4.1.18",
   "title": "Similarity preserves triangle similarity.",
-  "body": " Similarity preserves triangle similarity  For any similarity and any three points  "
+  "body": " Similarity preserves triangle similarity  For any similarity and any three points , , and ,  "
 },
 {
   "id": "section-transformation-5-8",
@@ -1114,7 +1141,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "4.1.19",
   "title": "Similarity preserves angles.",
-  "body": " Similarity preserves angles  For any similarity and any three points  "
+  "body": " Similarity preserves angles  For any similarity and any three points , , and ,  "
 },
 {
   "id": "section-transformation-5-9",
@@ -1123,7 +1150,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "4.1.20",
   "title": "Similarity preserves parallelism.",
-  "body": " Similarity preserves parallelism  For any similarity  if and only if  "
+  "body": " Similarity preserves parallelism  For any similarity , if and only if  "
 },
 {
   "id": "section-transformation-5-10",
@@ -1131,8 +1158,8 @@ var ptx_lunr_docs = [
   "url": "section-transformation.html#section-transformation-5-10",
   "type": "Theorem",
   "number": "4.1.21",
-  "title": "",
-  "body": " For any similarity circles are mapped to circles.  "
+  "title": "Similarity preserves circles.",
+  "body": " Similarity preserves circles  For any similarity , circles are mapped to circles.  "
 },
 {
   "id": "section-transformation-5-11",
