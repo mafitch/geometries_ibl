@@ -1,0 +1,110 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+</docinfo>
+<article xml:id="document" label="document">
+  <title>1.2.2 and 1.4.4</title>
+
+  <section xml:id="sec-completeness">
+    <title>Fano Geometry 1.2.2</title>
+
+    <definition xml:id="def-fano-geometry-attempt-1">
+      <title>Axioms</title>
+
+      <statement>
+        <ol>
+          <li>
+            <p>
+              There exists at least one line.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              There are exactly three points on every line.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Not all points are on the same line.
+            </p>
+          </li>
+        </ol>
+      </statement>
+    </definition>
+  </section>
+
+  <exercise xml:id="checkpoint-fano-geometry">
+    <title>Drawing Fano Geometry</title>
+
+    <statement>
+      <p>
+        Use the definition above and the previous definitions of intersection
+        and parallel to explore the Fano geometry as follows.
+      </p>
+
+      <ol label="(a)">
+        <li>
+          <p>
+            Draw a line using GeoGebra.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Add a third point to the line.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Axiom 3 requires one more point. Draw one.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Must any more lines be added? If so, do so.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            By continuing this process of adding required points and lines,
+            determine how many lines are in this geometry.
+          </p>
+        </li>
+      </ol>
+    </statement>
+
+    <interactive xml:id="fano-geogebra" platform="geogebra" width="100%" aspect="4:3">
+      <slate xml:id="fano-slate" surface="geogebra" source="code/fano-geo.ggb" aspect="4:3"/>
+    </interactive>
+  </exercise>
+  <image source="pasted-image.png"/>
+  <p>
+    Following the instructions and the axioms, there is only one line in this
+    geometry and four points, with one point outside of the line. There is
+    nothing in the axioms that forces us to draw a line to connect the point
+    outside of the line with the other points so this could be left as it is.
+  </p>
+
+  <section xml:id="sec-explain-and-apply">
+    <title>Explain and Apply 1.4.4</title>
+
+    <p>
+      Construct Fano Geometry with exactly seven points
+    </p>
+  </section>
+  <image source="pasted-image-2.png"/>
+  <p>
+    With the new axioms that were added and modified to account for consistency
+    and completeness, this is the new geometry that was drawn
+  </p>
+</article>
+</pretext>

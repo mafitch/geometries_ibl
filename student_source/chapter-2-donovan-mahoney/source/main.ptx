@@ -1,0 +1,105 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+</docinfo>
+<article xml:id="document" label="document">
+  <title>New PreTeXt XML document</title>
+
+  <!-- This is a new PreTeXt XML document.
+     You can add your content below.
+     Looking for example markup to get started?
+     Try creating a project from a template! -->
+  <problem>
+    <title>2.1.4</title>
+
+    <statement>
+      <p>
+        If a line ℓ intersects a triangle △𝐴⁢𝐵⁢𝐶 at a point 𝐷 such that 𝐴
+        −𝐷 −𝐵, then ℓ must intersect <m>\overline{AC}</m>⁢ or <m>\overline{BC}</m>.
+      </p>
+    </statement>
+  </problem>
+    
+
+
+  <solution>
+    <statement>
+        <p>
+            Assume there is some arbitrary triangle △𝐴⁢𝐵⁢𝐶 with a point 𝐷 such that 𝐴
+        −𝐷 −𝐵, with a line ℓ that passes through point 𝐷. 
+
+        We apply the plane separation postulate using ℓ as our line and the fact that a plane contains at least three non-collinear points. By the plane separation postulate, we can create two sets {𝐴⁢,𝐵⁢} and {𝐶}. By the plane separation postulate, this means that segment <m>\overline{AC}</m> and <m>\overline{BC}</m> intersect the line ℓ. Therefore, ℓ must intersect <m>\overline{AC}</m> or <m>\overline{BC}</m>. 
+        </p>
+    </statement>
+    </solution>
+
+<problem>
+    <title>2.1.20</title>
+
+    <statement>
+    <p>
+        The sum of the lengths of any two sides of a triangle is larger than the length of the other side. 
+    </p>
+</statement>
+</problem>
+
+
+<solution>
+    <statement>
+
+        <p>
+            
+            Case 1: Where 1 side is longer than the others. 
+            <blockquote>
+        <image width="75%" source="a"/>
+      </blockquote>
+            <p>
+                There exists some arbitrary triangle △𝐴⁢𝐵⁢𝐶. Assume that <m>\overline{AB}</m> is the longest side. 
+            </p>
+            
+            <p>
+                Subcase 1: <m>|AB|+|AC|>|BC|</m>
+                <p>
+                The length of <m>\overline{AC}</m> is a non-negative number and is being added to the longest side <m>\overline{AB}</m>. The sum will remain longer than the other side. 
+                <p><m>|AB|>|BC|</m> then <m>|AB|+|AC|>|BC|</m> remains true.  
+                </p>
+                </p>
+            </p>
+            <p>
+                Subcase 2: <m>|AB|+|BC|>|AC|</m>
+                <p>
+                Similar to Subcase 1. 
+                </p>
+            </p>
+            <p>
+                Subcase 3: <m>|AC|+|BC|>|AB|</m>
+                <p>
+                Place a point D such that <m>|AD|=|AC|</m>. We need to show that <m>|BC|>|DB|</m> for the sum of the two sides to be greater than <m>|AB|</m>. By definition, △𝐴𝐷𝐶 is an isosceles triangle and by the Isosceles Triangle theorem, the angles opposite the equal sides are congruent. <m>m\angle ADC=m\angle DCA</m>. 
+                </p>
+                <blockquote>
+        <image width="75%" source="b"/>
+      </blockquote>
+                <p> 
+                <m>\angle ADC</m> is an exterior angle to △𝐵𝐷⁢𝐶 and by the exterior angle theorem, <m>m\angle ADC>m\angle BCD</m>. <m>\angle BDC</m> is an exterior angle to △𝐴⁢𝐷⁢𝐶, so <m>m\angle BDC>m\angle DCA</m>. We know that <m>\angle ADC\cong\angle DCA</m> which  means <m>m\angle BDC>m\angle ADC</m> but we also know that <m>m\angle ADC>m\angle BCD</m>. Therefore, <m>m\angle BDC>m\angle BCD</m>. By the extended inverse of isosceles triangle, <m>|BC|>|DB|</m>. 
+                </p>
+                <p>
+                <m>|AB|=|AD|+|DB|</m> this equation becomes <m>|AB|=|AC|+|DB|</m>. Since we know that <m>|BC|>|DB|</m> this means <m>|AC|+|BC|>|AB|</m> which is what we wanted to prove.  
+                </p>
+            </p>
+        </p>
+        <p>
+            Case 2: 2 or more sides are equal
+        </p>
+        <p> 
+            This means for some △𝐴⁢𝐵⁢𝐶 where <m>|AB|=|AC|=|BC|</m> then for the sum of any two sides, <m>2|AB|>|AB|</m> which proves the theorem. 
+            </p>
+            
+    </statement>
+</solution>
+
+</article>
+</pretext>

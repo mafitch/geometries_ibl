@@ -1,0 +1,226 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+</docinfo>
+<article xml:id="document" label="document">
+  <title>New LaTeX-style PreTeXt document</title>
+
+  <!-- This is a new LaTeX&#x2D;style PreTeXt document.-->
+  <!-- You can add your content below.-->
+  <!-- Looking for example markup to get started? -->
+  <!-- Try creating a project from a template!-->
+  <problem>
+    <title>1.1.6</title>
+
+    <statement>
+      <p>
+        Construct a projective geometry with exactly 4 points on every line.
+      </p>
+    </statement>
+  </problem>
+
+  <solution>
+    <p>
+      Place 9 points in a <m>3\times 3</m> grid. Then, place four more points
+      above, below, and to the left and right of the grid.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="pj1"/>
+    </blockquote>
+
+    <p>
+      We want every line to contain exactly four points. So, we can draw the
+      following lines.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="pj2"/>
+    </blockquote>
+
+    <p>
+      We arrange the lines in this way to not violate axiom 3 of the Finite
+      Projective Geometry. Then, notice we can repeat this pattern as follows.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="pj3"/>
+    </blockquote>
+
+    <p>
+      Once again, we satisfy axiom 3. But, we cannot repeat this pattern again
+      since we would be violating axiom 1. So, we have to come up with a
+      different strategy to connect our top and rightmost points with the rest
+      of the diagram such that we do not violate axiom 1. Instead of attaching
+      the points along the verticals and horizontals, we can attack from the
+      diagonals like so.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="pj4"/>
+    </blockquote>
+
+    <p>
+      If we draw our lines this way, we still satisfy all the axioms. Now,
+      notice we can repeat this same method of attachment on our topmost point.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="pj5"/>
+    </blockquote>
+
+    <p>
+      Finally, we need to connect our 4 outermost dots to satisfy axiom 1.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="pj6"/>
+    </blockquote>
+
+    <p>
+      We see that this final image satisfies the three axioms of the finite
+      projective geometry:
+      <ol>
+        <li>
+          <p>
+            Every two distinct points have exactly one line on them,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            There are at least four points with no three on the same line,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Every two lines have at least one point on them both.
+          </p>
+        </li>
+      </ol>
+      To see how we satisfy axiom 2, we can pick the centermost point, the
+      topmost post, the rightmost point, and the left middle point of the
+      <m>3\times3</m> grid. Further, as per the problem statement, each line has
+      exactly four points on it.
+    </p>
+  </solution>
+
+  <problem>
+    <title>1.4.6</title>
+
+    <statement>
+      <p>
+        How many lines are in the Nine Point Geometry?
+      </p>
+    </statement>
+  </problem>
+
+  <solution>
+    <p>
+      This problem follows 1.4.5, where we are asked to modify the axioms of the
+      Nine Point Geometry:
+      <ol>
+        <li>
+          <p>
+            There exists exactly nine points,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            There exists exactly nine lines,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Any two distinct points have exactly one line on them,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Each line is on exactly three points.
+          </p>
+        </li>
+      </ol>
+      I followed the following modification to these axioms:
+      <ol>
+        <li>
+          <p>
+            There exists exactly nine points,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Any two distinct points have exactly one line on them,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Each line is on exactly three points.
+          </p>
+        </li>
+      </ol>
+      <!--Michael Axioms--> To visualize this geometry, we first place 9 points
+      in a <m>3\times 3</m> grid.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="npg1.png"/>
+    </blockquote>
+
+    <p>
+      Next, draw 3 horizontal and 3 vertical lines like so to satisfy axiom 3.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="npg2.png"/>
+    </blockquote>
+
+    <p>
+      Since we need to connect the corners to satisfy axiom 2, draw two diagonal
+      lines.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="npg3.png"/>
+    </blockquote>
+
+    <p>
+      But, the corners do not connect to the middle edges on the opposing sides.
+      Notice that each corner is not adjacent to exactly two edges. So, we can
+      draw lines that connect each corner to their nonadjacent edge points that
+      will conveniently satisfy axioms 2 and 3.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="npg4.png"/>
+    </blockquote>
+
+    <blockquote>
+      <image width="75%" source="npg5.png"/>
+    </blockquote>
+
+    <blockquote>
+      <image width="75%" source="npg6.jpg"/>
+    </blockquote>
+
+    <blockquote>
+      <image width="75%" source="npg7.jpg"/>
+    </blockquote>
+
+    <p>
+      Now, all axioms are satisfied. There are 12 lines in this depiction of the
+      Nine Point Geometry.
+    </p>
+  </solution>
+</article>
+</pretext>

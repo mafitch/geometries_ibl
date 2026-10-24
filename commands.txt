@@ -2,7 +2,7 @@ source /c/pve/pretext/Scripts/activate
 source /c/pve/manim/Scripts/activate
 deactivate
 
-cd /c/DATA/Documents/texts/geometries_ibl/
+cd /c/DATA/Documents/texts/geometries_26/
 
 pretext build web
 
@@ -10,3 +10,5 @@ pretext build print
 
 
 ~/pretext/pretext/pretext -V -p publication/publication.ptx source/geometries_ibl.ptx
+
+for %i in (*.svg) do "C:\Program Files\Inkscape\bin\inkscape.com" --export-filename=%~ni.pdf %i

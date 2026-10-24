@@ -21,6 +21,22 @@
         <theorem>
             <title>Vertical Angle Congruence</title>
             <statement><p>Vertical angles are congruent.</p></statement>
+            <proof>
+                <image source="images/asset-2-1-3-submission.png">
+                    <shortdescription>Image required for the proof of Theorem 2-1-3.</shortdescription>
+                </image>
+
+                <p>Take the figure above. Because angles <m>\alpha</m> and <m>\gamma</m> form a linear pair, the supplement postulate indicates that <m>m(\angle\alpha)+m(\angle\gamma)=180</m> <degree/>. We also know that <m>\gamma</m> and <m>\beta</m> form a linear pair, so we know that <m>m(\angle\gamma)+m(\angle\beta)=180</m> <degree/>.</p>
+
+                <p>
+                Thus,
+                <m>m(\angle\alpha)+m(\angle\gamma)=m(\angle\gamma)+m(\angle\beta)</m>
+                So, <m>m(\angle\alpha)=m(\angle\beta)</m>.
+                Thus, <m>\angle\alpha\cong\angle\beta</m>.
+                We can show by similar processes that
+                <m>\angle\gamma\cong\angle\sigma</m>, so the theorem is proven.
+                </p>
+            </proof>
         </theorem>
 
         <p><m>A-B-C</m> means that the points <m>A,B,</m> and <m>C</m> are colinear and <m>B</m> is between <m>A</m> and <m>C.</m></p>
@@ -28,6 +44,11 @@
         <theorem>
             <title>Pasch's Axiom</title>
             <statement><p>If a line <m>\ell</m> intersects a triangle <m>\triangle ABC</m> at a point <m>D</m> such that <m>A-D-B,</m> then <m>\ell</m> must intersect <m>\overline{AC}</m> or <m>\overline{BC}.</m></p></statement>
+            <proof>
+                <p>
+                    Assume there is some arbitrary triangle <m>\triangle ABC</m> with a point D such that A-B-D, with a line <m>\ell</m> that passes through point D. We apply the plane separation postulate using <m>\ell</m> as our line and the fact that a plane contains at least three non-collinear points. By the plane separation postulate, we can create two sets {A,B} and {C}. By the plane separation postulate, this means that segment <m>\overline{AC}</m> and <m>\overline{BC}</m> intersect the line <m>\ell</m>. Therefore, <m>\ell</m> must intersect <m>\overline{AC}</m> or <m>\overline{BC}</m>. 
+                </p>
+            </proof>
         </theorem>
 
         <theorem>
@@ -48,11 +69,56 @@
         <theorem>
             <title>Isosceles Triangle</title>
             <statement><p>In an isosceles triangle the angles opposite the equal sides are congruent.</p></statement>
+            <proof>
+                <p>
+                    Consider <m>\triangle ABC</m> with <m>AB \cong AC</m>.
+                    <image src="images/triangle.png" />
+                </p>
+                <p>
+                    Draw an angle bisector from <m>A</m> to the
+                    base <m>BC</m>, meeting <m>BC</m> at point <m>D</m>.
+                    <image src="images/triangles.png" />
+                </p>
+                <p>
+                    <m>\angle BAD \cong \angle CAD</m> from the construction of <m>AD</m>.
+                </p>
+
+                <p>
+                    <m>AD \cong AD</m> by the reflexive property. 
+                </p>
+
+                <p>
+                    <m>\triangle ABD \cong \triangle ACD</m> by the Side-Angle-Side congruence postulate.
+                </p>
+                <p>
+                    Corresponding angles of congruent triangles are congruent, so
+                    <m>\angle B \cong \angle C</m>. Therefore, the angles opposite the congruent
+                    sides of an isosceles triangle are congruent.
+                </p>
+            </proof>
         </theorem>
 
         <theorem>
             <title>Perpendicular Bisector</title>
             <statement><p>A point is on the perpendicular bisector of a segment if and only if it is equidistant from the endpoints.</p></statement>
+            <proof>
+                <p>
+                ( <m>\Rightarrow</m> ) Let <m>\overline{BC}</m> be a line segment.
+                Construct a perpendicular bisector that intersects <m>\overline{BC}</m> at
+                a point <m>D</m> so that <m>B-D-C</m>. Place a point <m>A</m> on this
+                perpendicular bisector. By Axiom 1, we can construct unique line segments
+                <m>\overline{AB}</m> and <m>\overline{AC}</m>. Since
+                <m>\overleftrightarrow{AD}</m> is a perpendicular bisector to
+                <m>\overline{BC}</m>, we have <m>\overline{BD}\cong\overline{DC}</m>. By
+                reflexivity, <m>\overline{AD}\cong\overline{AD}</m>. In fact, since
+                <m>\overleftrightarrow{AD}</m> is a perpendicular bisector of
+                <m>\overline{BC}</m>, we know that <m>m\angle ADB=m\angle ADC=\pi/2</m>.
+                Hence, <m>\angle ADB\cong\angle ADC</m>. By the SAS Postulate,
+                <m>\triangle ADB</m> is in a one-to-one correspondence to
+                <m>\triangle ACD</m>. So, <m>\overline{AB}\cong\overline{AC}</m> and
+                therefore <m>|AB|=|AC|</m>, as desired.
+                </p>
+            </proof>
         </theorem>
 
         <definition>
@@ -123,6 +189,30 @@
         <theorem>
             <title>Exterior Angle</title>
             <statement><p>The measure of an exterior angle of a triangle is greater than the measure of either of the opposing angles of the triangle.</p></statement>
+            <proof>
+                <p>Suppose we have <m>\triangle ABC</m>. We can construct a ray from         <m>\angle ACB</m> such that it goes through <m>\overline{AB}</m> and intersects it at point <m>E</m>, such that <m>A-E-B</m> and <m>E</m> is the midpoint of <m>\overline{AB}</m>. Thus, <m>\overline{AE} \cong \overline{EB}</m>.</p>
+
+                <p>By the Ruler Postulate, we then construct point <m>F</m> on the ray such that <m>C-E-F</m>, with <m>E</m> as the midpoint of <m>\overline{CF}</m>. Therefore, <m>\overline{EF} \cong \overline{CE}</m>.</p>
+
+                <image source="images/exterior_angle3.png"/>
+
+                <p>By the Vertical Angle Theorem, <m>\angle FEB \cong \angle AEC</m>. Since
+                <m>\overline{CE} \cong \overline{EF}</m> and <m>\overline{AE} \cong \overline{EB}</m>, it follows by SAS that <md>\triangle AEC \cong \triangle FEB.</md> Thus, <md>\angle CAE \cong \angle EBF.</md> By the Angle Addition Postulate, 
+                    <md>
+                    <mrow>
+                        m\angle ABD
+                        &amp;= m\angle EBF + m\angle FBD
+                    </mrow>
+                    <mrow>
+                        &amp;= m\angle CAE + m\angle FBD
+                    </mrow>
+                    <mrow>
+                        &amp;= m\angle CAB + m\angle FBD.
+                    </mrow>
+                    </md>
+                By Axiom 12, <m>m\angle FBD \ne 0</m>.
+                </p>
+            </proof>
         </theorem>
 
         <definition>
@@ -144,16 +234,125 @@
             <theorem>
                 <title>Angle-Angle-Side</title>
                 <statement><p>Two triangles are congruent if and only if two corresponding angles and a side not between them are congruent.</p></statement>
+                <proof>
+
+                    <p>Suppose we have two triangles, <m>\triangle ABC</m> and <m>\triangle DEF</m>, with <m>\angle BAC \cong \angle EDF</m>, <m>\angle ACB \cong \angle DFE</m>, and <m>\overline{AB} \cong \overline{DE}</m>.
+
+                    <image source="images/aas.png"/>
+
+                    Assume, for contradiction, that <m>m\angle ABC \gt m\angle DEF</m>. We want to construct an angle <m>\alpha</m> such that <m>\angle \alpha \cong \angle E</m>. Using Axiom 18, we can construct a crossbar from <m>\angle B</m> that intersects <m>\overline{AC}</m>, constructing a point <m>G</m> such that <m>A-G-C</m>.</p>
+                    <p>We now also have <m>\angle \alpha \cong \angle E</m>.
+
+                    <image source="images/aas2.png"/>
+
+                    By doing this, through angle-side-angle, the <m>\triangle ABG</m> that we constructed is congruent to <m>\triangle DEF</m> and we have <m>\angle AGB \cong \angle GCB \cong \angle DFE</m>. But <m>\angle AGB</m> is an exterior angle of <m>\angle BGC</m>, by the exterior angle theorem, <m>m\angle AGB \gt m\angle GCB</m> and <m>m\angle DFE</m> which contradicts the definition of congruent triangles.</p>
+                </proof>
             </theorem>
 
             <theorem>
                 <title>Side-Side-Side</title>
                 <statement><p>Two triangles are congruent if and only if all three corresponding sides are congruent.</p></statement>
+                <proof>
+                    <p>
+                    ( <m>\Rightarrow</m> ) Construct triangles <m>\triangle ABC</m> and
+                    <m>\triangle DEF</m> such that
+                    <md alignment="align">
+                        <mrow>\overline{AB}&amp;\cong\overline{DE},</mrow>
+                        <mrow>\overline{BC}&amp;\cong\overline{EF},</mrow>
+                        <mrow>\overline{AC}&amp;\cong\overline{DF}.</mrow>
+                    </md>
+                    By the Angle Construction Postulate, we can construct a ray
+                    <m>\overrightarrow{AP}</m> such that <m>m\angle PAB=m\angle FDE</m>, where
+                    <m>P</m> and <m>C</m> are in separate half-planes separated by
+                    <m>\overleftrightarrow{AB}</m>. Then, on ray <m>\overrightarrow{AP}</m>,
+                    by the Ruler Postulate we can extend this ray and place a point <m>F'</m>
+                    such that <m>\overline{AF'}\cong\overline{DF}</m>. By Axiom 1, we can
+                    construct the line <m>\overline{F'B}</m>. Now, since
+                    <m>\overline{AF'}\cong\overline{DF}</m>,
+                    <m>\overline{AB}\cong\overline{DE}</m>, and
+                    <m>\angle F'AB\cong\angle FDE</m>, we know that
+                    <m>\triangle ABF'\cong\triangle DEF</m> by the SAS Postulate. For the sake
+                    of simplicity, we will re-label <m>\triangle ABF'</m> as
+                    <m>\triangle DEF</m>. So, we should have the following figure.
+                    </p>
+
+                    <image width="75%" source="images/asset-2-1.png"/>
+
+                    <p>
+                    Essentially, we place <m>\triangle DEF</m> on <m>\triangle ABC</m> such
+                    that <m>D</m> overlaps <m>A</m> and <m>E</m> overlaps <m>B</m>. By axiom
+                    1, we can construct the segment <m>\overline{CF}</m>.
+                    </p>
+
+                    <image width="75%" source="images/asset-2-1-2.png"/>
+
+                    <p>
+                    We observe the new triangles <m>\triangle CDF</m> and
+                    <m>\triangle CBF</m>. Since <m>\overline{AC}\cong\overline{DF}</m> and
+                    <m>\overline{BC}\cong\overline{EF}</m>, triangles <m>\triangle CAF</m> and
+                    <m>\triangle CBF</m> are isosceles. By the Isosceles Triangle Theorem,
+                    <m>\angle ACF\cong\angle DFC</m> and <m>\angle BCF\cong\angle EFC</m>.
+                    </p>
+
+                    <image width="75%" source="images/asset-2-1-3.png"/>
+
+                    <p>
+                    Since <m>F</m> lies in the interior of <m>\angle ACB</m> and <m>C</m> lies
+                    in the interior of <m>\angle DFE</m>, by the Angle Addition Postulate,
+                    <md alignment="align">
+                        <mrow>m\angle ACB&amp;=m\angle ACF+m\angle BCF,</mrow>
+                        <mrow>m\angle DFE&amp;=m\angle DFC+m\angle EFC.</mrow>
+                    </md>
+                    Using the fact that <m>\angle ACF\cong\angle DFC</m> and
+                    <m>\angle BCF\cong\angle EFC</m>, we see that
+                    <md alignment="align">
+                        <mrow>m\angle ACB&amp;=m\angle DFC+m\angle EFC=m\angle DFE.</mrow>
+                    </md>
+                    So, we have that
+                    <ol>
+                        <li>
+                        <p>
+                            <m>\overline{AC}\cong\overline{DF}</m>,
+                        </p>
+                        </li>
+
+                        <li>
+                        <p>
+                            <m>\overline{BC}\cong\overline{EF}</m>,
+                        </p>
+                        </li>
+
+                        <li>
+                        <p>
+                            <m>\angle ACB\cong\angle DFE</m>.
+                        </p>
+                        </li>
+                    </ol>
+                    By the SAS Postulate, <m>\triangle ABC\cong\triangle DEF</m>.
+                    </p>
+
+                    <p>
+                    ( <m>\Leftarrow</m> ) Suppose <m>\triangle ABC\cong\triangle DEF</m>.
+                    Then, by definition, their corresponding sides are congruent. So,
+                    <md alignment="align">
+                        <mrow>\overline{AB}\cong\overline{DE},</mrow>
+                        <mrow>\overline{BC}\cong\overline{EF},</mrow>
+                        <mrow>\overline{AC}\cong\overline{DF}.</mrow>
+                    </md>
+                    </p>
+                </proof>
             </theorem>
 
             <theorem>
                 <title>Right Angle-Side-Side</title>
                 <statement><p>Two right triangles are congruent if and only if two corresponding sides and a right angle not between those sides are congruent.</p></statement>
+                <proof>
+                    <image source="images/asset-2-1-17-image.png">
+                        <shortdescription>Image required for the proof of right angle side side theorem</shortdescription>
+                    </image>
+
+                    <p>Take the above figure and suppose that line segments <m>i</m> and <m>j</m> to be congruent and the angles <m>\angle CBA</m> and <m>\angle DBA</m> to be congruent. Note that line segment <m>f</m> is congruent to itself. Then, per the Isosceles Triangle Theorem, <m>\angle ACB\cong\angle ADB</m>. Thus, by our congruences, we know that <m>\triangle ABC\cong\triangle ABD</m> per Angle Angle Side congruence.</p>
+                </proof>
             </theorem>
 
             <theorem>
@@ -169,6 +368,49 @@
             <theorem>
                 <title>Triangle Inequality</title>
                 <statement><p>The sum of the lengths of any two sides of a triangle is larger than the length of the other side.</p></statement>
+                <proof>
+                    <p>
+                        Case 1: Where 1 side is longer than the others. 
+                        <image width="75%" source="images/triangle-inequality.jpg"/>
+                        <p>
+                            There exists some arbitrary triangle <m>\triangle ABC</m>. Assume that <m>\overline{AB}</m> is the longest side. 
+                        </p>
+                        
+                        <p>
+                            Subcase 1: <m>|AB|+|AC| \gt |BC|</m>
+                            <p>
+                            The length of <m>\overline{AC}</m> is a non-negative number and is being added to the longest side <m>\overline{AB}</m>. The sum will remain longer than the other side. 
+                            <p><m>|AB| \gt |BC|</m> then <m>|AB|+|AC| \gt |BC|</m> remains true.  
+                            </p>
+                            </p>
+                        </p>
+                        <p>
+                            Subcase 2: <m>|AB|+|BC| \gt |AC|</m>
+                            <p>
+                            Similar to Subcase 1. 
+                            </p>
+                        </p>
+                        <p>
+                            Subcase 3: <m>|AC|+|BC| \gt |AB|</m>
+                            <p>
+                            Place a point D such that <m>|AD|=|AC|</m>. We need to show that <m>|BC| \gt |DB|</m> for the sum of the two sides to be greater than <m>|AB|</m>. By definition, <m>\triangle ADC</m> is an isosceles triangle and by the Isosceles Triangle theorem, the angles opposite the equal sides are congruent. <m>m\angle ADC=m\angle DCA</m>. 
+                            </p>
+                            <image width="75%" source="images/triangle-inequality2.jpg"/>
+                            <p> 
+                            <m>\angle ADC</m> is an exterior angle to <m>\triangle BDC</m>  and by the exterior angle theorem, <m>m\angle ADC \gt m\angle BCD</m>. <m>\angle BDC</m> is an exterior angle to <m>\triangle ADC</m>, so <m>m\angle BDC \gt m\angle DCA</m>. We know that <m>\angle ADC\cong\angle DCA</m> which  means <m>m\angle BDC \gt m\angle ADC</m> but we also know that <m>m\angle ADC \gt m\angle BCD</m>. Therefore, <m>m\angle BDC \gt m\angle BCD</m>. By the extended inverse of isosceles triangle, <m>|BC| \gt |DB|</m>. 
+                            </p>
+                            <p>
+                            <m>|AB|=|AD|+|DB|</m> this equation becomes <m>|AB|=|AC|+|DB|</m>. Since we know that <m>|BC| \gt |DB|</m> this means <m>|AC|+|BC| \gt |AB|</m> which is what we wanted to prove.  
+                            </p>
+                        </p>
+                    </p>
+                    <p>
+                        Case 2: 2 or more sides are equal
+                    </p>
+                    <p> 
+                        This means for some <m>\triangle ABC</m> where <m>|AB|=|AC|=|BC|</m> then for the sum of any two sides, <m>2|AB| \gt |AB|</m> which proves the theorem. 
+                        </p>
+                </proof>
             </theorem>
 
     </subsection>

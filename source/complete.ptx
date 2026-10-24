@@ -32,6 +32,15 @@
             </task>
             <task xml:id="fanolinecount">
                 <statement><p> By continuing this process of adding required points and lines, determine how many lines are in this geometry.</p></statement>
+                <solution>
+                    <image source="images/reniel-1.png"/>
+                    <p>
+                        Following the instructions and the axioms, there is only one line in this
+                        geometry and four points, with one point outside of the line. There is
+                        nothing in the axioms that forces us to draw a line to connect the point
+                        outside of the line with the other points so this could be left as it is.
+                    </p>
+                </solution>
             </task>
             <task>
                 <statement><p> Add the axiom: every point is on at least one line.</p></statement>
@@ -50,6 +59,10 @@
             </task>
             <task xml:id="fanolinecount3">
                 <statement><p> How many lines are in this geometry?</p></statement>
+                <solution>
+                    <image width="75%" source="images/g.png"/>
+                    <p>There are 2 lines.</p>
+                </solution>
             </task>
             <task>
                 <statement><p> What do the answers to <xref ref="fanolinecount" />, <xref ref="fanolinecount2" />, and <xref ref="fanolinecount3" /> say about this attempt at constructing a geometry?</p></statement>

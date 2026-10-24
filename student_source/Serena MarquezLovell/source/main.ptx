@@ -1,0 +1,114 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+</docinfo>
+<article xml:id="document" label="document">
+<title>1.1.54</title>
+
+<article xml:id="document">
+    <title>1.1.4</title>
+<p>
+</p>
+
+<p>
+  <dl>
+    <li>
+      <title>(a)</title>
+
+      <p>
+        <alert>Draw and label 4 points.</alert>
+      </p>
+
+    <image source="two.svg" width="100%"/>      
+    </li>
+
+    <li>
+      <title>(b)</title>
+
+      <p>
+        <alert>Use Axiom 2 to draw as many lines as possible.</alert>
+      </p>
+
+      <image source="one.svg"/>
+    </li>
+
+    <li>
+      <title>(c)</title>
+
+      <p>
+        <alert>How many lines exist in this geometry?</alert>
+      </p>
+
+      <p>
+        <md>
+          \boxed{6}
+        </md>
+      </p>
+    </li>
+
+    <li>
+      <title>(d)</title>
+
+      <p>
+        <alert>Find a pair of parallel lines.</alert>
+      </p>
+
+      <p>
+        There are three pairs of parallel lines:
+      </p>
+
+      <p>
+        <md>
+          \boxed{\overleftrightarrow{AB} \parallel \overleftrightarrow{CD}}
+        </md>
+      </p>
+
+      <p>
+        <md>
+          \boxed{\overleftrightarrow{AC} \parallel \overleftrightarrow{BD}}
+        </md>
+      </p>
+
+      <p>
+        <md>
+          \boxed{\overleftrightarrow{AD} \parallel \overleftrightarrow{BC}}
+        </md>
+      </p>
+    </li>
+
+    <li>
+      <title>(e)</title>
+
+      <p>
+        <alert>Can you find three lines that are pairwise parallel?</alert>
+      </p>
+
+      <p>
+        <md>
+          \boxed{\text{No.}}
+        </md>
+      </p>
+    </li>
+
+    <li>
+      <title>(f)</title>
+
+      <p>
+        <alert>Can you find a point that is on three lines?</alert>
+      </p>
+
+      <p>
+        <md>
+          \boxed{\text{Any point.}}
+        </md>
+      </p>
+    </li>
+  </dl>
+</p>
+</article>
+</article>
+</pretext>

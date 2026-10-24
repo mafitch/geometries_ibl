@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns="http://pretextbook.org/ns/pretext" version="2">
+  <section xml:id="axioms">
+    <ol>
+      <li>
+        <p>There exists exactly nine points.</p>
+      </li>
+      <li>
+        <p>Any two points have exactly one line on them.</p>
+      </li>
+      <li>
+        <p>Each line is on exactly three points.</p>
+      </li>
+    </ol>
+  </section>
+</pretext>

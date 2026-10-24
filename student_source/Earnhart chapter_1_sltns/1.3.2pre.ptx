@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns="http://pretextbook.org/ns/pretext" version="2">
+  <section xml:id="section-1">
+    <ol>
+      <li>
+        <p>Drawing nine points using geogebra:</p>
+        <image src="geogebra_points.png"/>
+      </li>
+      <li>
+        <p>Drawing all required lines using only axiom three:</p>
+        <image src="geogebra_lines.png"/>
+      </li>
+      <li>
+        <p>Using the formula for edges of a complete graph with n vertices: <me>
+          E = \frac{n(n-1)}{2}.
+          </me>
+          For nine points, this gives:
+          <me>
+          E = \frac{9(9-1)}{2} = 36.
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>Axiom two restricts us to nine lines.</p>
+      </li>
+    </ol>
+  </section>
+</pretext>

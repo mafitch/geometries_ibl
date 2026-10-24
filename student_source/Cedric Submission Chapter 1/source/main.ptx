@@ -1,0 +1,85 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+</docinfo>
+<article xml:id="document" label="document">
+    <title>New PreTeXt XML document</title>
+
+  <section>
+    <title>1.4.3</title>
+
+    <p>
+      Modify the axioms for the Fano geometry so they are complete and
+      consistent. You might use the Four Point Geometry axioms as a model.
+    </p>
+
+    <p>
+      For Fano Geometry, we were given the axioms:
+    </p>
+
+    <p>
+      1: There exists at least one line.
+    </p>
+
+    <p>
+      2: There are exactly three points on every line.
+    </p>
+
+    <p>
+      3: Not all points are on the same line.
+    </p>
+
+    <p>
+      We shall modify them in the following manner:
+    </p>
+
+    <p>
+      Axiom 3 shall be changed to: Any two points share a line. We shall also
+      add an Axiom 4: There are at most 7 points.
+    </p>
+  </section>
+
+  <section>
+    <title>1.4.5</title>
+
+    <p>
+      Modify the axioms of the Nine Point Geometry to be complete and
+      consistent. You might use the Four Point Geometry axioms as a model.
+    </p>
+
+    <p>
+      For the Nine Point Geometry, we were given the following axioms:
+    </p>
+
+    <p>
+      1: There exist exactly nine points.
+    </p>
+
+    <p>
+      2: There exist exactly nine lines.
+    </p>
+
+    <p>
+      3: Any two, distinct points have exactly one line on them.
+    </p>
+
+    <p>
+      4: Each line is on exactly three points.
+    </p>
+
+    <p>
+      We shall modify these in the following manner:
+    </p>
+
+    <p>
+      Axiom 3 shall be changed to: For every set of three points, two of those
+      points share a line.
+    </p>
+  </section>
+
+</article>
+</pretext>

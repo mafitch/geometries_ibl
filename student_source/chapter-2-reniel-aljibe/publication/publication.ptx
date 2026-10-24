@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publication>
+  <source>
+    <directories external="external" generated="generated"/>
+  </source>
+  <html embed-button="yes">
+    <resources host="cdn"/>
+    <brandlogo source="icon.svg"/>
+  </html>
+</publication>

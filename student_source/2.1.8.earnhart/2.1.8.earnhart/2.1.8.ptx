@@ -1,0 +1,32 @@
+<section xml:id="isosceles-triangle-angles">
+  <title>Isosceles Triangle 2.1.8</title>
+
+    <proof>
+      <p>
+        Consider <m>\triangle ABC</m> with <m>AB \cong AC</m>.
+        <image src="triangle.png">
+      </p>
+      <p>
+        Draw an angle bisector from <m>A</m> to the
+        base <m>BC</m>, meeting <m>BC</m> at point <m>D</m>.
+        <image src="triangles.png">
+      </p>
+      <p>
+        <m>\angle BAD \cong \angle CAD</m> from the construction of <m>AD</m>.
+      </p>
+
+      <p>
+        <m>AD \cong AD</m> by the reflexive property. 
+      </p>
+
+      <p>
+        <m>\triangle ABD \cong \triangle ACD</m> by the Side-Angle-Side congruence postulate.
+      </p>
+      <p>
+        Corresponding angles of congruent triangles are congruent, so
+        <m>\angle B \cong \angle C</m>. Therefore, the angles opposite the congruent
+        sides of an isosceles triangle are congruent.
+      </p>
+    </proof>
+  </theorem>
+</section>

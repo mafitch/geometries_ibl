@@ -1,0 +1,153 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+</docinfo>
+<article xml:id="document" label="document">
+  <title>New LaTeX-style PreTeXt document</title>
+
+  <!-- This is a new LaTeX&#x2D;style PreTeXt document.-->
+  <!-- You can add your content below.-->
+  <!-- Looking for example markup to get started? -->
+  <!-- Try creating a project from a template!-->
+  <theorem>
+    <title>2.1.9. Perpendicular Bisector</title>
+
+    <statement>
+      <p>
+        A point is on the perpendicular bisector of a segment if and only if it
+        is equidistant from the endpoints.
+      </p>
+    </statement>
+  </theorem>
+
+  <proof>
+    <p>
+      ( <m>\Rightarrow</m> ) Let <m>\overline{BC}</m> be a line segment.
+      Construct a perpendicular bisector that intersects <m>\overline{BC}</m> at
+      a point <m>D</m> so that <m>B-D-C</m>. Place a point <m>A</m> on this
+      perpendicular bisector. By Axiom 1, we can construct unique line segments
+      <m>\overline{AB}</m> and <m>\overline{AC}</m>. Since
+      <m>\overleftrightarrow{AD}</m> is a perpendicular bisector to
+      <m>\overline{BC}</m>, we have <m>\overline{BD}\cong\overline{DC}</m>. By
+      reflexivity, <m>\overline{AD}\cong\overline{AD}</m>. In fact, since
+      <m>\overleftrightarrow{AD}</m> is a perpendicular bisector of
+      <m>\overline{BC}</m>, we know that <m>m\angle ADB=m\angle ADC=\pi/2</m>.
+      Hence, <m>\angle ADB\cong\angle ADC</m>. By the SAS Postulate,
+      <m>\triangle ADB</m> is in a one-to-one correspondence to
+      <m>\triangle ACD</m>. So, <m>\overline{AB}\cong\overline{AC}</m> and
+      therefore <m>|AB|=|AC|</m>, as desired.
+    </p>
+  </proof>
+
+  <theorem>
+    <title>2.1.16. Side-Side-Side</title>
+
+    <statement>
+      <p>
+        Two triangles are congruent if and only if all three corresponding sides
+        are congruent.
+      </p>
+    </statement>
+  </theorem>
+
+  <proof>
+    <p>
+      ( <m>\Rightarrow</m> ) Construct triangles <m>\triangle ABC</m> and
+      <m>\triangle DEF</m> such that
+      <md alignment="align">
+        <mrow>\overline{AB}&amp;\cong\overline{DE},</mrow>
+        <mrow>\overline{BC}&amp;\cong\overline{EF},</mrow>
+        <mrow>\overline{AC}&amp;\cong\overline{DF}.</mrow>
+      </md>
+      By the Angle Construction Postulate, we can construct a ray
+      <m>\overrightarrow{AP}</m> such that <m>m\angle PAB=m\angle FDE</m>, where
+      <m>P</m> and <m>C</m> are in separate half-planes separated by
+      <m>\overleftrightarrow{AB}</m>. Then, on ray <m>\overrightarrow{AP}</m>,
+      by the Ruler Postulate we can extend this ray and place a point <m>F'</m>
+      such that <m>\overline{AF'}\cong\overline{DF}</m>. By Axiom 1, we can
+      construct the line <m>\overline{F'B}</m>. Now, since
+      <m>\overline{AF'}\cong\overline{DF}</m>,
+      <m>\overline{AB}\cong\overline{DE}</m>, and
+      <m>\angle F'AB\cong\angle FDE</m>, we know that
+      <m>\triangle ABF'\cong\triangle DEF</m> by the SAS Postulate. For the sake
+      of simplicity, we will re-label <m>\triangle ABF'</m> as
+      <m>\triangle DEF</m>. So, we should have the following figure.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="asset-2-1"/>
+    </blockquote>
+
+    <p>
+      Essentially, we place <m>\triangle DEF</m> on <m>\triangle ABC</m> such
+      that <m>D</m> overlaps <m>A</m> and <m>E</m> overlaps <m>B</m>. By axiom
+      1, we can construct the segment <m>\overline{CF}</m>.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="asset-2-1-2.png"/>
+    </blockquote>
+
+    <p>
+      We observe the new triangles <m>\triangle CDF</m> and
+      <m>\triangle CBF</m>. Since <m>\overline{AC}\cong\overline{DF}</m> and
+      <m>\overline{BC}\cong\overline{EF}</m>, triangles <m>\triangle CAF</m> and
+      <m>\triangle CBF</m> are isosceles. By the Isosceles Triangle Theorem,
+      <m>\angle ACF\cong\angle DFC</m> and <m>\angle BCF\cong\angle EFC</m>.
+    </p>
+
+    <blockquote>
+      <image width="75%" source="asset-2-1-3.png"/>
+    </blockquote>
+
+    <p>
+      Since <m>F</m> lies in the interior of <m>\angle ACB</m> and <m>C</m> lies
+      in the interior of <m>\angle DFE</m>, by the Angle Addition Postulate,
+      <md alignment="align">
+        <mrow>m\angle ACB&amp;=m\angle ACF+m\angle BCF,</mrow>
+        <mrow>m\angle DFE&amp;=m\angle DFC+m\angle EFC.</mrow>
+      </md>
+      Using the fact that <m>\angle ACF\cong\angle DFC</m> and
+      <m>\angle BCF\cong\angle EFC</m>, we see that
+      <md alignment="align">
+        <mrow>m\angle ACB&amp;=m\angle DFC+m\angle EFC=m\angle DFE.</mrow>
+      </md>
+      So, we have that
+      <ol>
+        <li>
+          <p>
+            <m>\overline{AC}\cong\overline{DF}</m>,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\overline{BC}\cong\overline{EF}</m>,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\angle ACB\cong\angle DFE</m>.
+          </p>
+        </li>
+      </ol>
+      By the SAS Postulate, <m>\triangle ABC\cong\triangle DEF</m>.
+    </p>
+
+    <p>
+      ( <m>\Leftarrow</m> ) Suppose <m>\triangle ABC\cong\triangle DEF</m>.
+      Then, by definition, their corresponding sides are congruent. So,
+      <md alignment="align">
+        <mrow>\overline{AB}&amp;\cong\overline{DE},</mrow>
+        <mrow>\overline{BC}&amp;\cong\overline{EF},</mrow>
+        <mrow>\overline{AC}&amp;\cong\overline{DF}.</mrow>
+      </md>
+    </p>
+  </proof>
+</article>
+</pretext>

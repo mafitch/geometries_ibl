@@ -1,0 +1,282 @@
+Validation Report
+=================
+
+Three examinations have been made of an assembled version of
+your source:
+
+  (1) "jing" checked conformance with the development RELAX-NG
+      schema at
+      C:\Users\mafitch\pretext\schema\pretext-dev.rng
+      (a schema can only describe parent-child relationships,
+      plus the attributes of each element)
+  (2) a second "jing" run, against the production schema at
+      C:\Users\mafitch\pretext\schema\pretext.rng
+      surveyed the experimental constructs in use; that section
+      of this report begins with a fuller explanation
+  (3) the PreTeXt "validation-plus" stylesheet made checks that
+      no RELAX-NG schema could ever express, and offers extra
+      advice and explanation besides
+
+Locations refer to the ASSEMBLED version of your source: your
+modular source files have been knitted together, and any version
+support has been applied (as elected by a "version" element
+within the "source" element of the publication file you
+supplied).  In particular, an element excluded from the version
+being built cannot raise a message here.  The assembled source
+has been deposited at
+    C:\DATA\Documents\texts\geometries_26\main-assembled.xml
+
+Each message locates its problem four ways, and then names
+the check that raised it:
+
+    file:   the source file where the problem lies
+    path:   the location within the assembled source
+    line:   the line number within the assembled source
+    text:   an excerpt of the offending content
+    check:  a short name for the check ("schema" for a message
+            from "jing", "experimental" for the survey of
+            experimental constructs)
+
+Only "file" points into your own source files.  In particular,
+"line" is a line number of the deposited assembled source named
+above, never of one of your files.
+
+To read a "path", count elements of each name.  For example,
+
+    /pretext/book/chapter[7]/section[2]/p[13]/em[2]
+
+is the second "em" within the thirteenth "p" (paragraph) of the
+second "section" of the seventh "chapter" of the book.  Counts
+are of elements with the same name: that paragraph is the
+thirteenth "p" of its section, though other elements may precede
+it or intervene.  An element without a count, like the "book"
+above, is the only element of that name at its location, so a
+count would just be clutter.
+
+
+======================================================================
+Messages: RELAX-NG schema validation, from "jing"
+======================================================================
+
+(no messages)
+
+======================================================================
+Messages: experimental constructs in use
+======================================================================
+
+Constructs reported here are part of the development schema, but
+not the production schema.  They are experimental: their markup
+may change at any time, without the usual deprecation cycle and
+automatic conversion of your source.  So this section is not a
+list of errors -- it is an inventory of the places where your
+source relies on experimental parts of the PreTeXt vocabulary,
+so you can weigh the risk, and recognize the cause if one of
+these constructs changes underneath you.
+
+One caution: while genuine errors remain (the previous section),
+the two schema examinations may recover from an error in
+different ways, and then a few entries here can be echoes of
+those errors, rather than experimental constructs.  Once the
+previous section is clean, this inventory is exact.
+
+(no messages: no experimental constructs are in use)
+
+======================================================================
+Messages: PreTeXt "validation-plus" stylesheet
+======================================================================
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\finite.ptx
+    path: /pretext/book/chapter[1]/section[1]/exercise[1]/task[1]/solution/image
+    line: 110
+    text: <image source="images/serena-two" width="100%"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\finite.ptx
+    path: /pretext/book/chapter[1]/section[1]/exercise[1]/task[2]/solution/image
+    line: 116
+    text: <image source="images/serena-one"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\finite.ptx
+    path: /pretext/book/chapter[1]/section[1]/exercise[2]/solution/image[1]
+    line: 176
+    text: <image width="75%" source="images/pj1.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\finite.ptx
+    path: /pretext/book/chapter[1]/section[1]/exercise[2]/solution/image[2]
+    line: 183
+    text: <image width="75%" source="images/pj2.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\finite.ptx
+    path: /pretext/book/chapter[1]/section[1]/exercise[2]/solution/image[3]
+    line: 190
+    text: <image width="75%" source="images/pj3.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\finite.ptx
+    path: /pretext/book/chapter[1]/section[1]/exercise[2]/solution/image[4]
+    line: 201
+    text: <image width="75%" source="images/pj4.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\finite.ptx
+    path: /pretext/book/chapter[1]/section[1]/exercise[2]/solution/image[5]
+    line: 208
+    text: <image width="75%" source="images/pj5.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\finite.ptx
+    path: /pretext/book/chapter[1]/section[1]/exercise[2]/solution/image[6]
+    line: 214
+    text: <image width="75%" source="images/pj6.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\complete.ptx
+    path: /pretext/book/chapter[1]/section[2]/exercise/task[5]/solution/image
+    line: 280
+    text: <image source="images/reniel-1.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\complete.ptx
+    path: /pretext/book/chapter[1]/section[2]/exercise/task[11]/solution/image
+    line: 307
+    text: <image width="75%" source="images/g.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\consistent.ptx
+    path: /pretext/book/chapter[1]/section[3]/exercise/task[2]/solution/image
+    line: 345
+    text: <image source="images/9pt_lines.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\complete_finish.ptx
+    path: /pretext/book/chapter[1]/section[4]/exercise[6]/solution/image[1]
+    line: 505
+    text: <image width="75%" source="images/npg1.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\complete_finish.ptx
+    path: /pretext/book/chapter[1]/section[4]/exercise[6]/solution/image[2]
+    line: 511
+    text: <image width="75%" source="images/npg2.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\complete_finish.ptx
+    path: /pretext/book/chapter[1]/section[4]/exercise[6]/solution/image[3]
+    line: 518
+    text: <image width="75%" source="images/npg3.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\complete_finish.ptx
+    path: /pretext/book/chapter[1]/section[4]/exercise[6]/solution/image[4]
+    line: 527
+    text: <image width="75%" source="images/npg4.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\complete_finish.ptx
+    path: /pretext/book/chapter[1]/section[4]/exercise[6]/solution/image[5]
+    line: 529
+    text: <image width="75%" source="images/npg5.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\complete_finish.ptx
+    path: /pretext/book/chapter[1]/section[4]/exercise[6]/solution/image[6]
+    line: 531
+    text: <image width="75%" source="images/npg6.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\complete_finish.ptx
+    path: /pretext/book/chapter[1]/section[4]/exercise[6]/solution/image[7]
+    line: 533
+    text: <image width="75%" source="images/npg7.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\triangles.ptx
+    path: /pretext/book/chapter[2]/section/subsection[1]/theorem[4]/proof/p[1]/image
+    line: 627
+    text: <image src="images/triangle.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\triangles.ptx
+    path: /pretext/book/chapter[2]/section/subsection[1]/theorem[4]/proof/p[2]/image
+    line: 632
+    text: <image src="images/triangles.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\triangles.ptx
+    path: /pretext/book/chapter[2]/section/subsection[1]/theorem[6]/proof/image
+    line: 689
+    text: <image source="images/exterior_angle3.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\triangles.ptx
+    path: /pretext/book/chapter[2]/section/subsection[2]/theorem[2]/proof/p[1]/image
+    line: 733
+    text: <image source="images/aas.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\triangles.ptx
+    path: /pretext/book/chapter[2]/section/subsection[2]/theorem[2]/proof/p[2]/image
+    line: 738
+    text: <image source="images/aas2.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\triangles.ptx
+    path: /pretext/book/chapter[2]/section/subsection[2]/theorem[3]/proof/image[1]
+    line: 771
+    text: <image width="75%" source="images/asset-2-1.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\triangles.ptx
+    path: /pretext/book/chapter[2]/section/subsection[2]/theorem[3]/proof/image[2]
+    line: 779
+    text: <image width="75%" source="images/asset-2-1-2.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\triangles.ptx
+    path: /pretext/book/chapter[2]/section/subsection[2]/theorem[3]/proof/image[3]
+    line: 789
+    text: <image width="75%" source="images/asset-2-1-3.png"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\triangles.ptx
+    path: /pretext/book/chapter[2]/section/subsection[2]/theorem[7]/proof/p[1]/image
+    line: 866
+    text: <image width="75%" source="images/triangle-inequality.jpg"/>
+    check: image-description-missing
+
+PTX:WARNING: You have an image without any description and do not declare the image to be decorative. Because of this, output may not be accessible. If the image does not add information that is not already present, use @decorative="yes". Otherwise, provide a <shortdescription> (concise, it becomes alternative text), perhaps augmented by a structured <description>.
+    file: C:DATA\Documents\texts\geometries_26\source\triangles.ptx
+    path: /pretext/book/chapter[2]/section/subsection[2]/theorem[7]/proof/p[1]/p[4]/image
+    line: 890
+    text: <image width="75%" source="images/triangle-inequality2.jpg"/>
+    check: image-description-missing

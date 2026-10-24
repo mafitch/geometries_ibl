@@ -1,0 +1,67 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+</docinfo>
+<article xml:id="Chapter-2" label="Chapter-2">
+  <title>Chapter 2 Submission</title>
+
+  <section>
+    <title>2.1.3 Proof</title>
+
+    <figure>
+      <image source="asset-2-1-3-submission.png">
+<shortdescription>Image required for the proof of Theorem 2-1-3.</shortdescription>
+</image>
+    </figure>
+
+    <p>
+      Take the figure above. Because angles <m>\alpha</m> and <m>\gamma</m> form
+      a linear pair, the supplement postulate indicates that
+      <m>m(\angle\alpha)+m(\angle\gamma)=180</m> <degree/>. We also know that
+      <m>\gamma</m> and <m>\beta</m> form a linear pair, so we know that
+      <m>m(\angle\gamma)+m(\angle\beta)=180</m> <degree/>.
+    </p>
+
+    <p>
+      Thus,
+      <m>m(\angle\alpha)+m(\angle\gamma)=m(\angle\gamma)+m(\angle\beta)</m>
+    </p>
+
+    <p>
+      So, <m>m(\angle\alpha)=m(\angle\beta)</m>.
+    </p>
+
+    <p>
+      Thus, <m>\angle\alpha\cong\angle\beta</m>.
+    </p>
+
+    <p>
+      We can show by similar processes that
+      <m>\angle\gamma\cong\angle\sigma</m>, so the theorem is proven.
+    </p>
+  </section>
+
+  <section>
+    <title>2.1.17 Proof</title>
+
+    <figure>
+      <image source="asset-2-1-17-image.png">
+<shortdescription>Image required for the proof of Theorem 2-1-17.</shortdescription>
+</image>
+    </figure>
+
+    <p>
+      Take the above figure and suppose that line segments <m>i</m> and <m>j</m>
+      to be congruent and the angles <m>\angle CBA</m> AND <m>\angle DBA</m> to
+      be congruent. Note that line segment <m>f</m> is congruent to itself.
+      Then, per the Isosceles Triangle Theorem,
+      <m>\angle ACB\cong\angle ADB</m>. Thus, by our congruences, we know that
+      <m>\triangle ABC\cong\triangle ABD</m> per Angle Angle Side congruence.
+    </p>
+  </section>
+</article>
+</pretext>

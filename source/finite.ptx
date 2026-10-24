@@ -31,21 +31,46 @@
         </introduction>
         <task>
             <statement><p>Draw and label four points.</p></statement>
+            <solution>
+                <image source="images/serena-two" width="100%"/>      
+            </solution>
         </task>
         <task>
             <statement><p>Use axiom 2 to draw as many lines as possible.</p></statement>
+            <solution>
+                <image source="images/serena-one"/>
+            </solution>
         </task>
         <task>
             <statement><p>How many lines exist in this geometry?</p></statement>
+            <solution>
+                <p>
+                    6
+                </p>
+            </solution>
         </task>
         <task>
             <statement><p>Find a pair of parallel lines.</p></statement>
+            <solution>
+                <p><m>\boxed{\overleftrightarrow{AB} \parallel \overleftrightarrow{CD}}</m>, <m>\boxed{\overleftrightarrow{AC} \parallel \overleftrightarrow{BD}}</m>, <m>\boxed{\overleftrightarrow{AD} \parallel \overleftrightarrow{BC}}</m>
+                </p>
+            </solution>
         </task>
         <task>
             <statement><p>Can you find three lines that are pairwise parallel?</p></statement>
+            <solution>
+                <p>
+                    No.
+                </p>
+            </solution>
         </task>
         <task>
             <statement><p>Can you find a point that is on three lines?</p></statement>
+            <solution>
+                <p>
+                    Any point.
+                </p>
+            </solution>
         </task>
     </exercise>
 
@@ -67,5 +92,79 @@
         <statement>
             <p>Construct a projective geometry with exactly 4 points on every line.</p>
         </statement>
+        <solution>
+            <p>
+            Place 9 points in a <m>3\times 3</m> grid. Then, place four more points
+            above, below, and to the left and right of the grid.
+            </p>
+   
+            <image width="75%" source="images/pj1.png"/>
+         
+            <p>
+            We want every line to contain exactly four points. So, we can draw the
+            following lines.
+            </p>
+
+            <image width="75%" source="images/pj2.png"/>
+
+            <p>
+            We arrange the lines in this way to not violate axiom 3 of the Finite
+            Projective Geometry. Then, notice we can repeat this pattern as follows.
+            </p>
+
+            <image width="75%" source="images/pj3.png"/>
+            
+            <p>
+            Once again, we satisfy axiom 3. But, we cannot repeat this pattern again
+            since we would be violating axiom 1. So, we have to come up with a
+            different strategy to connect our top and rightmost points with the rest
+            of the diagram such that we do not violate axiom 1. Instead of attaching
+            the points along the verticals and horizontals, we can attack from the
+            diagonals like so.
+            </p>
+
+            <image width="75%" source="images/pj4.png"/>
+
+            <p>
+            If we draw our lines this way, we still satisfy all the axioms. Now,
+            notice we can repeat this same method of attachment on our topmost point.
+            </p>
+
+            <image width="75%" source="images/pj5.png"/>
+
+            <p>
+            Finally, we need to connect our 4 outermost dots to satisfy axiom 1.
+            </p>
+
+            <image width="75%" source="images/pj6.png"/>
+
+            <p>
+            We see that this final image satisfies the three axioms of the finite
+            projective geometry:
+            <ol>
+                <li>
+                <p>
+                    Every two distinct points have exactly one line on them,
+                </p>
+                </li>
+
+                <li>
+                <p>
+                    There are at least four points with no three on the same line,
+                </p>
+                </li>
+
+                <li>
+                <p>
+                    Every two lines have at least one point on them both.
+                </p>
+                </li>
+            </ol>
+            To see how we satisfy axiom 2, we can pick the centermost point, the
+            topmost post, the rightmost point, and the left middle point of the
+            <m>3\times3</m> grid. Further, as per the problem statement, each line has
+            exactly four points on it.
+            </p>
+        </solution>
     </exercise>
 </section>

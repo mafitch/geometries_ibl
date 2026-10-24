@@ -1,0 +1,96 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+</docinfo>
+<article xml:id="document" label="document">
+    <title>New PreTeXt XML document</title>
+
+<!-- This is a new PreTeXt XML document.
+     You can add your content below.
+     Looking for example markup to get started?
+     Try creating a project from a template! -->
+    <statement>
+        <blockquote>
+            <image width="75%" source="f"/>
+        </blockquote>
+
+        
+    </statement>
+    <problem>
+        <title>1.2.2 (f)</title>
+
+        <statement>
+            <p>
+                Add the axiom: every point is on at least one line.
+            </p>
+        </statement>
+    </problem>
+    <solution>
+        <blockquote>
+            <image width="75%" source="f-1"/>
+        </blockquote>
+
+        
+    </solution>
+    <problem>
+        <title>1.2.2 (g)</title>
+
+        <statement>
+            <p>
+                To your line with three points, and one point not on that line add any lines required by this new axiom.
+            </p>
+        </statement>
+    </problem>
+
+    <solution>
+        <blockquote>
+            <image width="75%" source="g"/>
+        </blockquote>
+
+        
+    </solution>
+
+
+    <problem>
+        <title>1.2.2 (h)</title>
+
+        <statement>
+            <p>
+                Make sure these lines satisfy Axiom 2.
+            </p>
+        </statement>
+    </problem>
+    <solution>
+        <blockquote>
+            <image width="75%" source="g"/>
+        </blockquote>
+
+        
+    </solution>
+    <problem>
+        <title>1.2.2 (i)</title>
+
+        <statement>
+            <p>
+                How many lines are in this geometry now?
+            </p>
+        </statement>
+    </problem>
+    <solution>
+        <blockquote>
+            <image width="75%" source="g"/>
+        </blockquote>
+
+        <p>
+            There are 2 lines.
+        </p>
+
+        
+    </solution>
+
+</article>
+</pretext>

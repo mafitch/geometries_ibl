@@ -24,12 +24,28 @@
             </task>
             <task>
                 <statement><p>Use Axiom 3 to draw all required lines.</p></statement>
+                <solution>
+                    <image source="images/9pt_lines.png"/>
+                </solution>
             </task>
             <task>
                 <statement><p>How many lines did you construct?</p></statement>
+                <solution>
+                    <p>Using the formula for edges of a complete graph with n vertices: <md>
+                    E = \frac{n(n-1)}{2}.
+                    </md>
+                    For nine points, this gives:
+                    <md>
+                    E = \frac{9(9-1)}{2} = 36.
+                    </md>
+                    </p>
+                </solution>
             </task>
             <task>
                 <statement><p>Compare this answer to Axiom 2.</p></statement>
+                <solution>
+                    <p>Axiom two restricts us to nine lines.</p>
+                </solution>
             </task>
         </exercise>
 </section>

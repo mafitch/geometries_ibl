@@ -1,0 +1,234 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+</docinfo>
+<article xml:id="document" label="document">
+  <title>2.1.11 and 2.1.15</title>
+<section xml:id="sec-exterior-angle-theorem">
+    <title>Exterior Angle Theorem 2.1.11</title>
+
+    <theorem xml:id="thm-exterior-angles">
+        <statement>
+            <p>
+                <em>
+                    The measure of an exterior angle of a triangle
+                    is greater than the measure of either of the
+                    opposing angles of the triangle.
+                </em>
+            </p>
+        </statement>
+
+        <proof>
+            <p>
+      Suppose we have <m>\triangle ABC</m>. We can construct a ray from
+      <m>\angle ACB</m> such that it goes through <m>\overline{AB}</m>
+      and intersects it at point <m>E</m>, such that
+      <m>A-E-B</m> and <m>E</m> is the midpoint of
+      <m>\overline{AB}</m>. Thus,
+      <m>\overline{AE} \cong \overline{EB}</m>.
+    </p>
+
+    <p>
+      By the Ruler Postulate, we then construct point <m>F</m> on the ray
+      such that <m>C-E-F</m>, with <m>E</m> as the midpoint of
+      <m>\overline{CF}</m>. Therefore,
+      <m>\overline{EF} \cong \overline{CE}</m>.
+    </p>
+
+    <p>
+      We do the same thing and construct a ray from
+      <m>\angle CAB</m> that goes through <m>\overline{CB}</m>.
+      Let this ray intersect <m>\overline{CB}</m> at point <m>G</m>,
+      where <m>G</m> is the midpoint of <m>\overline{CB}</m>.
+    </p>
+
+    <p>
+      By the Ruler Postulate, there is a point <m>H</m> on the ray such
+      that <m>A-G-H</m> and
+      <m>\overline{AG} \cong \overline{GH}</m>.
+    </p>
+
+    <p>
+      We then construct a line <m>\overline{FH}</m> that goes through point
+      <m>B</m>, such that <m>F-B-H</m> are collinear, with
+      <m>\overline{CD}</m> and <m>\overline{FH}</m> intersecting at
+      point <m>B</m>. Doing this, we have constructed
+      <m>\triangle EFB</m> and <m>\triangle GBH</m>.
+    </p>
+
+    <image source="pasted-image-3.png"/>
+
+    <p>
+      By the Vertical Angle Theorem,
+      <m>\angle FEB \cong \angle AEC</m>. Since
+      <m>\overline{CE} \cong \overline{EF}</m> and
+      <m>\overline{AE} \cong \overline{EB}</m>, it follows by SAS that
+    </p>
+
+    <me>
+      \triangle AEC \cong \triangle FEB.
+    </me>
+
+    <p>
+      Thus,
+    </p>
+
+    <me>
+      \angle CAE \cong \angle EBF.
+    </me>
+
+    <p>
+      By the Angle Addition Postulate,
+    </p>
+
+    <md>
+      <mrow>
+        m\angle ABD
+        &amp;= m\angle EBF + m\angle FBD
+      </mrow>
+
+      <mrow>
+        &amp;= m\angle CAE + m\angle FBD
+      </mrow>
+
+      <mrow>
+        &amp;= m\angle CAB + m\angle FBD.
+      </mrow>
+    </md>
+
+    <p>
+      By Axiom 12,
+      <m>m\angle FBD \ne 0</m>. Since
+      <m>m\angle CAB</m> is being added to another angle,
+    </p>
+
+    <me>
+      m\angle ABD > m\angle CAB.
+    </me>
+
+    <p>
+      By the Vertical Angle Theorem,
+      <m>\angle AGC \cong \angle HGB</m>. Since
+      <m>\overline{CG} \cong \overline{GB}</m> and
+      <m>\overline{AG} \cong \overline{GH}</m>, it follows by SAS that
+    </p>
+
+    <me>
+      \triangle CAG \cong \triangle HBG.
+    </me>
+
+    <p>
+      Therefore,
+    </p>
+
+    <me>
+      \angle GBH \cong \angle ACG.
+    </me>
+
+    <p>
+      Also, by the Vertical Angle Theorem,
+      <m>\angle GBH \cong \angle FBD</m>. Hence,
+    </p>
+
+    <me>
+      \angle ACG \cong \angle FBD.
+    </me>
+
+    <p>
+  Therefore, by the Angle Addition Postulate,
+</p>
+
+<md>
+  <mrow>
+    m\angle ABD
+    &amp;= m\angle FBD + m\angle EBF
+  </mrow>
+
+  <mrow>
+    &amp;= m\angle ACG + m\angle CAB.
+  </mrow>
+</md>
+
+<p>
+  Hence,
+</p>
+
+<md>
+  <mrow>
+    m\angle ABD &amp;> m\angle ACG
+  </mrow>
+
+  <mrow>
+    m\angle ABD &amp;> m\angle CAB.
+  </mrow>
+</md>
+
+  </proof>
+</theorem>
+</section>
+
+<section xml:id="sec-exterior-angle-theorem">
+    <title>Angle Angle Side 2.1.15</title>
+
+  <theorem xml:id="thm-angle-angle-side">
+    <statement>
+      <p>
+      <em>
+       Two triangles are congruent if and only if two corresponding angles and a side not between them are congruent.
+      </em>
+    </p>
+  </statement>
+</theorem>
+
+<proof>
+
+      <p>
+  Suppose we have two triangles, <m>\triangle ABC</m> and
+  <m>\triangle DEF</m>, with
+  <m>\angle BAC \cong \angle EDF</m>,
+  <m>\angle ACB \cong \angle DFE</m>, and
+  <m>\overline{AB} \cong \overline{DE}</m>.
+      </p>
+
+      <image source="pasted-image-4.png"/>
+
+    <p>
+  Assume, for contradiction, that
+  <m>m\angle ABC > m\angle DEF</m>.
+  We want to construct an angle <m>\alpha</m> such that
+</p>
+
+<me>
+  \angle \alpha \cong \angle E.
+</me>
+
+<p>
+  Using Axiom 18, we can construct a crossbar from
+  <m>\angle B</m> that intersects <m>\overline{AC}</m>,
+  constructing a point <m>G</m> such that <m>A-G-C</m>.
+</p>
+
+<p>
+  We now also have
+</p>
+
+<me>
+  \angle \alpha \cong \angle E.
+</me>
+
+<image source="pasted-image-6.png"/>
+
+<p>
+  By doing this, through angle-side-angle, the <m>\triangle ABG</m> that we constructed is congruent to <m>\triangle DEF</m> and we have <m>\angle AGB \cong \angle GCB \cong \angle DFE</m>. But <m>\angle AGB</m> is an exterior angle of <m>\angle BGC</m>, by the exterior angle theorem, <m>m\angle AGB \gt m\angle GCB</m> and <m>m\angle DFE</m> which contradicts the definition of congruent triangles.
+</p>
+
+    
+        </proof>
+
+</section>
+</article>
+</pretext>
