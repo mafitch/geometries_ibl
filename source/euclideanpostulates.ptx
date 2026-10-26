@@ -24,16 +24,104 @@
             <theorem>
                 <title>Alternate Interior Angles</title>
                 <statement><p>If the alternate interior angles formed by a transversal of two lines are equal, then the lines are parallel.</p></statement>
+                <proof>
+                    <p>
+                    By Definition, parallel lines do not intersect.
+                    </p>
+
+                    <image source="images/asset-3-1-2-image.png">
+                    <shortdescription>Image required for the proof of Theorem 3-1-2.</shortdescription>
+                    </image>
+
+                    <p>
+                    Suppose <m>m(\angle a)=m(\angle c)</m>.
+                    </p>
+
+                    <p>
+                    Suppose that <m>\alpha</m> and <m>\beta</m> intersect to the left of our
+                    transversal. Then we have a triangle, and by the Exterior Angle Theorem,
+                    <m>m(\angle a)&lt;m(\angle c)</m>. <m>\rightarrow\!\leftarrow</m>
+                    </p>
+
+                    <p>
+                    As a similar argument applies to intersections on the right, the theorem
+                    is proven.
+                    </p>
+                </proof>
                 </theorem>
 
             <theorem>
                 <title>Point to line distance</title>
                 <statement><p>The (shortest) distance between a point and a line is from the point to the foot of the perpendicular.</p></statement>
+                <proof>
+                    <p>
+                    Consider line <m>\overleftrightarrow{AB}</m> and a point <m>P</m> not on
+                    the line. Let point <m>X</m> be the foot of the perpendicular from point
+                    <m>P</m> to line <m>\overleftrightarrow{AB}</m>.
+                    </p>
+
+                    <image source="images/asset-3-1"/>
+
+                    <p>
+                    For the sake of contradiction, suppose <m>|PX|</m> is not the shortest
+                    distance from <m>P</m> to <m>\overleftrightarrow{AB}</m>. Then, there
+                    exists a point <m>Y</m> on <m>\overleftrightarrow{AB}</m> such that
+                    <m>|PY|&lt;|PX|</m>. By the Ruler Postulate, we can extend
+                    <m>\overline{PX}</m> and place a point <m>P'</m> on <m>\overline{PX}</m>
+                    such that <m>\overline{PX}\cong\overline{P'X}</m>. Then, by axiom 1, we
+                    can create segment <m>\overline{P'Y}</m>. Since <m>\angle YXP</m> is a
+                    right angle, so is <m>\angle YXP'</m> by the Supplement Postulate.
+                    Further, <m>\overline{XY}\cong\overline{XY}</m> by reflexivity. Thus, by
+                    the SAS Postulate, <m>\triangle PXY\cong\triangle P'XY</m>. So,
+                    <m>\overline{PY}\cong\overline{P'Y}</m>. By the Triangle Inequality,
+                    <md>
+                        |PY|+|P'Y|&gt;|PP'|.
+                    </md>
+                    But, <m>\overline{PY}\cong\overline{P'Y}</m> and <m>|PP'|=2|PX|</m> since
+                    <m>\overline{PX}\cong\overline{P'X}</m>. Thus,
+                    <md>
+                        2|PY|&gt;2|PX|\implies |PX|&gt;|PX|,
+                    </md>
+                    which is a contradiction. Hence, <m>|PX|</m> must be the shortest distance
+                    from point <m>P</m> to <m>\overleftrightarrow{AB}</m>.
+                    </p>
+                </proof>
                 </theorem>
 
             <theorem xml:id="parallelright">
                 <title>Convenient Euclid Parallel Axiom</title>
                 <statement><p>Given two lines and a transversal of those lines, if the sum of the angles on one side of the transversal is equal to two right angles then the lines are parallel.</p></statement>
+                <proof>
+                    <p>
+                    Consider two lines with a transversal. Let the angles on one side of
+                    the transversal be labeled <m>A</m> and <m>B</m>, with <m>C</m> being
+                    supplementary to <m>B</m>.
+                    </p>
+
+                    <image src="images/3_1_4.svg" />
+
+                    <p>
+                    Suppose
+                     <md>
+                        mA + mB = 180^\circ.
+                     </md>
+                    Since <m>B</m> and <m>C</m> are supplementary,
+                     <md>
+                        mB + mC = 180^\circ.
+                     </md>
+                    Therefore,
+                     <md>
+                        mA + mB = mB + mC.
+                     </md>
+                    Subtracting <m>mB</m> from both sides gives
+                     <md>
+                        mA = mC.
+                     </md>
+                    Therefore, <m>A</m> and <m>C</m> are congruent alternate interior
+                    angles. By Theorem 3.1.2 (Alternate Interior Angles), 
+                    the lines are parallel.
+                    </p>
+                </proof>
             </theorem>
 
     </subsection>
@@ -45,7 +133,7 @@
 
             <theorem>
                 <statement>
-                    <p>Euclid's postulate and <xref ref="parallelright" /> are equivalent to the following. "The sum of the angles on one side of a transversal of two lines is equal to the sum of two right angles if and only if the lines are parallel."</p>
+                    <p>Euclid's postulate and Theorem <xref ref="parallelright" /> are equivalent to the following. "The sum of the angles on one side of a transversal of two lines is equal to the sum of two right angles if and only if the lines are parallel."</p>
                 </statement>
             </theorem>
 
@@ -59,20 +147,245 @@
                 <statement>
                     <p>Playfair's axiom implies the alternate interior angle converse theorem.</p>
                 </statement>
+                <proof>
+                    <p>
+                    Consider a line  <m>l </m> and a point  <m>A </m> not on that line.
+                    </p>
+
+                    <p>
+                    Playfair's axiom states that there is exactly one line through
+                     <m>A </m> parallel to  <m>l </m>. Now draw a transversal through
+                     <m>A </m> that intersects  <m>l </m>. Let  <m>\alpha </m> and
+                     <m>\beta </m> denote a pair of alternate interior angles formed
+                    by the transversal and the two lines. Suppose that
+                     <m>m\angle\alpha \ne m\angle\beta </m>.
+                    </p>
+
+                    <p>
+                    We can construct a line through  <m>A </m> such that its alternate
+                    interior angle is congruent to  <m>\beta </m>. Denote this new
+                    angle by  <m>\alpha' </m>, so that
+                     <m>m\angle\alpha' = m\angle\beta </m>.
+                    </p>
+
+                    <p>
+                    By the Alternate Interior Angle Theorem, this new line is parallel
+                    to  <m>l </m>. Thus, we have constructed a line through  <m>A </m>
+                    that is parallel to  <m>l </m> and distinct from the original
+                    parallel line.
+                    </p>
+
+                    <p>
+                    This contradicts Playfair's axiom, which states that there is
+                    exactly one line through  <m>A </m> parallel to  <m>l </m>.
+                    </p>
+
+                    <p>
+                    Therefore,
+                     <m>m\angle\alpha = m\angle\beta </m>,
+                    and hence Playfair's axiom implies the Alternate Interior Angle
+                    Converse Theorem.
+                    </p>
+                </proof>
             </theorem>
 
-            <p>The alternate interior angle converse theorem states <q>Given parallel lines and a transversal of those lines, the alternate interior angles formed by the transversal are congruent.</q></p>
+            <p>The alternate interior angle converse theorem states ``Given parallel lines and a transversal of those lines, the alternate interior angles formed by the transversal are congruent.''</p>
 
             <theorem>
                 <statement>
-                    <p>Playfair and the alternate interior angle converse theorem imply the equidistance of parallel lines.</p>
+                    <p>Playfair and the alternating interior angle converse theorem imply the equidistance of parallel lines.</p>
                 </statement>
+                <proof>
+                    <p>
+                    Let <m>P</m> be a point not on line <m>\ell_{1}</m>. Then, by Playfair,
+                    there exists exactly one line <m>\ell_{2}</m> such that <m>P</m> lies in
+                    <m>\ell_{2}</m> and <m>\ell_{1}\parallel\ell_{2}</m>. Choose two arbitrary
+                    points <m>A</m> and <m>B</m> on <m>\ell_{2}</m>. By Theorem 3.1.3, the
+                    closest distance from <m>A</m> to <m>\ell_{1}</m> is from <m>A</m> to the
+                    foot of the perpendicular. Let <m>C</m> be the point at the foot of the
+                    perpendicular on <m>\ell_{1}</m> from <m>A</m>. Similarly, let <m>D</m> be
+                    the point at the foot of the perpendicular on <m>\ell_{1}</m> when finding
+                    the distance from <m>B</m> to <m>\ell_{1}</m>.
+                    </p>
+
+                    <image width="75%" source="images/asset-3-1-3.png"/>
+
+                    <p>
+                    We claim that <m>\overline{AC}\cong\overline{BD}</m>. Since
+                    <m>\ell_{1}\parallel\ell_{2}</m>, by the alternating interior angle
+                    converse theorem, the angles at the intersection of <m>\overline{AC}</m>
+                    and <m>\ell_{2}</m> are right angles and same with <m>\overline{BD}</m>.
+                    </p>
+
+                    <image width="75%" source="images/asset-3-1-4.png"/>
+
+                    <p>
+                    By axiom 1, we can construct segment <m>\overline{BC}</m>. Then, by the
+                    alternating interior angle converse theorem,
+                    <m>\angle ABC\cong\angle DCB</m>.
+                    </p>
+
+                    <image width="75%" source="images/asset-3-1-5.png"/>
+
+                    <p>
+                    By reflexivity, <m>\overline{BC}</m> is congruent to itself. So, we have
+                    that
+                    <ol>
+                        <li>
+                        <p>
+                            <m>\angle ABC\cong\angle DCB</m>,
+                        </p>
+                        </li>
+
+                        <li>
+                        <p>
+                            <m>\angle CAB\cong\angle BDC</m>,
+                        </p>
+                        </li>
+
+                        <li>
+                        <p>
+                            <m>\overline{BC}\cong\overline{BC}</m>.
+                        </p>
+                        </li>
+                    </ol>
+                    By Angle-Angle-Side, <m>\triangle ABC\cong\triangle DCB</m>, making
+                    <m>\overline{AC}\cong\overline{BD}</m> as desired. Since <m>A</m> and
+                    <m>B</m> were arbitrary points, parallel lines <m>\ell_{1}</m> and
+                    <m>\ell_{2}</m> are everywhere equidistant.
+                    </p>
+                </proof>
             </theorem>
 
             <theorem>
                 <statement>
                     <p>The equidistance of parallel lines implies Euclid's postulate.</p>
                 </statement>
+                <proof>
+                    <p>
+                    Let <m>\ell_{1}</m> and <m>\ell_{2}</m> be a pair of lines with a
+                    transversal <m>t</m> that intersects <m>\ell_{1}</m> at point <m>t_{1}</m>
+                    and <m>\ell_{2}</m> at point <m>t_{2}</m> such that the sum of the angles
+                    on one side of <m>t</m>, say <m>\angle1</m> and <m>\angle2</m>, is less
+                    than two right angles. We claim that <m>\ell_{1}</m> and <m>\ell_{2}</m>
+                    intersect on the same side of the transversal as <m>\angle1</m> and
+                    <m>\angle2</m>.
+                    </p>
+
+                    <blockquote>
+                    <image width="75%" source="images/asset-3-1-6.png"/>
+                    </blockquote>
+
+                    <p>
+                    Assume the contrary, that is <m>\ell_{1}</m> and <m>\ell_{2}</m> do not
+                    intersect on the same side of <m>t</m> as <m>\angle1</m> and
+                    <m>\angle2</m>. Then, we have two cases: <m>\ell_{1}\parallel\ell_{2}</m>
+                    or <m>\ell_{1}</m> intersects with <m>\ell_{2}</m> on the other side of
+                    <m>t</m>.
+                    </p>
+
+                    <p>
+                    <alert>Case 1: <m>\ell_{1}\parallel\ell_{2}</m>:</alert> Since parallel
+                    lines are equidistant, assume the distance between <m>\ell_{1}</m> and
+                    <m>\ell_{2}</m> is <m>d&gt;0</m>. Here, we will explore two subcases.
+                    </p>
+
+                    <p>
+                    <alert>Subcase 1.1: <m>m\angle1&lt;\pi/2</m> and <m>m\angle2&lt;\pi/2</m>:</alert>
+                    Then, we know that <m>|t_{1}t_{2}|</m> is not the shortest distance from
+                    <m>t_{1}</m> to <m>\ell_{2}</m> and <m>t_{2}</m> to <m>\ell_{1}</m> by
+                    Theorem 3.1.3. So, draw the distance lines from each point to the opposing
+                    line.
+                    </p>
+
+                    <image width="75%" source="images/asset-3-1-7.png"/>
+
+                    <p>
+                    If <m>\ell_{1}\parallel\ell_{2}</m>, we know that
+                    <m>|t_{1}a_{2}|=|t_{2}a_{1}|=d</m> since parallel lines are equidistant.
+                    By reflexivity, <m>\overline{t_1t_2}\cong\overline{t_2t_1}</m>. Further,
+                    by Theorem 3.1.3 we know that
+                    <m>m\angle t_{1}a_{2}t_{2}=m\angle t_{2}a_{1}t_{1}=\pi/2</m>. So, by Right
+                    Angle-Side-Side,
+                    <m>\triangle t_{1}a_{2}t_{2}\cong\triangle t_{1}a_{1}t_{2}</m> and
+                    therefore <m>\angle 1\cong \angle t_{1}t_{2}a_{2}</m>. By the Supplement
+                    Postulate,
+                    <md>
+                        m\angle2+m\angle t_{1}t_{2}a_{2}=\pi\implies m\angle2+m\angle1=\pi,
+                    </md>
+                    which is a contradiction since we are assuming
+                    <m>m\angle1+m\angle2&lt;\pi</m>. Note that the same reasoning would apply
+                    if instead <m>\angle 2</m> was an interior angle to a triangle instead of
+                    <m>\angle 1</m> (that is, if instead <m>t</m> crossed <m>\ell_{1}</m>
+                    first when going from left to right or if <m>\angle 1</m> and
+                    <m>\angle 2</m> were on the other side of <m>t</m> in the figure.)
+                    </p>
+
+                    <p>
+                    Subcase 1.2: <m>m\angle1=\pi/2</m> and <m>m\angle2 &lt; \pi/2</m>:
+                    Then, <m>\overline{t_1t_2}</m> is the shortest distance from <m>t_{2}</m>
+                    to <m>\ell_{1}</m> by Theorem 3.1.3 and thus <m>|t_{1}t_{2}|=d</m>. Now,
+                    we have even more cases. If the distance line from <m>t_{1}</m> to
+                    <m>\ell_{2}</m> is on the same side of <m>t</m> as <m>\angle 2</m>, then
+                    we have the following figure.
+                    </p>
+
+                    <image width="75%" source="images/asset-3-1-8.png"/>
+
+                    <p>
+                    Since <m>\ell_{1}\parallel\ell_{2}</m>, <m>|t_{1}c|=d</m> as well. Thus,
+                    by the property of isosceles triangles (Theorem 2.1.8)
+                    <m>m\angle2=\pi/2</m>, which is a contradiction. If instead the distance
+                    line from <m>t_{1}</m> to <m>\ell_{2}</m> is on the other side of
+                    <m>t</m>, then we have the following figure.
+                    </p>
+
+                    <image width="75%" source="images/asset-3-1-9.png"/>
+
+                    <p>
+                    Again, by the properties of isosceles triangles
+                    <m>m\angle t_{1}t_{2}b=\pi/2</m> and by the supplement postulate
+                    <m>m\angle2=\pi/2</m>, which is a contradiction. A similar reasoning
+                    applies when instead <m>m\angle1&lt;\pi/2</m> and <m>m\angle2=\pi/2</m>.
+                    </p>
+
+                    <p>
+                    Case 2: <m>\ell_{1}</m> and <m>\ell_{2}</m> intersect on the other side of <m>t</m>:
+                    Suppose <m>\ell_{1}</m> and <m>\ell_{2}</m> intersect at a point <m>X</m>
+                    on the other side of <m>t</m>.
+                    </p>
+
+                    <image width="75%" source="images/asset-3-1-10.png"/>
+
+                    <p>
+                    Then, by the Supplement Postulate,
+                    <md alignment="align">
+                        <mrow>m\angle3 \amp =\pi-m\angle1,</mrow>
+                        <mrow>m\angle4 \amp =\pi-m\angle2.</mrow>
+                    </md>
+                    Further, by the Exterior Angle Theorem,
+                    <md alignment="align">
+                        <mrow>m\angle1 &gt; m\angle4 \amp \implies m\angle1 &gt; \pi-m\angle 2,</mrow>
+                        <mrow>m\angle2 &gt; m\angle3 \amp \implies m\angle2 &gt; \pi-m\angle 1.</mrow>
+                    </md>
+                    Adding the inequalities, we get
+                    <md alignment="align">
+                        <mrow>m\angle1+m\angle2 \amp &gt;2\pi-m\angle1-m\angle2,</mrow>
+                        <mrow>\implies 2m\angle1+2m\angle2 \amp &gt;2\pi,</mrow>
+                        <mrow>\implies m\angle1+m\angle2 \amp &gt;\pi,</mrow>
+                    </md>
+                    which is a contradiction. Hence, if <m>m\angle1+m\angle2&lt;\pi</m>, then
+                    <m>\ell_{1}</m> and <m>\ell_{2}</m> must intersect on the same side of
+                    <m>t</m> as <m>\angle1</m> and <m>\angle2</m>.
+                    </p>
+
+                    <p>
+                    One should notice that in the process of proving this theorem, we showed
+                    that if two lines are parallel, then the angles on the same side of a
+                    transversal between the lines sum up to two right angles. This is the
+                    converse of Theorem 3.1.4
+                    </p>
+                </proof>
             </theorem>
 
             <theorem>

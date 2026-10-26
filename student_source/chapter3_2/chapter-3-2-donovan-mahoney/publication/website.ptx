@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publication>
+  <source>
+    <directories external="external" generated="generated"/>
+  </source>
+  <html embed-button="yes">
+    <resources host="cdn"/>
+    <brandlogo source="pretext-plus/icon.svg" url="https://pretext.plus"/>
+  </html>
+</publication>

@@ -1,0 +1,107 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+  <latex-image-preamble>
+\usepackage{tikz, pgf}
+</latex-image-preamble>
+</docinfo>
+<article xml:id="document" label="document">
+  <title>3.2</title>
+<section xml:id="sec-triangle-angle-sum">
+    <title>Triangle Angle Sum 3.2.2</title>
+
+    <theorem xml:id="thm-triangle-angle-sum">
+        <statement>
+            <p>
+                <em>
+                    The angle sum of the interior angles of a triangle is <m>\pi</m>.
+                </em>
+            </p>
+        </statement>
+
+        <proof>
+            <p>
+      Suppose we have <m>\triangle ABC</m>. Since point B is a point outside of the line <m>\overline{AC}</m>, we can construct a line going through B that is parallel to <m>\overline{AC}</m> by the Playfair Axiom. By doing so, we have constructed angles <m>\angle \alpha</m>, <m>\angle \beta</m>.
+    </p>
+
+   <image source="geogebra-export-2-2.svg"/>
+
+    <p>
+      Since <m>\overline{AC} \parallel L</m>, the lines <m>\overline{AB}</m> and <m>\overline{CB}</m> are the transversals of the parallel lines, thus by the Alternate Interior Angle Converse Theorem, <m>\angle\alpha \cong \angle ACB</m> and <m>\angle\beta \cong \angle CAB</m>.
+      By the Supplementary Postulate, <m>m\angle\alpha + m\angle\beta + m\angle ABC = \pi</m>. Thus, by congruence, <m>m\angle ACB + m\angle CAB + m\angle ABC = \pi</m>.
+    </p>
+
+  </proof>
+</theorem>
+</section>
+
+<section xml:id="sec-exterior-angle-theorem">
+    <title>Euclidean Exterior Angle 3.2.3</title>
+
+  <theorem xml:id="thm-corollary">
+    <statement>
+      <p>
+      <em>
+       The measure of an exterior angle of a triangle is equal to the sum of the two opposing interior angles
+      </em>
+    </p>
+  </statement>
+</theorem>
+
+<proof>
+
+      <p>
+  Suppose we have <m>\triangle ABC</m> with <m>\overline{AB}</m> extended to a point D, forming the exterior angle <m>\angle ABD</m>. By Playfair's Axiom, we can construct a line L on point B that is parallel to <m>\overline{AC}</m> and in so doing, constructed angles <m>\angle\alpha</m>, <m>\angle\beta</m>, <m>\angle\phi</m>.
+
+  <image source="geogebra-export-4.svg"/>
+
+  By the Angle Addition Postulate, <m>m\angle ABD = m\angle\beta + m\angle\phi</m>. Since <m>\overline{AC} \parallel L</m>, <m>\overline{AB}</m> and <m>\overline{CB}</m> forms a transversal of the two parallel lines giving us that <m>\angle\beta \cong \angle CAB</m> and <m>\angle\alpha \cong \angle ACB</m> with <m>\angle\alpha \cong \angle\phi</m> by vertical angles, making <m>\angle\phi \cong \angle ACB</m>. Thus, <m>m\angle ABD = m\angle CAB + m\angle ACB</m>.
+     </p>
+    
+</proof>
+
+</section>
+
+<section xml:id="sec-3.2.10 Checkpoint">
+  <title>3.2.10 Checkpoint</title>
+  
+  <ol label="(a)">
+    <li>
+        <p>
+            <m>\frac{A(\triangle DEB)}{A(\triangle AED)}</m> = <m>\frac{\frac{1}{2}\lvert\overline {FE}\rvert \lvert\overline{DB}\rvert}{\frac{1}{2} \lvert\overline{FE}\rvert \lvert\overline{AD}\rvert}</m> = <m>\frac{\lvert\overline{DB}\rvert}{\lvert\overline{AD}\rvert}</m>
+
+            <image source="geogebra-export-7.svg"/>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <m>\frac{A(\triangle DEB)}{A(\triangle CDE)}</m> = <m>\frac{\frac{1}{2}\lvert\overline {DG}\rvert \lvert\overline{BE}\rvert}{\frac{1}{2} \lvert\overline{DG}\rvert \lvert\overline{EC}\rvert}</m> = <m>\frac{\lvert\overline{BE}\rvert}{\lvert\overline{EC}\rvert}</m>
+
+            <image source="geogebra-export-5.svg"/>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            Since <m>\triangle AED</m> and
+            <m>\triangle CDE</m> share the same base <m>\overline{DE}</m>, in which <m>\overline {DE} \parallel \overline{AC}</m>. We can use the point to line distance to construct the line <m>\overline{AH}</m> and the line <m>\overline{CI}</m>. With <m>\overline DE \parallel \overline{AC}</m>, we know with the Equidistance Postulate that <m>\overline{AH} \cong \overline{CI}</m>. As such, with both their altitudes being the same and sharing the same base, we have that <m>A(\triangle AED) = A(\triangle CDE)</m>.
+
+            <image source="geogebra-export-8.svg"/>
+        </p>
+    </li>
+</ol>
+</section>
+
+<section xml:id="sec-Lemma 3.2.12">
+  <title>Lemma 3.2.12</title>
+  <p>
+    Suppose we have <m>\triangle ABC</m>, by the Ruler's Postulate, we can construct a point D on the line <m>\overline{AB}</m> such that <m> A-D-B</m>. By Playfair's Postulate, we can construct a line parallel to <m>\overline{AC}</m> and by Pasch's Axiom this line will intersect <m>\overline{BC}</m> at a point E such that <m> B-E-C</m>. By Axiom 1, we can construct the lines <m>\overline{DC}</m> and <m>\overline{EA}</m>, thus constructing the triangles <m>\triangle CDE</m> and <m>\triangle AED</m>. <image source="geogebra-export-9.svg"/> From Checkpoint 3.2.10, we have <m>\frac{A(\triangle DEB)}{A(\triangle AED)}</m> = <m>\frac{\frac{1}{2}\lvert\overline {FE}\rvert \lvert\overline{DB}\rvert}{\frac{1}{2} \lvert\overline{FE}\rvert \lvert\overline{AD}\rvert}</m> = <m>\frac{\lvert\overline{DB}\rvert}{\lvert\overline{AD}\rvert}</m> and <m>\frac{A(\triangle DEB)}{A(\triangle CDE)}</m> = <m>\frac{\frac{1}{2}\lvert\overline {DG}\rvert \lvert\overline{BE}\rvert}{\frac{1}{2} \lvert\overline{DG}\rvert \lvert\overline{EC}\rvert}</m> = <m>\frac{\lvert\overline{BE}\rvert}{\lvert\overline{EC}\rvert}</m> and we have proven that <m>A(\triangle AED) = A(\triangle CDE)</m>. So, <m>\frac{\lvert\overline{DB}\rvert}{\lvert\overline{AD}\rvert} = \frac{A(\triangle DEB)}{A(\triangle AED)} = \frac{A(\triangle DEB)}{A(\triangle CDE)} = \frac{\lvert\overline{BE}\rvert}{\lvert\overline{EC}\rvert}</m>. Thus, we have <m>\frac{\lvert\overline{DB}\rvert}{\lvert\overline{AD}\rvert} = \frac{\lvert\overline{BE}\rvert}{\lvert\overline{EC}\rvert}</m> being proportional.
+  </p>
+</section>
+</article>
+</pretext>

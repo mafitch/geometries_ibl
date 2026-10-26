@@ -1,0 +1,171 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+  <latex-image-preamble>
+\usepackage{tikz, pgf}
+</latex-image-preamble>
+</docinfo>
+<article xml:id="document" label="document">
+  <title>New LaTeX-style PreTeXt document</title>
+
+  <!-- This is a new LaTeX&#x2D;style PreTeXt document.-->
+  <!-- You can add your content below.-->
+  <!-- Looking for example markup to get started? -->
+  <!-- Try creating a project from a template!-->
+  <lemma>
+    <title>3.3.11</title>
+
+    <statement>
+      <p>
+        Consider three points <m>A</m>, <m>B</m>, <m>C</m> with <m>\ell_{1}</m>
+        and <m>\ell_{2}</m> the perpendicular bisectors of <m>\overline{AB}</m>
+        and <m>\overline{BC}</m> respectively. Let
+        <m>M_{2}=\ell_{2}\cap\overline{BC}</m>. Show
+        <m>\ell_{1}\parallel\ell_{2}</m> implies the existence of
+        <m>D=\ell_{2}\cap\overleftrightarrow{AB}</m> such that <m>A</m>,
+        <m>B</m>, and <m>D</m> are collinear and <m>\angle BDM_{2}</m> is a
+        right angle.
+      </p>
+    </statement>
+  </lemma>
+
+  <proof>
+    <p>
+      Suppose <m>\ell_{1}\parallel\ell_{2}</m> and that
+      <m>\overleftrightarrow{AB}</m> does not intersect <m>\ell_{2}</m>. Then,
+      <m>\overleftrightarrow{AB}\parallel\ell_{2}</m>. Since <m>\ell_{1}</m> is
+      the perpendicular bisector of <m>\overline{AB}</m>, let
+      <m>X=\ell_{1}\cap\overline{AB}</m>. By the Playfair Postulate, there
+      exists exactly one line parallel to <m>\ell_{2}</m> through point
+      <m>X</m>. But, we have two, namely <m>\ell_{1}</m> and
+      <m>\overleftrightarrow{AB}</m>. This is only possible if
+      <m>\ell_{1}=\overleftrightarrow{AB}</m>, which contradicts that
+      <m>\ell_{1}\perp\overleftrightarrow{AB}</m>. So, by contradiction there
+      exists a point <m>D=\ell_{2}\cap\overleftrightarrow{AB}</m>. As <m>D</m>
+      lies on <m>\overleftrightarrow{AB}</m>, <m>A</m>, <m>B</m>, and <m>D</m>
+      must be collinear.
+    </p>
+
+    <blockquote>
+      <image source="asset-3-3-4"/>
+    </blockquote>
+
+    <p>
+      Using the Ruler Postulate, place points <m>X</m> and <m>Y</m> on
+      <m>\ell_{1}</m> such that <m>Y=\overleftrightarrow{AB}\cap\ell_{1}</m> and
+      <m>X</m> and <m>M_{2}</m> lie in the same half plane separated by
+      <m>\overleftrightarrow{AB}</m>. Since <m>\overleftrightarrow{AB}</m> is a
+      transversal of parallel lines <m>\ell_{1}</m> and <m>\ell_{2}</m>, Theorem
+      3.1.5 gives us that
+      <md>
+        m\angle XYB+m\angle BDM_{2}=\pi.
+      </md>
+      But, <m>m\angle XYB=\pi/2</m> since <m>\ell_{1}</m> is the perpendicular
+      bisector of <m>\overline{AB}</m>. This forces
+      <m>m\angle BDM_{2}=\pi/2</m>, which was to be shown.
+    </p>
+  </proof>
+
+  <theorem>
+    <title>3.3.12 Perpendicular bisectors</title>
+
+    <statement>
+      <p>
+        Prove the conjecture about the perpendicular bisectors.
+      </p>
+    </statement>
+  </theorem>
+
+  <proof>
+    <p>
+      We will show that the perpendicular bisectors of a triangle must intersect
+      at a singular point.
+    </p>
+
+    <p>
+      Consider <m>\triangle ABC</m> with <m>\ell_{1}</m> the perpendicular
+      bisector of <m>\overline{AB}</m> with <m>D=\ell_{1}\cap\overline{AB}</m>,
+      <m>\ell_{2}</m> the perpendicular bisector of <m>\overline{BC}</m> with
+      <m>E=\ell_{2}\cap\overline{BC}</m>, and <m>\ell_{3}</m> the perpendicular
+      bisector of <m>\overline{AC}</m> with <m>F=\ell_{2}\cap\overline{AC}</m>.
+      We first claim that any two perpendicular bisectors of
+      <m>\triangle ABC</m> must intersect.
+    </p>
+
+    <p>
+      Without loss of generality, suppose that <m>\ell_{1}</m> and
+      <m>\ell_{2}</m> do not intersect. Then, <m>\ell_{1}\parallel\ell_{2}</m>
+      and by Lemma 3.3.11 there exists a point
+      <m>P=\overleftrightarrow{AB}\cap\ell_{2}</m> such that <m>A</m>, <m>B</m>,
+      and <m>P</m> are collinear and <m>m\angle BPE=\pi/2</m>.
+    </p>
+
+    <blockquote>
+      <image source="asset-3-3"/>
+    </blockquote>
+
+    <p>
+      By the Supplement Postulate, <m>m\angle BEP=\pi/2</m>. In fact, Theorem
+      3.1.5 implies that <m>\overline{BP}\parallel\overline{BE}</m>. But,
+      <m>A</m>, <m>B</m>, and <m>P</m> are collinear and <m>B</m>, <m>E</m>, and
+      <m>C</m> are collinear. Thus, <m>\overline{AB}\parallel\overline{BC}</m>.
+      This implies <m>A</m>, <m>B</m>, and <m>C</m> are collinear, which
+      contradicts the definition of a triangle. So, contradiction yields that
+      any pair of perpendicular bisectors of a triangle must intersect. Now,
+      we'll show that, in fact, the perpendicular bisectors of a triangle
+      intersect at a singular point.
+    </p>
+
+    <p>
+      Without loss of generality, let <m>X=\ell_{1}\cap\ell_{2}</m>. By the
+      Ruler Postulate, we can place point <m>F</m> such that
+      <md>
+        A-F-C \hspace{1em}\text{and}\hspace{1em}|AF|=|AC|.
+      </md>
+      That is, <m>F</m> is the midpoint of <m>|AC|</m>. By Axiom 1, draw
+      <m>\ell_{3}=\overrightarrow{FX}</m>.
+    </p>
+
+    <blockquote>
+      <image source="asset-3-3-2"/>
+    </blockquote>
+
+    <p>
+      Apply Axiom 1 to draw <m>\overline{AX}</m>, <m>\overline{BX}</m>, and
+      <m>\overline{CX}</m>.
+    </p>
+
+    <blockquote>
+      <image source="asset-3-3-3"/>
+    </blockquote>
+
+    <p>
+      By the SAS Postulate,
+      <md alignment="align">
+        <mrow>\triangle CXE&amp;\cong\triangle BXE,</mrow>
+        <mrow>\triangle AXD&amp;\cong\triangle BXD.</mrow>
+      </md>
+      So,
+      <md>
+        \overline{AX}\cong\overline{BX}\cong\overline{CX}.
+      </md>
+      This result is interesting in and of itself. But, we go further. By
+      Side-Side-Side, <m>\triangle AXF\cong\triangle CXF</m> and therefore
+      <m>\angle AFX\cong\angle CFX</m>. Indeed, the Supplement Postulate shows
+      that
+      <md alignment="align">
+        <mrow>m\angle AFX+m\angle CFX&amp;=\pi</mrow>
+        <mrow>\implies m\angle AFX+m\angle AFX&amp;=\pi</mrow>
+        <mrow>\implies m\angle AFX=\frac{\pi}{2}&amp;=m\angle CFX.</mrow>
+      </md>
+      So, <m>\ell_{3}</m> is the perpendicular bisector of side
+      <m>\overline{AC}</m> and <m>\ell_{3}</m> intersects <m>\ell_{1}</m> and
+      <m>\ell_{2}</m> at a singular point <m>X</m>, as desired.
+    </p>
+  </proof>
+</article>
+</pretext>

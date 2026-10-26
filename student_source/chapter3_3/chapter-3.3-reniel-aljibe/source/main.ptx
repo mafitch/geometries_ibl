@@ -1,0 +1,71 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+  <latex-image-preamble>
+\usepackage{tikz, pgf}
+</latex-image-preamble>
+</docinfo>
+<article xml:id="document" label="document">
+  <title>3.3</title>
+<section xml:id="sec-triangle-angle-sum">
+    <title>Circumcenter 3.3.13</title>
+
+    <theorem xml:id="thm-triangle-angle-sum">
+        <statement>
+            <p>
+                <em>
+                    Three non-colinear points uniquely determine a circle.
+                </em>
+            </p>
+        </statement>
+
+        <proof>
+            <p>
+      Suppose we have three non-colinear points A, B, C, by Axiom 1, we can construct <m>\triangle ABC</m>, by the Ruler postulate, and Axiom 1, we can construct the perpendicular bisectors for each side of the triangle, where the intersections are D, E, F, such that <m>A-D-B</m>, <m>B-E-C</m>, <m>A-F-C</m> . From Theorem 3.3.12, we know that the 3 perpendicular bisectors intersect at a point X. 
+      <image source="geogebra-export-10.svg"/>
+      Using point X, we can again use Axiom 1 to construct triangles <m>\triangle XEB</m>, <m>\triangle XEC</m>, <m>\triangle XDB</m>, <m>\triangle XDA</m>, <m>\triangle XFA</m>, <m>\triangle XFC</m>. With SAS, we know that the six triangles are congruent with <m>\overline{XB} \cong \overline{XA} \cong \overline{XC}</m>. 
+
+      <image source="geogebra-export-11.svg"/>
+
+      Meaning points A, B, C are equidistant from point X, since we have a set of points equidistant from a given point, then we have the definition of a circle.
+      <image source="geogebra-export-16.svg"/>
+    </p>
+
+
+  </proof>
+</theorem>
+</section>
+
+<section xml:id="sec-Altitudes">
+  <title>Altitudes</title>
+  <theorem xml:id="thm-triangle-angle-sum">
+        <statement>
+            <p>
+                <em>
+                    Conjecture: The three altitudes of a triangle intersect at a point.
+                </em>
+            </p>
+        </statement>
+
+  <proof>
+   <p>
+    Suppose we have <m>\triangle ABC</m>, by using Playfair's Axiom, we can construct the triangle <m>\triangle XYZ</m> such that <m> X-B-Y</m>, <m>X-A-Z</m>, <m>Y-C-Z</m> with <m>\overline{YZ} \parallel \overline{AB}</m>, <m>\overline{XY} \parallel \overline{AC}</m> and <m>\overline{XZ} \parallel \overline{BC}</m>.
+
+   <image source="geogebra-export-12.svg"/>
+   
+   Now, we have a parallelogram where <m>\overline{AB} \parallel \overline{YC}</m> and <m>\overline{BY} \parallel \overline{AC}</m> and another one where <m>\overline{XB} \parallel \overline{AC}</m> and <m>\overline{BC} \parallel \overline{XA}</m>. Using the parallelogram theorem, <m>\overline{BY} \cong \overline{AC}</m> and <m>\overline{XB} \cong \overline{AC}</m>, so <m>\overline{BY} \cong \overline{XB}</m>. Using the same argument, we have <m>\overline{YC} \cong \overline{CZ}</m> and <m>\overline{XA} \cong \overline{AZ}</m>. Therefore, A is the midpoint of <m>\overline{XZ}</m>, point B is the midpoint of <m>\overline{XY}</m>, and point C is the midpoint of <m>\overline{YZ}</m>. So we know that the perpendicular bisectors <m>L_{1}, L_{2}, L_{3}</m>of <m>\triangle XYZ</m> are going to intersect the triangle sides at those points.
+
+   <image source="geogebra-export-15.svg"/>
+
+   Since <m>\overline{YZ} \parallel \overline{AB}</m>, this means that <m>L_{1}</m> is a transversal of <m>\overline{AB}</m> and <m>\overline{YZ}</m> then by Playfair's Axiom, <m>L_{1}</m> intersects <m>\overline{AB}</m> at a point D. Furthermore, using Theorem 3.1.5, the sum of the angles on one side of the transversal is equal to <m>\pi</m>. Since <m>L_{1} \cap \overline{YZ} = \frac{\pi}{2}</m>, then <m>L_{1} \cap \overline{AB}</m> is forced to be <m>\frac{\pi}{2}</m>, therefore <m>L_{1}</m> is an altitude of <m>\triangle ABC</m>. Using the same argument, we find that <m>L_{2}</m> and <m>L_{3}</m> are also altitudes of <m>\triangle ABC</m>. Since the altitudes of <m>\triangle ABC</m> are the perpendicular bisectors of <m>\triangle XYZ</m>, then by Theorem 3.3.12, the perpendiculars of a triangle intersect at a point, so altitudes also intersect at a point P.
+  <image source="geogebra-export-18.svg"/>
+   </p>
+   </proof>
+   </theorem>
+</section>
+</article>
+</pretext>

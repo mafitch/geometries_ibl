@@ -1,0 +1,41 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+</docinfo>
+<article xml:id="Submission" label="Submission">
+  <title>Chapter 3-1 Submission</title>
+
+  <section>
+    <title>3-1-2 Proof</title>
+
+    <p>
+      By Definition, parallel lines do not intersect.
+    </p>
+
+    <figure>
+      <image source="asset-3-1-2-image.png">
+<shortdescription>Image required for the proof of Theorem 3-1-2.</shortdescription>
+</image>
+    </figure>
+
+    <p>
+      Suppose <m>m(\angle a)=m(\angle c)</m>.
+    </p>
+
+    <p>
+      Suppose that <m>\alpha</m> and <m>\beta</m> intersect to the left of our
+      transversal. Then we have a triangle, and by the Exterior Angle Theorem,
+      <m>m(\angle a)&lt;m(\angle c)</m>. <m>\rightarrow\!\leftarrow</m>
+    </p>
+
+    <p>
+      As a similar argument applies to intersections on the right, the theorem
+      is proven.
+    </p>
+  </section>
+</article>
+</pretext>

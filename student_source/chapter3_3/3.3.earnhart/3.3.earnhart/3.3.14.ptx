@@ -1,0 +1,30 @@
+<section xml:id="tryit-xml">
+    <title>Theorem 3.3.14 Earnhart</title>
+
+    <proof>
+        <p>
+            <me>
+                \text{Consider } \triangle ABC \text{ with two medians, } \overline{AD} \text{ and } \overline{BE} \text{. Draw the line connecting } D \text{ and } E.
+            </me>
+
+            <me>
+                \text{From the construction of the medians, } \overline{DE} \text{ splits } \overline{BC} \text{ and } \overline{AC} \text{ in half. Therefore, by a combination of Playfair's axiom and Lemma 3.2.12, } \overline{DE} \parallel \overline{AB} \text{.}
+            </me>
+
+            <me>
+                \text{Label the intersection of the medians } F \text{. } \angle BFA \cong \angle EFD \text{ by vertical angles. Then, considering the parallel lines with the medians as transversals, alternate interior angles provide } \angle FDE \cong \angle FAB \text{ and } \angle FBA \cong \angle FED.
+            </me>
+
+            <me>
+                \text{Therefore, } \triangle FBA \sim \triangle FED \text{. Furthermore, by Corollary 3.2.13, } \overline{DE} = \frac{1}{2}\overline{AB} \text{. By the consistent ratio of similar triangles, } \overline{FE} = \frac{1}{2}\overline{BF} \text{ and } \overline{FD} = \frac{1}{2}\overline{AF}.
+            </me>
+
+            <me>
+                \text{Hence, two medians intersect at a point two-thirds of the way down both medians.}
+            </me>
+        </p>
+
+        <image src="medians.svg"/>
+    </proof>
+
+</section>

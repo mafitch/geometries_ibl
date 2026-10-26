@@ -11,16 +11,49 @@
 			<statement>
 				<p>For <m>\triangle ABC</m> construct line <m>\ell</m> such that <m>\ell \parallel \overline{AC}</m> and <m>B</m> is on <m>\ell.</m> What is the relationship between the three angles at <m>B</m> (smaller than a straight angle) to the angles of the triangle?</p>
 			</statement>
+			<solution>
+		    	<image source="images/asset-3-2-1-image.png"/>
+
+				<p>
+				From the above, we can make several observations. By Theorem 3-1-2, we
+				know that <m>\alpha\cong\sigma</m> and <m>\epsilon\cong\beta</m>, as
+				<m>\overline{AB}</m> and <m>\overline{CB}</m> are transversals of the
+				parallels <m>\overline{AC}</m> and l. Consider these things for theorem
+				3-2-2.
+				</p>
+			</solution>
 		</exercise>
 
 		<theorem>
 			<title>Triangle Angle Sum</title>
 			<statement><p>The angle sum of the interior angles of a triangle is <m>\pi.</m></p></statement>
+			<proof>
+				<p>
+				Suppose we have <m>\triangle ABC</m>. Since point B is a point outside of the line <m>\overline{AC}</m>, we can construct a line going through B that is parallel to <m>\overline{AC}</m> by the Playfair Axiom. By doing so, we have constructed angles <m>\angle \alpha</m>, <m>\angle \beta</m>.
+				</p>
+
+				<image source="images/triangle-angle-sum"/>
+
+				<p>
+				Since <m>\overline{AC} \parallel L</m>, the lines <m>\overline{AB}</m> and <m>\overline{CB}</m> are the transversals of the parallel lines, thus by the Alternate Interior Angle Converse Theorem, <m>\angle\alpha \cong \angle ACB</m> and <m>\angle\beta \cong \angle CAB</m>.
+				By the Supplementary Postulate, <m>m\angle\alpha + m\angle\beta + m\angle ABC = \pi</m>. Thus, by congruence, <m>m\angle ACB + m\angle CAB + m\angle ABC = \pi</m>.
+				</p>
+			</proof>
 		</theorem>
 
 		<corollary>
 			<title>Euclidean Exterior Angle</title>
 			<statement><p>The measure of an exterior angle of a triangle is equal to the sum of the two opposing, interior angles.</p></statement>
+			<proof>
+				<p>
+				Suppose we have <m>\triangle ABC</m> with <m>\overline{AB}</m> extended to a point D, forming the exterior angle <m>\angle ABD</m>. By Playfair's Axiom, we can construct a line L on point B that is parallel to <m>\overline{AC}</m> and in so doing, constructed angles <m>\angle\alpha</m>, <m>\angle\beta</m>, <m>\angle\phi</m>.
+
+				<image source="images/exterior-angle-sum"/>
+
+				By the Angle Addition Postulate, <m>m\angle ABD = m\angle\beta + m\angle\phi</m>. Since <m>\overline{AC} \parallel L</m>, <m>\overline{AB}</m> and <m>\overline{CB}</m> forms a transversal of the two parallel lines giving us that <m>\angle\beta \cong \angle CAB</m> and <m>\angle\alpha \cong \angle ACB</m> with <m>\angle\alpha \cong \angle\phi</m> by vertical angles, making <m>\angle\phi \cong \angle ACB</m>. Thus, <m>m\angle ABD = m\angle CAB + m\angle ACB</m>.
+				</p>
+				
+			</proof>
 		</corollary>
 
 		<definition>
@@ -30,10 +63,64 @@
 
 		<theorem>
 			<statement><p>Opposite sides of a parallelogram are congruent.</p></statement>
+			<proof>
+				<image source="images/asset-3-2-5-image.png"/>
+
+				<p>
+					Establish the four parallel lines of our parallelogram, then transverse
+					both pairs of parallels at either pair of opposing vertices. By the
+					Converse of the Alternate Interior Angles Theorem, we know that
+					<m>\alpha\cong\beta</m> and <m>\gamma\cong\sigma</m>. As the segment of
+					the transverse in the interior of the parallelogram is congruent to
+					itself, the parallelogram is constructed out of two congruent triangles,
+					so <m>\overline{AD}\cong\overline{BC}</m> and
+					<m>\overline{AB}\cong\overline{CD}</m>.
+				</p>
+			</proof>
 		</theorem>
 
 		<theorem>
 			<statement><p>If a transversal intersects three parallel lines in such a way as to divide itself into congruent segments, then any transversal of these parallel lines is also divided into congruent segments.</p></statement>
+			<proof>
+				<p>
+					Consider three parallel lines <m> l_1, l_2</m>,  and <m>l_3</m>
+					 intersected by a transversal <m> t_1</m>
+					 such that <m> t_1</m>  is divided into two congruent sections.
+					If <m> t_1</m>  is perpendicular to the parallel lines, then the
+					shortest distance between the neighboring lines is equal.
+					Now consider the case of <m> t_1</m>  not being perpendicular.
+					Then using alternate interior angles, the angle formed by <m> t_1</m>
+					 and <m> l_1</m>  is equal to the angle formed by <m> t_1</m>
+					 and <m> l_3</m>.
+					 We can draw the perpendicular from the intersection of <m> t_1</m>
+					 and <m> l_2</m>  that spans from <m> l_1</m>  to <m> l_3</m>.
+					 There now exist two triangles, one between <m> l_1</m>  and <m> l_2</m>
+					 and one between <m> l_2</m>  and <m> l_3</m>.
+					The hypotenuse of each is equal as given, and the two corresponding
+					angles are equal as shown with alternate interior angles and the definition
+					of perpendicular. Hence these two triangles are congruent.
+					Considering corresponding parts of congruent triangles are congruent,
+					the two sets of parallels <m> l_1 l_2</m>  and <m> l_2 l_3</m>
+					 are equidistant.
+					Now consider some other transversal <m> t_2</m>.
+					 Draw the perpendicular from <m> l_1</m>  to <m> l_3</m>
+					 through the <m> t_2 l_2</m>  intersection.
+					In accordance with the parallel postulate, these perpendicular segments
+					are congruent. As they are perpendicular, each segment has a right angle
+					on one end, and the other end is shown to be congruent through the vertical
+					angles. Hence there are congruent triangles once again.
+					Considering corresponding parts of congruent triangles are congruent,
+					this arbitrary transversal is divided into congruent segments by the three
+					parallel lines.
+				</p>
+				<image source="images/paralell"/>
+			</proof>
+			<proof>
+				<p>
+					Assume there are three arbitrary parallel lines with a transversal that is divided into congruent segments. We will call the parallel lines <m>\ell_1</m>, <m>\ell_2</m>, and <m>\ell_3</m>; and the transversal will be t. This means that <m>\overline{BC} \cong \overline{CD}</m>. There exists an arbitrary transversal (T_1) that crosses the parallel lines. Using Playfair's axiom, we can construct two lines parallel to <m>T_1</m> that intersects at point B and point C respectively, we will call them <m>T_2</m> and <m>T_3</m>. Using our corresponding angles lemma, we find that <m>\angle CDG \cong \angle BCH</m> and <m>\angle DGC \cong \angle CHB</m>.  Then, using the Angle-Angle-Side and the congruence of components, we know <m>\overline{CG} \cong \overline{BH}</m>. Finally, we know that the parallel lines and the three transversals form quadrilaterals by definition. Using Theorem 3.2.5, we know that opposite sides of a parallelogram are congruent. Therefore, <m>\overline{CG} \cong \overline{HI} \cong \overline{FJ}</m> and <m>\overline{BH} \cong \overline{EJ}</m>. <m>T_1</m> is divided into congruent segments and any transversal can similarly be divided into congruent segments. 
+				</p>
+                <image width="75%" source="images/a.jpg"/>
+			</proof>
 		</theorem>
 	</subsection>
 
@@ -47,6 +134,16 @@
 
 		<exercise>
 			<statement><p>Construct a triangle and enough parallel lines to divide one side of the triangle into four equal parts. Into how many parts do these lines divide the other sides?</p></statement>
+			<solution>
+				<p>
+					Assume there is an arbitrary triangle <m>\triangle ABC</m> with three parallel lines that divide one side into four equal parts. The remaining sides will either be unchanged or divided into up to four parts. WLOG, if <m>\overline{AC}</m> is divided into four equal parts and the parallel lines are also parallel to <m>\overline{AB}</m>, then <m>\overline{BC}</m> will be divided into four parts. If one of the parallel lines intersects the triangle at one of the vertices, then <m>\overline{AB}</m> and <m>\overline{BC}</m> can each be divided into up to three segments or remain undivided. 
+				</p>
+                <image source="images/asset-3-2-8-a.png"/>
+                <image source="images/asset-3-2-8-b.png"/>
+                <image source="images/asset-3-2-8-c.png"/>
+                <image source="images/asset-3-2-8-d.png"/>
+                <image source="images/asset-3-2-8-e.png"/>
+			</solution>
 		</exercise>
 
 		<definition>
@@ -62,16 +159,38 @@
 				<statement>
 					<p>Construct <m>\overline{AE}</m> and <m>\overline{EF}</m> such that <m>F</m> is the foot of the perpendicular from <m>E</m> to <m>\overline{AB}.</m> Reduce the ratio of the areas of <m>\triangle DEB</m> and <m>\triangle AED.</m></p>
 				</statement>
+				<solution>
+					<p>
+						<m>\frac{A(\triangle DEB)}{A(\triangle AED)}</m> = <m>\frac{\frac{1}{2}\lvert\overline {FE}\rvert \lvert\overline{DB}\rvert}{\frac{1}{2} \lvert\overline{FE}\rvert \lvert\overline{AD}\rvert}</m> = <m>\frac{\lvert\overline{DB}\rvert}{\lvert\overline{AD}\rvert}</m>
+
+						<image source="images/checkpoint-similarity-1"/>
+					</p>
+				</solution>
 			</task>
 			<task>
 				<statement>
 					<p>Construct <m>\overline{DC}</m> and <m>\overline{DG}</m> such that <m>G</m> is the foot of the perpendicular from <m>D</m> to <m>\overline{BC}.</m> Reduce the ratio of the areas of <m>\triangle DEB</m> and <m>\triangle CDE.</m></p>
 				</statement>
+				<solution>
+					<p>
+						<m>\frac{A(\triangle DEB)}{A(\triangle CDE)}</m> = <m>\frac{\frac{1}{2}\lvert\overline {DG}\rvert \lvert\overline{BE}\rvert}{\frac{1}{2} \lvert\overline{DG}\rvert \lvert\overline{EC}\rvert}</m> = <m>\frac{\lvert\overline{BE}\rvert}{\lvert\overline{EC}\rvert}</m>
+
+						<image source="images/checkpoint-similarity-2"/>
+					</p>
+				</solution>
 			</task>
 			<task>
 				<statement>
 					<p>Prove area of <m>\triangle AED</m> is equal to the area of <m>\triangle CDE.</m></p>
 				</statement>
+				<solution>
+					<p>
+						Since <m>\triangle AED</m> and
+						<m>\triangle CDE</m> share the same base <m>\overline{DE}</m>, in which <m>\overline {DE} \parallel \overline{AC}</m>. We can use the point to line distance to construct the line <m>\overline{AH}</m> and the line <m>\overline{CI}</m>. With <m>\overline DE \parallel \overline{AC}</m>, we know with the Equidistance Postulate that <m>\overline{AH} \cong \overline{CI}</m>. As such, with both their altitudes being the same and sharing the same base, we have that <m>A(\triangle AED) = A(\triangle CDE)</m>.
+
+						<image source="images/checkpoint-similarity-3"/>
+					</p>
+				</solution>
 			</task>
 		</exercise>
 	</subsection>
@@ -88,17 +207,103 @@
 			<statement>
 				<p>A line parallel to one side of a triangle and intersecting the other two sides divides those sides proportionally.</p>
 			</statement>
+			<proof>
+				<p>
+					Suppose we have <m>\triangle ABC</m>, by the Ruler's Postulate, we can construct a point D on the line <m>\overline{AB}</m> such that <m> A-D-B</m>. By Playfair's Postulate, we can construct a line parallel to <m>\overline{AC}</m> and by Pasch's Axiom this line will intersect <m>\overline{BC}</m> at a point E such that <m> B-E-C</m>. By Axiom 1, we can construct the lines <m>\overline{DC}</m> and <m>\overline{EA}</m>, thus constructing the triangles <m>\triangle CDE</m> and <m>\triangle AED</m>. <image source="images/parallel-divides-proportional"/> From Checkpoint 3.2.10, we have <m>\frac{A(\triangle DEB)}{A(\triangle AED)}</m> = <m>\frac{\frac{1}{2}\lvert\overline {FE}\rvert \lvert\overline{DB}\rvert}{\frac{1}{2} \lvert\overline{FE}\rvert \lvert\overline{AD}\rvert}</m> = <m>\frac{\lvert\overline{DB}\rvert}{\lvert\overline{AD}\rvert}</m> and <m>\frac{A(\triangle DEB)}{A(\triangle CDE)}</m> = <m>\frac{\frac{1}{2}\lvert\overline {DG}\rvert \lvert\overline{BE}\rvert}{\frac{1}{2} \lvert\overline{DG}\rvert \lvert\overline{EC}\rvert}</m> = <m>\frac{\lvert\overline{BE}\rvert}{\lvert\overline{EC}\rvert}</m> and we have proven that <m>A(\triangle AED) = A(\triangle CDE)</m>. So, <m>\frac{\lvert\overline{DB}\rvert}{\lvert\overline{AD}\rvert} = \frac{A(\triangle DEB)}{A(\triangle AED)} = \frac{A(\triangle DEB)}{A(\triangle CDE)} = \frac{\lvert\overline{BE}\rvert}{\lvert\overline{EC}\rvert}</m>. Thus, we have <m>\frac{\lvert\overline{DB}\rvert}{\lvert\overline{AD}\rvert} = \frac{\lvert\overline{BE}\rvert}{\lvert\overline{EC}\rvert}</m> being proportional.
+				</p>
+			</proof>
 		</lemma>
 
 		<corollary>
 			<statement>
 				<p>A line parallel to one side of a triangle divides the triangle into two (whole and part), similar triangles.</p>
 			</statement>
+			<proof>
+				<p>
+					Assume there is an arbitrary triangle <m>\triangle ABC</m>. We will construct a line parallel to <m>\overline{AC}</m> using Playfair's axiom with points D and E that lie on the line. Similarly, we will construct an additional line parallel to <m>\overline{AB}</m> with points E and F that lie on the line. By lemma 3.2.12, we know that <m>\overline{AB}</m> and <m>\overline{BC}</m> are divided proportionally. Using the corresponding angle lemma, we find that <m>\angle BAC\cong\angle BDE</m>, <m>\angle BCA\cong\angle BED</m>, and <m>\angle ABC\cong\angle DBE</m>. This means that <m>\triangle DBE</m> and <m>\triangle FEC</m> are similar triangles. We know that the points A, D, E, F form a parallelogram because both opposing sides are parallel. By Theorem 3.2.5, <m>|DE|=|AF|</m>. Using our known similar triangles, <m>|AF|/|AC|=|BE|/|BC|</m>, Then, by replacing <m>|AF|</m>, we find that <m>|DE/|AC|=|BE|/|BC|</m> which is what we wanted to show that <m>\overline{AC}</m> is divided proportionally. Therefore, the triangle is divided into two similar triangles where <m>\triangle ABC</m> is similar to <m>\triangle BDE</m>
+					<image source="images/asset-3-2-13.png"/>
+				</p>
+			</proof>
 		</corollary>
 
 		<theorem>
 			<title>Angle-Angle-Angle (AAA) Similarity</title>
 			<statement><p>Two triangle are similar if and only if they have three congruent angles.</p></statement>
+			<proof>
+				<p>
+				( <m>\Rightarrow</m> ) Suppose <m>\triangle ABC</m> and
+				<m>\triangle DEF</m> have three congruent angles:
+				<ol>
+					<li>
+					<p>
+						<m>\angle ABC\cong\angle DEF</m>,
+					</p>
+					</li>
+
+					<li>
+					<p>
+						<m>\angle BAC\cong\angle EDF</m>,
+					</p>
+					</li>
+
+					<li>
+					<p>
+						<m>\angle BCA\cong\angle EFD</m>.
+					</p>
+					</li>
+				</ol>
+				</p>
+
+				<image source="images/asset-3-2.png"/>
+
+				<p>
+				If any two corresponding sides are congruent, say
+				<m>\overline{AB}\cong\overline{DE}</m>, then
+				<m>\triangle ABC\cong\triangle DEF</m> by Angle-Side-Angle. Congruent
+				triangles are similar since the ratio of the corresponding sides is 1. So,
+				without loss of generality, suppose
+				<md>
+					|AB|&gt;|DE|.
+				</md>
+				By the Ruler Postulate, we can place a point <m>E'</m> such that
+				<m>A-E'-B</m> and <m>\overline{AE'}\cong\overline{DE}</m>. We can also
+				place a point <m>F'</m> on <m>\overleftrightarrow{AC}</m> such that
+				<m>\overline{AF'}\cong\overline{DF}</m> and <m>F'</m> lies in the same
+				half plane separated by <m>\overleftrightarrow{AE'}</m> as <m>C</m>. We
+				first consider the case where <m>A-F'-C</m>.
+				</p>
+
+				<image source="images/asset-3-2-2.png"/>
+
+				<p>
+				By the SAS Postulate, <m>\triangle AE'F'\cong\triangle DEF</m>. Extend
+				<m>\overline{E'F'}</m> to get vertical angles.
+				</p>
+
+				<image source="images/asset-3-2-3.png"/>
+
+				<p>
+				We see that we have two pairs of congruent alternate interior angles. By
+				the Alternate Interior Angles Theorem (3.1.2),
+				<m>\overline{E'F'}\parallel\overline{BC}</m>. So, by Corollary 3.2.13,
+				<m>\triangle ABC</m> is similar to <m>\triangle AE'F'</m>. But
+				<m>\triangle AE'F'\cong\triangle DEF</m>. So, <m>\triangle ABC</m> is
+				similar to <m>\triangle DEF</m>.
+				</p>
+
+				<p>
+				If instead <m>A-C-F'</m>, extend <m>\overline{BC}</m> to get that
+				<m>\overline{E'F'}\parallel\overline{BC}</m> by 3.1.2.
+				</p>
+
+				<image source="images/asset-3-2-4.png"/>
+
+				<p>
+				( <m>\Leftarrow</m> ) Suppose <m>\triangle ABC</m> and
+				<m>\triangle DEF</m> are similar. Then, by definition, their corresponding
+				angles are congruent. So, they share 3 congruent angles.
+				</p>
+			</proof>
 		</theorem>
 	</subsection>
 
@@ -109,12 +314,88 @@
 			<statement>
 				<p>Construct a definition for similar quadrilaterals. Construct examples to show that your definition works.</p>
 			</statement>
+			<solution>
+				<p>
+				A definition for similar quadrilaterals is: All corresponding angles are
+				congruent and all sides of one parallelogram are proportional to their
+				corresponding side on the other parallelogram by the same ratio.
+				</p>
+
+				<p>
+				The following conjectures posited by failure to find counterexample:
+				</p>
+
+				<p>
+				6/8 angle congruences and line similarities cases:
+				</p>
+
+				<p>
+				Three congruences and three similarities may work.
+				</p>
+
+				<p>
+				Four congruences and two similarities may work if and only if the similar
+				lines intersect at one of our congruent angles. Otherwise, we cannot
+				discern the difference between a square and a rectangle.
+				</p>
+
+				<p>
+				Two congruences and four similarities may work.
+				</p>
+
+				<p>
+				5/8 angle congruences and line similarities cases:
+				</p>
+
+				<p>
+				Three congruences and two similarities may work if the congruences and
+				similarities are angle-side-angle-side-angle, with the unknown
+				side-angle-side being between the first and last angles known to be
+				congruent in the arrangement.
+				</p>
+
+				<p>
+				Two congruences and three similarities may work if, similarly to the
+				above, we take a side-angle-side-angle-side arrangement with the unknown
+				angle-side-angle arrangement being between the first and last sides of the
+				known arrangement.
+				</p>
+
+				<p>
+				One congruence and four sides cannot prevent a boomerang scenario as shown
+				below:
+				</p>
+
+				<image source="images/asset-3-2-15-example-1.png"/>
+				<p>
+					Using Geogebra's polygon tool, one can construct a quadrilateral and
+					display the side lengths of said quadrilateral. Then the Parallel line
+					tool was used to ensure that <m>\angle DAB\cong\angle FEH</m>. From
+					there, and with the displayed side lengths of the constructed polygon on
+					the left, Geogebra's segment with length tool was used to construct
+					sides similar to those of the constructed polygon by ratio 1. Said
+					segments were then arranged so that they formed a nonsimilar polygon.
+				</p>
+
+				<p>
+				Four congruences and one similar cannot discern between a rectangle and a
+				square.
+				</p>
+			</solution>
 		</exercise>
 
 		<exercise>
 			<statement>
 				<p>Explain why similarity is not defined simply as "all angles are congruent."</p>
 			</statement>
+			<solution>
+				<p>
+				All angles congruent cannot discern any difference between the following
+				trapezoids:
+				</p>
+
+				<image source="images/asset-3-2-16-image.png"/>
+			</solution>
 		</exercise>
 	</subsection>
 

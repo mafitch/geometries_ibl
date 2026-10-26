@@ -1,0 +1,114 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+  <latex-image-preamble>
+\usepackage{tikz, pgf}
+</latex-image-preamble>
+</docinfo>
+<article xml:id="document" label="document">
+  <title>New LaTeX-style PreTeXt document</title>
+
+  <!-- This is a new LaTeX&#x2D;style PreTeXt document.-->
+  <!-- You can add your content below.-->
+  <!-- Looking for example markup to get started? -->
+  <!-- Try creating a project from a template!-->
+  <theorem>
+    <title>3.2.14 Angle-Angle-Angle (AAA) Similarity</title>
+
+    <statement>
+      <p>
+        Two triangles are similar if and only if they have three congruent
+        angles.
+      </p>
+    </statement>
+  </theorem>
+
+  <proof>
+    <p>
+      ( <m>\Rightarrow</m> ) Suppose <m>\triangle ABC</m> and
+      <m>\triangle DEF</m> have three congruent angles:
+      <ol>
+        <li>
+          <p>
+            <m>\angle ABC\cong\angle DEF</m>,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\angle BAC\cong\angle EDF</m>,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\angle BCA\cong\angle EFD</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <blockquote>
+      <image source="asset-3-2.png"/>
+    </blockquote>
+
+    <p>
+      If any two corresponding sides are congruent, say
+      <m>\overline{AB}\cong\overline{DE}</m>, then
+      <m>\triangle ABC\cong\triangle DEF</m> by Angle-Side-Angle. Congruent
+      triangles are similar since the ratio of the corresponding sides is 1. So,
+      without loss of generality, suppose
+      <md>
+        |AB|&gt;|DE|.
+      </md>
+      By the Ruler Postulate, we can place a point <m>E'</m> such that
+      <m>A-E'-B</m> and <m>\overline{AE'}\cong\overline{DE}</m>. We can also
+      place a point <m>F'</m> on <m>\overleftrightarrow{AC}</m> such that
+      <m>\overline{AF'}\cong\overline{DF}</m> and <m>F'</m> lies in the same
+      half plane separated by <m>\overleftrightarrow{AE'}</m> as <m>C</m>. We
+      first consider the case where <m>A-F'-C</m>.
+    </p>
+
+    <blockquote>
+      <image source="asset-3-2-2"/>
+    </blockquote>
+
+    <p>
+      By the SAS Postulate, <m>\triangle AE'F'\cong\triangle DEF</m>. Extend
+      <m>\overline{E'F'}</m> to get vertical angles.
+    </p>
+
+    <blockquote>
+      <image source="asset-3-2-3"/>
+    </blockquote>
+
+    <p>
+      We see that we have two pairs of congruent alternate interior angles. By
+      the Alternate Interior Angles Theorem (3.1.2),
+      <m>\overline{E'F'}\parallel\overline{BC}</m>. So, by Corollary 3.2.13,
+      <m>\triangle ABC</m> is similar to <m>\triangle AE'F'</m>. But
+      <m>\triangle AE'F'\cong\triangle DEF</m>. So, <m>\triangle ABC</m> is
+      similar to <m>\triangle DEF</m>.
+    </p>
+
+    <p>
+      If instead <m>A-C-F'</m>, extend <m>\overline{BC}</m> to get that
+      <m>\overline{E'F'}\parallel\overline{BC}</m> by 3.1.2.
+    </p>
+
+    <blockquote>
+      <image source="asset-3-2-4"/>
+    </blockquote>
+
+    <p>
+      ( <m>\Leftarrow</m> ) Suppose <m>\triangle ABC</m> and
+      <m>\triangle DEF</m> are similar. Then, by definition, their corresponding
+      angles are congruent. So, they share 3 congruent angles.
+    </p>
+  </proof>
+</article>
+</pretext>

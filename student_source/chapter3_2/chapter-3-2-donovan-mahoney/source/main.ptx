@@ -1,0 +1,93 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+  <latex-image-preamble>
+\usepackage{tikz, pgf}
+</latex-image-preamble>
+</docinfo>
+<article xml:id="document" label="document">
+    <title>New PreTeXt XML document</title>
+
+<!-- This is a new PreTeXt XML document.
+     You can add your content below.
+     Looking for example markup to get started?
+     Try creating a project from a template! -->
+ <problem>
+    <title>3.2.6</title>
+
+    <statement>
+      <p>
+        If a transversal intersects three parallel lines in such a way as to divide itself into congruent segments, then any transversal of these parallel lines is also divided into congruent segments. 
+      </p>
+    </statement>
+  </problem>
+    
+<solution>
+    <statement>
+        <p>
+            Assume there are three arbitrary parallel lines with a transversal that is divided into congruent segments. We will call the parallel lines ℓ_1, ℓ_2, and ℓ_3; and the transversal will be t. This means that <m>\overline{BC}\cong\overline{CD}</m>. There exists an arbitrary transversal (T_1) that crosses the parallel lines. Using Playfair's axiom, we can construct two lines parallel to T_1 that intersects at point B and point C respectively, we will call them T_2 and T_3. Using our corresponding angles lemma, we find that <m>\angle CDG\cong\angle BCH</m> and <m>\angle DGC\cong\angle CHB</m>.  Then, using the Angle-Angle-Side and the congruence of components, we know <m>\overline{CG}\cong\overline{BH}</m>. Finally, we know that the parallel lines and the three transversals form quadrilaterals by definition. Using Theorem 3.2.5, we know that opposite sides of a parallelogram are congruent. Therefore, <m>\overline{CG}\cong\overline{HI}\cong\overline{FJ}</m> and <m>\overline{BH}\cong\overline{EJ}</m>. T_1 is divided into congruent segments and any transversal can similarly be divided into congruent segments. 
+        </p>
+        <blockquote>
+            <p>
+                <image width="75%" source="a"/>
+            </p>
+        </blockquote>
+    </statement>
+</solution>
+
+ <problem>
+    <title>3.2.8</title>
+
+    <statement>
+      <p>
+        Construct a triangle and enough parallel lines to divide one side of the triangle into four equal parts. Into how many parts do these lines divide the other sides?
+      </p>
+    </statement>
+  </problem>
+    
+<solution>
+    <statement>
+        <p>
+            Assume there is an arbitrary triangle △𝐴⁢𝐵⁢𝐶 with three parallel lines that divide one side into four equal parts. The remaining sides will either be unchanged or divided into up to four parts. WLOG, if <m>\overline{AC}</m> is divided into four equal parts and the parallel lines are also parallel to <m>\overline{AB}</m>, then <m>\overline{BC}</m> will be divided into four parts. If one of the parallel lines intersects the triangle at one of the vertices, then <m>\overline{AB}</m> and <m>\overline{BC}</m> can each be divided into up to three segments or remain undivided. 
+        </p>
+        <blockquote>
+            <p>
+                <image source="asset-3-2-8-a.png"/>
+                <image source="asset-3-2-8-b.png"/>
+                <image source="asset-3-2-8-c.png"/>
+                <image source="asset-3-2-8-d.png"/>
+                <image source="asset-3-2-8-e.png"/>
+            </p>
+        </blockquote>
+    </statement>
+</solution>
+
+ <problem>
+    <title>3.2.13</title>
+
+    <statement>
+      <p>
+         A line parallel to one side of a triangle divides the triangle into two (whole and part), similar triangles. 
+      </p>
+    </statement>
+  </problem>
+    
+<solution>
+    <statement>
+        <p>
+            Assume there is an arbitrary triangle △𝐴⁢𝐵⁢𝐶. We will construct a line parallel to <m>\overline{AC}</m> using Playfair's axiom with points D and E that lie on the line. Similarly, we will construct an additional line parallel to <m>\overline{AB}</m> with points E and F that lie on the line. By lemma 3.2.12, we know that <m>\overline{AB}</m> and <m>\overline{BC}</m> are divided proportionally. Using the corresponding angle lemma, we find that <m>\angle BAC\cong\angle BDE</m>, <m>\angle BCA\cong\angle BED</m>, and <m>\angle ABC\cong\angle DBE</m>. This means that △DBE and △FEC are similar triangles. We know that the points A, D, E, F form a parallelogram because both opposing sides are parallel. By Theorem 3.2.5, <m>|DE|=|AF|</m>. Using our known similar triangles, <m>|AF|/|AC|=|BE|/|BC|</m>, Then, by replacing <m>|AF|</m>, we find that <m>|DE/|AC|=|BE|/|BC|</m> which is what we wanted to show that <m>\overline{AC}</m> is divided proportionally. Therefore, the triangle is divided into two similar triangles where △𝐴⁢𝐵⁢𝐶 is similar to △BDE
+            <image source="asset-3-2-13.png"/>
+        </p>
+        <p>
+            
+            
+        </p>
+    </statement>
+</solution>
+
+</article>
+</pretext>

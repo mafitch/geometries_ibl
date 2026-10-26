@@ -1,0 +1,136 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+  <latex-image-preamble>
+\usepackage{tikz, pgf}
+</latex-image-preamble>
+</docinfo>
+<article xml:id="Submission" label="Submission">
+  <title>Cedric 3-2 Submission</title>
+
+  <section>
+    <title>3-2-1</title>
+
+    <figure>
+      <image source="asset-3-2-1-image.png"/>
+    </figure>
+
+    <p>
+      From the above, we can make several observations. By Theorem 3-2-1, we
+      know that <m>\alpha\cong\sigma</m> and <m>\epsilon\cong\beta</m>, as
+      <m>\overline{AB}</m> and <m>\overline{CB}</m> are transversals of the
+      parallels <m>\overline{AC}</m> and l. Consider these things for theorem
+      3-2-2.
+    </p>
+  </section>
+
+  <section>
+    <title>3-2-5</title>
+
+    <figure>
+      <image source="asset-3-2-5-image.png"/>
+    </figure>
+
+    <p>
+      Establish the four parallel lines of our parallelogram, then transverse
+      both pairs of parallels at either pair of opposing vertices. By the
+      Converse of the Alternate Interior Angles Theorem, we know that
+      <m>\alpha\cong\beta</m> and <m>\gamma\cong\sigma</m>. As the segment of
+      the transverse in the interior of the parallelogram is congruent to
+      itself, the parallelogram is constructed out of two congruent triangles,
+      so <m>\overline{AD}\cong\overline{BC}</m> and
+      <m>\overline{AB}\cong\overline{CD}</m>.
+    </p>
+  </section>
+
+  <section>
+    <title>3-2-15</title>
+
+    <p>
+      A definition for similar quadrilaterals is: All corresponding angles are
+      congruent and all sides of one parallelogram are proportional to their
+      corresponding side on the other parallelogram by the same ratio.
+    </p>
+
+    <p>
+      The following conjectures posited by failure to find counterexample:
+    </p>
+
+    <p>
+      6/8 angle congruences and line similarities cases:
+    </p>
+
+    <p>
+      Three congruences and three similarities may work.
+    </p>
+
+    <p>
+      Four congruences and two similarities may work if and only if the similar
+      lines intersect at one of our congruent angles. Otherwise, we cannot
+      discern the difference between a square and a rectangle.
+    </p>
+
+    <p>
+      Two congruences and four similarities may work.
+    </p>
+
+    <p>
+      5/8 angle congruences and line similarities cases:
+    </p>
+
+    <p>
+      Three congruences and two similarities may work if the congruences and
+      similarities are angle-side-angle-side-angle, with the unknown
+      side-angle-side being between the first and last angles known to be
+      congruent in the arrangement.
+    </p>
+
+    <p>
+      Two congruences and three similarities may work if, similarly to the
+      above, we take a side-angle-side-angle-side arrangement with the unknown
+      angle-side-angle arrangement being between the first and last sides of the
+      known arrangement.
+    </p>
+
+    <p>
+      One congruence and four sides cannot prevent a boomerang scenario as shown
+      below:
+    </p>
+
+    <figure>
+      <image source="asset-3-2-15-example-1.png"/>
+      <caption>
+        Using Geogebra's polygon tool, one can construct a quadrilateral and
+        display the side lengths of said quadrilateral. Then the Parallel line
+        tool was used to ensure that <m>\angle DAB\cong\angle FEH</m>. From
+        there, and with the displayed side lengths of the constructed polygon on
+        the left, Geogebra's segment with length tool was used to construct
+        sides similar to those of the constructed polygon by ratio 1. Said
+        segments were then arranged so that they formed a nonsimilar polygon.
+      </caption>
+    </figure>
+
+    <p>
+      Four congruences and one similar cannot discern between a rectangle and a
+      square.
+    </p>
+  </section>
+
+  <section>
+    <title>3-2-16</title>
+
+    <p>
+      All angles congruent cannot discern any difference between the following
+      trapezoids:
+    </p>
+
+    <figure>
+      <image source="asset-3-2-16-image.png"/>
+    </figure>
+  </section>
+</article>
+</pretext>

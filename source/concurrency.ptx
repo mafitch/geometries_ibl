@@ -61,6 +61,15 @@
 		<statement>
 			<p>Use the Geogebra example in <xref ref="geogebra-anglebisect" /> to experiment with the relationship of the three angle bisectors of a triangle. Move the vertices of the triangle around. What remains true about the angle bisectors?</p>
 		</statement>
+		<solution>
+			<p>
+			Things noticed/conjetures about the angle bisectors: <ol>
+				<li>Angle bisectors intersect at one point interior to the triangle.</li>
+				<li> An angle bisector is a perpendicular bisector iff the triangle is       isosceles. </li>
+				<li>Two angle bisectors are perpendicular bisectors iff the triangle is       equilateral.</li>
+			</ol>
+			</p>
+		</solution>
 	</exercise>
 
     <figure xml:id="geogebra-anglebisect">
@@ -80,6 +89,18 @@
 		<statement>
 			<p>Use the Geogebra example in <xref ref="geogebra-altitudes" /> to experiment with the relationship of the three altitudes of a triangle. Move the vertices of the triangle around. What remains true about the altitudes?</p>
 		</statement>
+		<solution>
+			<p>
+			Things noticed/conjectures about the altitudes:
+			<ol>
+				<li>The altitudes all intersect at one point (Aiden and Reniel).</li>
+				<li>That point is a vertex of the triangle iff that triangle is right       (Cedric).</li>
+				<li>That point is the vertex of the right angle (Cedric).</li>
+				<li>One altitude is a perpendicular bisector iff the triangle is an       isosceles iff that altitude is an angle bisector (Cedric).</li>
+				<li>Two altitudes are perpendicular bisectors iff three altitudes are       perpendicular bisectors iff the triangle is equilateral iff three       altitudes are angle bisectors iff two altitudes are angle bisectors       (Cedric).</li>
+			</ol>
+		    </p>
+		</solution>
 	</exercise>
 
     <figure xml:id="geogebra-altitudes">
@@ -108,29 +129,227 @@
 
 	<lemma>
 		<statement><p>Consider three points <m>A,B,C</m> with <m>\ell_1</m> and <m>\ell_2</m> the perpendicular bisectors of <m>\overline{AB}</m> and <m>\overline{BC}</m> respectively. Let <m>M_2=\ell_2 \cap \overline{BC}.</m> Show <m>\ell_1 \parallel \ell_2</m> implies the existence of <m>D=\ell_2 \cap \stackrel{\longleftrightarrow}{AB}</m> such that <m>A,</m> <m>B,</m> and <m>D</m> are collinear and <m>\angle BDM_2</m> is a right angle.</p></statement>
+		<proof>
+			<p>
+			Suppose <m>\ell_{1}\parallel\ell_{2}</m> and that
+			<m>\overleftrightarrow{AB}</m> does not intersect <m>\ell_{2}</m>. Then,
+			<m>\overleftrightarrow{AB}\parallel\ell_{2}</m>. Since <m>\ell_{1}</m> is
+			the perpendicular bisector of <m>\overline{AB}</m>, let
+			<m>X=\ell_{1}\cap\overline{AB}</m>. By the Playfair Postulate, there
+			exists exactly one line parallel to <m>\ell_{2}</m> through point
+			<m>X</m>. But, we have two, namely <m>\ell_{1}</m> and
+			<m>\overleftrightarrow{AB}</m>. This is only possible if
+			<m>\ell_{1}=\overleftrightarrow{AB}</m>, which contradicts that
+			<m>\ell_{1}\perp\overleftrightarrow{AB}</m>. So, by contradiction there
+			exists a point <m>D=\ell_{2}\cap\overleftrightarrow{AB}</m>. As <m>D</m>
+			lies on <m>\overleftrightarrow{AB}</m>, <m>A</m>, <m>B</m>, and <m>D</m>
+			must be collinear.
+			</p>
+
+			<image source="images/asset-3-3-4.png"/>
+
+			<p>
+			Using the Ruler Postulate, place points <m>X</m> and <m>Y</m> on
+			<m>\ell_{1}</m> such that <m>Y=\overleftrightarrow{AB}\cap\ell_{1}</m> and
+			<m>X</m> and <m>M_{2}</m> lie in the same half plane separated by
+			<m>\overleftrightarrow{AB}</m>. Since <m>\overleftrightarrow{AB}</m> is a
+			transversal of parallel lines <m>\ell_{1}</m> and <m>\ell_{2}</m>, Theorem
+			3.1.5 gives us that
+			<md>
+				m\angle XYB+m\angle BDM_{2}=\pi.
+			</md>
+			But, <m>m\angle XYB=\pi/2</m> since <m>\ell_{1}</m> is the perpendicular
+			bisector of <m>\overline{AB}</m>. This forces
+			<m>m\angle BDM_{2}=\pi/2</m>, which was to be shown.
+			</p>
+		</proof>
 	</lemma>
 
 	<theorem>
 		<title>Perpendicular bisectors</title>
 		<statement><p>Prove the conjecture about the perpendicular bisectors.</p></statement>
+		<proof>
+			<p>
+			We will show that the perpendicular bisectors of a triangle must intersect
+			at a singular point.
+			</p>
+
+			<p>
+			Consider <m>\triangle ABC</m> with <m>\ell_{1}</m> the perpendicular
+			bisector of <m>\overline{AB}</m> with <m>D=\ell_{1}\cap\overline{AB}</m>,
+			<m>\ell_{2}</m> the perpendicular bisector of <m>\overline{BC}</m> with
+			<m>E=\ell_{2}\cap\overline{BC}</m>, and <m>\ell_{3}</m> the perpendicular
+			bisector of <m>\overline{AC}</m> with <m>F=\ell_{2}\cap\overline{AC}</m>.
+			We first claim that any two perpendicular bisectors of
+			<m>\triangle ABC</m> must intersect.
+			</p>
+
+			<p>
+			Without loss of generality, suppose that <m>\ell_{1}</m> and
+			<m>\ell_{2}</m> do not intersect. Then, <m>\ell_{1}\parallel\ell_{2}</m>
+			and by Lemma 3.3.11 there exists a point
+			<m>P=\overleftrightarrow{AB}\cap\ell_{2}</m> such that <m>A</m>, <m>B</m>,
+			and <m>P</m> are collinear and <m>m\angle BPE=\pi/2</m>.
+			</p>
+
+			<image source="images/asset-3-3.png"/>
+
+			<p>
+			By the Supplement Postulate, <m>m\angle BEP=\pi/2</m>. In fact, Theorem
+			3.1.5 implies that <m>\overline{BP}\parallel\overline{BE}</m>. But,
+			<m>A</m>, <m>B</m>, and <m>P</m> are collinear and <m>B</m>, <m>E</m>, and
+			<m>C</m> are collinear. Thus, <m>\overline{AB}\parallel\overline{BC}</m>.
+			This implies <m>A</m>, <m>B</m>, and <m>C</m> are collinear, which
+			contradicts the definition of a triangle. So, contradiction yields that
+			any pair of perpendicular bisectors of a triangle must intersect. Now,
+			we'll show that, in fact, the perpendicular bisectors of a triangle
+			intersect at a singular point.
+			</p>
+
+			<p>
+			Without loss of generality, let <m>X=\ell_{1}\cap\ell_{2}</m>. By the
+			Ruler Postulate, we can place point <m>F</m> such that
+			<md>
+				A-F-C \hspace{1em}\text{and}\hspace{1em}|AF|=|AC|.
+			</md>
+			That is, <m>F</m> is the midpoint of <m>|AC|</m>. By Axiom 1, draw
+			<m>\ell_{3}=\overrightarrow{FX}</m>.
+			</p>
+
+			<image source="images/asset-3-3-2.png"/>
+
+			<p>
+			Apply Axiom 1 to draw <m>\overline{AX}</m>, <m>\overline{BX}</m>, and
+			<m>\overline{CX}</m>.
+			</p>
+
+			<image source="images/asset-3-3-3.png"/>
+
+			<p>
+			By the SAS Postulate,
+			<md alignment="align">
+				<mrow>\triangle CXE&amp;\cong\triangle BXE,</mrow>
+				<mrow>\triangle AXD&amp;\cong\triangle BXD.</mrow>
+			</md>
+			So,
+			<md>
+				\overline{AX}\cong\overline{BX}\cong\overline{CX}.
+			</md>
+			This result is interesting in and of itself. But, we go further. By
+			Side-Side-Side, <m>\triangle AXF\cong\triangle CXF</m> and therefore
+			<m>\angle AFX\cong\angle CFX</m>. Indeed, the Supplement Postulate shows
+			that
+			<md alignment="align">
+				<mrow>m\angle AFX+m\angle CFX&amp;=\pi</mrow>
+				<mrow>\implies m\angle AFX+m\angle AFX&amp;=\pi</mrow>
+				<mrow>\implies m\angle AFX=\frac{\pi}{2}&amp;=m\angle CFX.</mrow>
+			</md>
+			So, <m>\ell_{3}</m> is the perpendicular bisector of side
+			<m>\overline{AC}</m> and <m>\ell_{3}</m> intersects <m>\ell_{1}</m> and
+			<m>\ell_{2}</m> at a singular point <m>X</m>, as desired.
+			</p>
+		</proof>
 	</theorem>
 
 	<theorem>
 		<title>Circumcenter</title>
 		<statement><p>Three, non-colinear points uniquely determine a circle.</p></statement>
+		<proof>
+            <p>
+			Suppose we have three non-colinear points A, B, C, by Axiom 1, we can construct <m>\triangle ABC</m>, by the Ruler postulate, and Axiom 1, we can construct the perpendicular bisectors for each side of the triangle, where the intersections are D, E, F, such that <m>A-D-B</m>, <m>B-E-C</m>, <m>A-F-C</m> . From Theorem 3.3.12, we know that the 3 perpendicular bisectors intersect at a point X.</p>
+			<image source="images/geogebra-export-10"/>
+			<p>Using point X, we can again use Axiom 1 to construct triangles <m>\triangle XEB</m>, <m>\triangle XEC</m>, <m>\triangle XDB</m>, <m>\triangle XDA</m>, <m>\triangle XFA</m>, <m>\triangle XFC</m>. With SAS, we know that the six triangles are congruent with <m>\overline{XB} \cong \overline{XA} \cong \overline{XC}</m>.</p>
+
+			<image source="images/geogebra-export-11"/>
+
+			<p>Meaning points A, B, C are equidistant from point X, since we have a set of points equidistant from a given point, then we have the definition of a circle.</p>
+			<image source="images/geogebra-export-16"/>
+		</proof>
 	</theorem>
 
 	<lemma>
-		<statement><p>Two medians intersect at a point <m>2/3</m> of the way down both medians.</p></statement> 
+		<statement><p>Two medians intersect at a point <m>2/3</m> of the way down both medians.</p></statement>
+			<proof>
+				<p>
+					Consider <m>\triangle ABC</m> with two medians, <m>\overline{AD}</m>  and <m>\overline{BE}</m> . Draw the line connecting D and E.
+
+					From the construction of the medians, <m>\overline{DE}</m>  splits <m>\overline{BC}</m>  and <m>\overline{AC}</m>  in half. Therefore, by a combination of Playfair's axiom and Lemma 3.2.12, <m>\overline{DE} \parallel \overline{AB}</m> .
+
+					Label the intersection of the medians F. <m>\angle BFA \cong \angle EFD</m>  by vertical angles. Then, considering the parallel lines with the medians as transversals, alternate interior angles provide <m>\angle FDE \cong \angle FAB</m>  and <m>\angle FBA \cong \angle FED</m>.
+
+					Therefore, <m>\triangle FBA \sim \triangle FED</m> . Furthermore, by Corollary 3.2.13, <m>\overline{DE} = \frac{1}{2}\overline{AB}</m> . By the consistent ratio of similar triangles, <m>\overline{FE} = \frac{1}{2}\overline{BF}</m>  and <m>\overline{FD} = \frac{1}{2}\overline{AF}</m>.
+
+					Hence, two medians intersect at a point two-thirds of the way down both medians.
+				</p>
+
+				<image src="medians"/>
+		</proof>
 	</lemma>
 
 	<theorem>
 		<title>Medians</title>
 		<statement><p>Prove the conjecture about the medians.</p></statement>
+		<proof>
+			<p>
+			Consider <m>\triangle ABC</m> with two medians, <m>\overline{AD}</m> and <m>\overline{BE}</m>.
+
+			Draw the line from vertex C  through the intersection of the medians. The crossbar theorem guarantees this line interescts <m>\overline{AB}</m>.
+
+			Consider the intersection of the medians and this new line F.
+
+			Suppose <m>\overline{CF}</m>  is not a median. Then conisdering 3.3.14, there exists a median from C  such that it interescts <m>\overline{BE}</m>  2/3's of the way down both medians.
+
+			Thus the median from vertex C  must intersect <m>\overline{BF}</m>. Considering the ruler postulate, this means the median from C  does not intersect <m>\overline{AD}</m>  2/3's of the way down both line segments.
+
+			This contradicts our assumption that the median from C is not collinear with F.
+
+			Therefore the medians of a triangle all intersect at one point.
+
+			<image src="threemedians"/>
+			</p>
+		</proof>
 	</theorem>
 
 	<theorem>
 		<statement><p>A point is on the angle bisector of an angle if and only if it is equidistant from both sides of the angle.</p></statement>
+		<proof>
+			<image source="images/anglebisectors1.png">
+				<shortdescription>3-3-16 Image</shortdescription>
+			</image>
+
+			<p>
+			Construct <m>\angle BAC</m> and <m>\overrightarrow{AD}</m>.
+			</p>
+
+			<p>
+			For the <m>\implies</m> proof, suppose <m>\overrightarrow{AD}</m> is the
+			angle bisector of <m>\angle BAC</m>. Then take any point
+			<m>E\in\overrightarrow{AD}</m> and take lines from <m>E</m> to the foot of
+			the perpendiculars on <m>\overrightarrow{AB}</m> and
+			<m>\overrightarrow{AC}</m> and call those points <m>F</m> and <m>G</m>
+			respectively. As <m>\overline{AE}\cong\overline{AE}</m>,
+			<m>\angle\beta\cong\angle\alpha</m> and <m>\angle AFE\cong\angle AGE</m>,
+			<m>\triangle AFE\cong\triangle AGE</m> by definition.
+			</p>
+
+			<p>
+			Therefore <m>\overline{FE}\cong\overline{GE}</m> and any point <m>E</m> on
+			the angle bisector of an angle is equidistant to the sides of the angle.
+			</p>
+
+			<p>
+			For the <m>\impliedby</m> proof, do not suppose that
+			<m>\overrightarrow{AD}</m> is the angle bisector and instead suppose that
+			<m>\overline{FE}\cong\overline{GE}</m>. As the angles at <m>G</m> and
+			<m>F</m> are right and <m>\overline{AE}\cong\overline{AE}</m>,
+			<m>\triangle{AEF}\cong\triangle{AEG}</m>.
+			</p>
+
+			<p>
+			Thus <m>\angle{\alpha}\cong\angle{\beta}</m> and
+			<m>\overrightarrow{AD}</m> is the angle bisector of <m>\angle{BAC}</m>.
+			</p>
+		</proof>
 	</theorem>
 
 	<theorem>
@@ -138,14 +357,104 @@
 		<statement><p>Prove the conjecture about the angle bisectors.</p></statement>
 	</theorem>
 
+	<corollary>
+		<statement>
+			<p>
+				An angle bisector of a triangle is the perpendicular bisector of the
+				opposite side iff the triangle is isosceles.
+			</p>
+		</statement>
+		<proof>
+			<image src="anglebisectors2.png"/>
+			<p>
+				Proof of <m>\implies</m>: Suppose that <m>l_{1}</m> is an angle bisector
+				of <m>\angle{BAC}</m> and the perpendicular bisector of
+				<m>\overline{BC}</m>. Then <m>\angle{\alpha}\cong\angle{\beta}</m>. As
+				<m>\overline{BD}\cong\overline{CD}</m> and
+				<m>\angle{BAD}\cong\angle{CAD}</m>,
+				<m>\triangle{BDA}\cong\triangle{CDA}</m> by AAS or ASA.
+			</p>
+
+			<p>
+				Therefore <m>\overline{AB}\cong\overline{AC}</m> and
+				<m>\triangle{ABC}</m> is isosceles.
+			</p>
+
+			<p>
+				Proof of <m>\impliedby</m>: Take <m>\triangle{ABC}</m> to be isosceles,
+				so <m>\overline{AB}\cong\overline{AC}</m> and <m>l_{1}</m> to be the
+				perpendicular bisector of <m>\overline{BC}</m>. We then have two cases:
+			</p>
+
+			<p>
+				Case 1: <m>A\in l_{1}</m>. Then, as
+				<m>\overline{BD}\cong\overline{CD}</m>,
+				<m>\overline{AC}\cong\overline{BC}</m> and
+				<m>\overline{AD}\cong\overline{AD}</m>,
+				<m>\triangle{BDA}\cong\triangle{CDA}</m> by SSS.
+			</p>
+
+			<p>
+				Then <m>\angle{BAD}\cong\angle{CAD}</m> and <m>l_{1}</m> is the angle
+				bisector of <m>\angle{BAC}</m>.
+			</p>
+
+			<p>
+				Case 2: <m>A\notin l_{1}</m> Then by Axiom 1 and Theorem 2-1-9,
+				<m>\overline{AB}\ncong\overline{AC}</m> and <m>l_{1}</m> is not the
+				bisector of <m>\angle{BAC}</m>.
+			</p>
+		</proof>
+	</corollary>
+
+	<corollary>
+		<statement>
+			<p>
+				Two angle bisectors are perpendicular bisectors of their opposing sides
+				iff the triangle is isosceles.
+			</p>
+		</statement>
+		<proof>
+			<p>
+				For the <m>\implies</m> proof, take the result of the previous
+				conjecture's <m>\implies</m> proof and pick <m>l_{2}</m> or <m>l_{3}</m>
+				to consider, we will get <m>\overline{BA}\cong\overline{BC}</m> or
+				<m>\overline{CA}\cong\overline{CB}</m> respectively. Either will get you
+				<m>\overline{AB}\cong\overline{BC}\cong\overline{CA}</m> with the result
+				of the previous conjecture. For the <m>\impliedby</m> proof, again take
+				the result of the previous conjecture on the new line and use the same
+				process as the previous <m>\impliedby</m> proof.
+			</p>
+		</proof>
+	</corollary>
+
 	<theorem>
 		<title>Incenter</title>
 		<statement><p>For each triangle there exists a circle inside and tangent to all three sides.</p></statement>
+		<proof>
+			<p>
+				Assume there is an arbitrary triangle △𝐴⁢𝐵⁢𝐶. Consider the angle bisectors of <m>\angle ABC</m>, <m>\angle BCA</m>, and <m>\angle CAB</m>. By Theorem 3.3.17, we know that the angle bisectors of the triangle will intersect at one point in the interior of the triangle, we will call this point D. From point D, we place points E,F, and G at the foot of the perpendiculars on each side of the triangle. We know that <m>\overline{DE}</m>, <m>\overline{DF}</m>, and <m>\overline{DG}</m> are all congruent to each other by Theorem 3.3.16. The points E, F, and G will uniquely determine a circle by Theorem 3.3.13. Additionally, this satisifies the definition of a circle, because points E,F, and G are all equidistant from point D. 
+			</p>
+		</proof>
 	</theorem>
 
 	<theorem>
 		<title>Altitudes</title>
 		<statement><p>Prove the conjecture about the altitudes.</p></statement>
+		<proof>
+			<p>
+			Suppose we have <m>\triangle ABC</m>, by using Playfair's Axiom, we can construct the triangle <m>\triangle XYZ</m> such that <m> X-B-Y</m>, <m>X-A-Z</m>, <m>Y-C-Z</m> with <m>\overline{YZ} \parallel \overline{AB}</m>, <m>\overline{XY} \parallel \overline{AC}</m> and <m>\overline{XZ} \parallel \overline{BC}</m>.</p>
+
+			<image source="images/geogebra-export-12"/>
+			
+			<p>Now, we have a parallelogram where <m>\overline{AB} \parallel \overline{YC}</m> and <m>\overline{BY} \parallel \overline{AC}</m> and another one where <m>\overline{XB} \parallel \overline{AC}</m> and <m>\overline{BC} \parallel \overline{XA}</m>. Using the parallelogram theorem, <m>\overline{BY} \cong \overline{AC}</m> and <m>\overline{XB} \cong \overline{AC}</m>, so <m>\overline{BY} \cong \overline{XB}</m>. Using the same argument, we have <m>\overline{YC} \cong \overline{CZ}</m> and <m>\overline{XA} \cong \overline{AZ}</m>. Therefore, A is the midpoint of <m>\overline{XZ}</m>, point B is the midpoint of <m>\overline{XY}</m>, and point C is the midpoint of <m>\overline{YZ}</m>. So we know that the perpendicular bisectors <m>L_{1}, L_{2}, L_{3}</m>of <m>\triangle XYZ</m> are going to intersect the triangle sides at those points.</p>
+
+			<image source="images/geogebra-export-15"/>
+
+			<p>Since <m>\overline{YZ} \parallel \overline{AB}</m>, this means that <m>L_{1}</m> is a transversal of <m>\overline{AB}</m> and <m>\overline{YZ}</m> then by Playfair's Axiom, <m>L_{1}</m> intersects <m>\overline{AB}</m> at a point D. Furthermore, using Theorem 3.1.5, the sum of the angles on one side of the transversal is equal to <m>\pi</m>. Since <m>L_{1} \cap \overline{YZ} = \frac{\pi}{2}</m>, then <m>L_{1} \cap \overline{AB}</m> is forced to be <m>\frac{\pi}{2}</m>, therefore <m>L_{1}</m> is an altitude of <m>\triangle ABC</m>. Using the same argument, we find that <m>L_{2}</m> and <m>L_{3}</m> are also altitudes of <m>\triangle ABC</m>. Since the altitudes of <m>\triangle ABC</m> are the perpendicular bisectors of <m>\triangle XYZ</m>, then by Theorem 3.3.12, the perpendiculars of a triangle intersect at a point, so altitudes also intersect at a point P.</p>
+
+			<image source="images/geogebra-export-18"/>
+		</proof>
 	</theorem>
 
 </subsection>

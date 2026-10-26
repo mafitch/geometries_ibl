@@ -1,0 +1,60 @@
+<section xml:id="tryit-xml">
+    <title>Theorem 3.2.6</title>
+
+    <proof>
+        <p>
+        <me>
+            \text{Consider three parallel lines } l_1, l_2, \text{ and } l_3
+            \text{ intersected by a transversal } t_1
+            \text{ such that } t_1 \text{ is divided into two congruent sections.}
+        </me>
+        </p>
+        <p>
+        <me>
+            \text{If } t_1 \text{ is perpendicular to the parallel lines, then the
+            shortest distance between the neighboring lines is equal.}
+        </me>
+        </p>
+        <p>
+        <me>
+            \text{Now consider the case of } t_1 \text{ not being perpendicular.
+            Then using alternate interior angles, the angle formed by } t_1
+            \text{ and } l_1 \text{ is equal to the angle formed by } t_1
+            \text{ and } l_3.
+            \text{ We can draw the perpendicular from the intersection of } t_1
+            \text{ and } l_2 \text{ that spans from } l_1 \text{ to } l_3.
+            \text{ There now exist two triangles, one between } l_1 \text{ and } l_2
+            \text{ and one between } l_2 \text{ and } l_3.
+        </me>
+        </p>
+        <p>
+        <me>
+            \text{The hypotenuse of each is equal as given, and the two corresponding
+            angles are equal as shown with alternate interior angles and the definition
+            of perpendicular. Hence these two triangles are congruent.
+            Considering corresponding parts of congruent triangles are congruent,
+            the two sets of parallels } l_1 l_2 \text{ and } l_2 l_3
+            \text{ are equidistant.}
+        </me>
+        </p>
+        <p>
+        <me>
+            \text{Now consider some other transversal } t_2.
+            \text{ Draw the perpendicular from } l_1 \text{ to } l_3
+            \text{ through the } t_2 l_2 \text{ intersection.
+            In accordance with the parallel postulate, these perpendicular segments
+            are congruent. As they are perpendicular, each segment has a right angle
+            on one end, and the other end is shown to be congruent through the vertical
+            angles. Hence there are congruent triangles once again.}
+        </me>
+        </p>
+        <p>
+        <me>
+            \text{Considering corresponding parts of congruent triangles are congruent,
+            this arbitrary transversal is divided into congruent segments by the three
+            parallel lines.}
+        </me>
+        </p>
+        <image src="paralell.svg">
+    </proof>
+</section>

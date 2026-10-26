@@ -1,0 +1,40 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+  <latex-image-preamble>
+\usepackage{tikz, pgf}
+</latex-image-preamble>
+</docinfo>
+<article xml:id="document" label="document">
+    <title>New PreTeXt XML document</title>
+
+<!-- This is a new PreTeXt XML document.
+     You can add your content below.
+     Looking for example markup to get started?
+     Try creating a project from a template! -->
+
+<problem>
+    <title>3.3.18</title>
+    
+    <statement>
+        <p>
+            For each triangle there exists a circle inside and tangent to all three sides.
+        </p>
+    </statement>
+</problem>
+
+<solution>
+    <statement>
+        <p>
+            Assume there is an arbitrary triangle △𝐴⁢𝐵⁢𝐶. Consider the angle bisectors of <m>\angle ABC</m>, <m>\angle BCA</m>, and <m>\angle CAB</m>. By Theorem 3.3.17, we know that the angle bisectors of the triangle will intersect at one point in the interior of the triangle, we will call this point D. From point D, we place points E,F, and G at the foot of the perpendiculars on each side of the triangle. We know that <m>\overline{DE}</m>, <m>\overline{DF}</m>, and <m>\overline{DG}</m> are all congruent to each other by Theorem 3.3.16. The points E, F, and G will uniquely determine a circle by Theorem 3.3.13. Additionally, this satisifies the definition of a circle, because points E,F, and G are all equidistant from point D. 
+        </p>
+    </statement>
+</solution>
+
+
+</article>
+</pretext>

@@ -1,0 +1,44 @@
+<section xml:id="isosceles-triangle-angles">
+  <title>3.1.7 Playfair's Axiom Implies the Alternate Interior Angle Converse Theorem</title>
+
+  <proof>
+    <p>
+      Consider a line <me>l</me> and a point <me>A</me> not on that line.
+    </p>
+
+    <p>
+      Playfair's axiom states that there is exactly one line through
+      <me>A</me> parallel to <me>l</me>. Now draw a transversal through
+      <me>A</me> that intersects <me>l</me>. Let <me>\alpha</me> and
+      <me>\beta</me> denote a pair of alternate interior angles formed
+      by the transversal and the two lines. Suppose that
+      <me>m\angle\alpha \ne m\angle\beta</me>.
+    </p>
+
+    <p>
+      We can construct a line through <me>A</me> such that its alternate
+      interior angle is congruent to <me>\beta</me>. Denote this new
+      angle by <me>\alpha'</me>, so that
+      <me>m\angle\alpha' = m\angle\beta</me>.
+    </p>
+
+    <p>
+      By the Alternate Interior Angle Theorem, this new line is parallel
+      to <me>l</me>. Thus, we have constructed a line through <me>A</me>
+      that is parallel to <me>l</me> and distinct from the original
+      parallel line.
+    </p>
+
+    <p>
+      This contradicts Playfair's axiom, which states that there is
+      exactly one line through <me>A</me> parallel to <me>l</me>.
+    </p>
+
+    <p>
+      Therefore,
+      <me>m\angle\alpha = m\angle\beta</me>,
+      and hence Playfair's axiom implies the Alternate Interior Angle
+      Converse Theorem.
+    </p>
+  </proof>
+</section>

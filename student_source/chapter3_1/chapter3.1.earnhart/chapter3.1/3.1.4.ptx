@@ -1,0 +1,37 @@
+<section xml:id="isosceles-triangle-angles">
+  <title>3.1.4 Convenient Euclid Parallel Axiom</title>
+
+  <proof>
+    <p>
+      Consider two lines with a transversal. Let the angles on one side of
+      the transversal be labeled <m>A</m> and <m>B</m>, with <m>C</m> being
+      supplementary to <m>B</m>.
+    </p>
+
+    <image src="3.1.4.svg">
+
+    <p>
+      Suppose
+      <me>
+        mA + mB = 180^\circ.
+      </me>
+      Since <m>B</m> and <m>C</m> are supplementary,
+      <me>
+        mB + mC = 180^\circ.
+      </me>
+      Therefore,
+      <me>
+        mA + mB = mB + mC.
+      </me>
+      Subtracting <m>mB</m> from both sides gives
+      <me>
+        mA = mC.
+      </me>
+      Therefore, <m>A</m> and <m>C</m> are congruent alternate interior
+      angles. By Theorem 3.1.2 (Alternate Interior Angles), 
+      the lines are parallel.
+    </p>
+  </proof>
+</section>
+
+

@@ -1,0 +1,31 @@
+<section xml:id="tryit-xml">
+    <title>Theorem 3.3.15 Earnhart</title>
+
+    <proof>
+        <p>
+        <me>
+            \text{Consider } \triangle ABC \text{with two medians, } \overline{AD} \text{and } \overline{BE}.
+        </me>
+        <me>
+            \text{Draw the line from vertex } C \text{ through the intersection of the medians. The crossbar theorem guarantees this line interescts } \overline{AB}.
+        </me>
+        <me>
+            \text{Consider the intersection of the medians and this new line } F.
+        </me>
+        <me>
+            \text{Suppose } \overline{CF} \text{ is not a median. Then conisdering 3.3.14, there exists a median from } C \text{ such that it interescts } \overline{BE} \text{ 2/3's of the way down both medians.}
+        </me>
+        <me>
+            \text{Thus the median from vertex } C \text{ must intersect } \overline{BF}. \text{  Considering the ruler postulate, this means the median from } C \text{ does not intersect } \overline{AD} \text{ 2/3's of the way down both line segments.}
+        </me>
+        <me>
+            \text{This contradicts our assumption that the median from } C \text{ is not collinear with } F.
+        </me>
+        <me>
+            \text{Therefore the medians of a triangle all intersect at one point.}
+        </me>
+        <image src="threemedians.svg"/>
+        </p>
+    </proof>
+
+</section>

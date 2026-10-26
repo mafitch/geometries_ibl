@@ -1,0 +1,205 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+  <latex-image-preamble>
+\usepackage{tikz, pgf}
+</latex-image-preamble>
+</docinfo>
+<article xml:id="Submission" label="Submission">
+  <title>Chapter 3-3 Submission</title>
+
+  <section>
+    <title>3-3-6</title>
+
+    <p>
+      Things noticed/conjetures about the angle bisectors:
+    </p>
+
+    <p>
+      1) Angle bisectors intersect at one point interior to the triangle.
+    </p>
+
+    <p>
+      2) An angle bisector is a perpendicular bisector iff the triangle is
+      isosceles.
+    </p>
+
+    <p>
+      2) Two angle bisectors are perpendicular bisectors iff the triangle is
+      equilateral.
+    </p>
+  </section>
+
+  <section>
+    <title>3-3-8</title>
+
+    <p>
+      Things noticed/conjectures about the altitudes:
+    </p>
+
+    <p>
+      1) The altitudes all intersect at one point (Aiden and Reniel).
+    </p>
+
+    <p>
+      2) That point is a vertex of the triangle iff that triangle is right
+      (Cedric).
+    </p>
+
+    <p>
+      a) That point is the vertex of the right angle (Cedric).
+    </p>
+
+    <p>
+      3) One altitude is a perpendicular bisector iff the triangle is an
+      isosceles iff that altitude is an angle bisector (Cedric).
+    </p>
+
+    <p>
+      4) Two altitudes are perpendicular bisectors iff three altitudes are
+      perpendicular bisectors iff the triangle is equilateral iff three
+      altitudes are angle bisectors iff two altitudes are angle bisectors
+      (Cedric).
+    </p>
+  </section>
+
+  <section>
+    <title>3-3-16</title>
+
+    <figure>
+      <image source="Image.png">
+<shortdescription>3-3-16 Image</shortdescription>
+</image>
+    </figure>
+
+    <p>
+      Construct <m>\angle BAC</m> and <m>\overrightarrow{AD}</m>.
+    </p>
+
+    <p>
+      For the <m>\implies</m> proof, suppose <m>\overrightarrow{AD}</m> is the
+      angle bisector of <m>\angle BAC</m>. Then take any point
+      <m>E\in\overrightarrow{AD}</m> and take lines from <m>E</m> to the foot of
+      the perpendiculars on <m>\overrightarrow{AB}</m> and
+      <m>\overrightarrow{AC}</m> and call those points <m>F</m> and <m>G</m>
+      respectively. As <m>\overline{AE}\cong\overline{AE}</m>,
+      <m>\angle\beta\cong\angle\alpha</m> and <m>\angle AFE\cong\angle AGE</m>,
+      <m>\triangle AFE\cong\triangle AGE</m> by definition.
+    </p>
+
+    <p>
+      Therefore <m>\overline{FE}\cong\overline{GE}</m> and any point <m>E</m> on
+      the angle bisector of an angle is equidistant to the sides of the angle.
+    </p>
+
+    <p>
+      For the <m>\impliedby</m> proof, do not suppose that
+      <m>\overrightarrow{AD}</m> is the angle bisector and instead suppose that
+      <m>\overline{FE}\cong\overline{GE}</m>. As the angles at <m>G</m> and
+      <m>F</m> are right and <m>\overline{AE}\cong\overline{AE}</m>,
+      <m>\triangle{AEF}\cong\triangle{AEG}</m>.
+    </p>
+
+    <p>
+      Thus <m>\angle{\alpha}\cong\angle{\beta}</m> and
+      <m>\overrightarrow{AD}</m> is the angle bisector of <m>\angle{BAC}</m>.
+    </p>
+  </section>
+
+  <section>
+    <title>3-3-17 (Cedric)</title>
+
+    <figure>
+      <image source="image.png">
+<shortdescription>3-3-17 Image</shortdescription>
+</image>
+      <caption/>
+    </figure>
+
+    <p>
+      Take <m>\triangle{ABC}</m> with the lines <m>l_{1}</m> through <m>D</m>,
+      <m>l_{2}</m> through <m>E</m> and <m>l_{3}</m> through <m>F</m>.
+    </p>
+
+    <subsection>
+      <title>1st Conjecture:</title>
+
+      <p>
+        An angle bisector of a triangle is the perpendicular bisector of the
+        opposite side iff the triangle is isosceles.
+      </p>
+    </subsection>
+
+    <subsection>
+      <title>Proof of Conjecture:</title>
+
+      <p>
+        Proof of <m>\implies</m>: Suppose that <m>l_{1}</m> is an angle bisector
+        of <m>\angle{BAC}</m> and the perpendicular bisector of
+        <m>\overline{BC}</m>. Then <m>\angle{\alpha}\cong\angle{\beta}</m>. As
+        <m>\overline{BD}\cong\overline{CD}</m> and
+        <m>\angle{BAD}\cong\angle{CAD}</m>,
+        <m>\triangle{BDA}\cong\triangle{CDA}</m> by AAS or ASA.
+      </p>
+
+      <p>
+        Therefore <m>\overline{AB}\cong\overline{AC}</m> and
+        <m>\triangle{ABC}</m> is isosceles.
+      </p>
+
+      <p>
+        Proof of <m>\impliedby</m>: Take <m>\triangle{ABC}</m> to be isosceles,
+        so <m>\overline{AB}\cong\overline{AC}</m> and <m>l_{1}</m> to be the
+        perpendicular bisector of <m>\overline{BC}</m>. We then have two cases:
+      </p>
+
+      <p>
+        Case 1: <m>A\in l_{1}</m>. Then, as
+        <m>\overline{BD}\cong\overline{CD}</m>,
+        <m>\overline{AC}\cong\overline{BC}</m> and
+        <m>\overline{AD}\cong\overline{AD}</m>,
+        <m>\triangle{BDA}\cong\triangle{CDA}</m> by SSS.
+      </p>
+
+      <p>
+        Then <m>\angle{BAD}\cong\angle{CAD}</m> and <m>l_{1}</m> is the angle
+        bisector of <m>\angle{BAC}</m>.
+      </p>
+
+      <p>
+        Case 2: <m>A\notin l_{1}</m> Then by Axiom 1 and Theorem 2-1-9,
+        <m>\overline{AB}\ncong\overline{AC}</m> and <m>l_{1}</m> is not the
+        bisector of <m>\angle{BAC}</m>.
+      </p>
+    </subsection>
+
+    <subsection>
+      <title>2nd Conjecture:</title>
+
+      <p>
+        Two angle bisectors are perpendicular bisectors of their opposing sides
+        iff the triangle is isosceles.
+      </p>
+    </subsection>
+
+    <subsection>
+      <title>Proof of Conjecture:</title>
+
+      <p>
+        For the <m>\implies</m> proof, take the result of the previous
+        conjecture's <m>\implies</m> proof and pick <m>l_{2}</m> or <m>l_{3}</m>
+        to consider, we will get <m>\overline{BA}\cong\overline{BC}</m> or
+        <m>\overline{CA}\cong\overline{CB}</m> respectively. Either will get you
+        <m>\overline{AB}\cong\overline{BC}\cong\overline{CA}</m> with the result
+        of the previous conjecture. For the <m>\impliedby</m> proof, again take
+        the result of the previous conjecture on the new line and use the same
+        process as the previous <m>\impliedby</m> proof.
+      </p>
+    </subsection>
+  </section>
+</article>
+</pretext>
