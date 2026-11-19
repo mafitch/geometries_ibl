@@ -25,18 +25,175 @@
 		<statement>
 			<p>Translations, rotations, and reflections are isometries.</p>
 		</statement>
+		  <proof>
+			<p>
+			<alert>Translation:</alert> Let <m>T</m> be a translation. By definition,
+			there exists a vector <m>\mathbf{v}\neq\mathbf{0}</m> such that
+			<md>
+				T(P)-P=\mathbf{v}=T(Q)-Q.
+			</md>
+			This implies that there exists some vector <m>\mathbf{u}</m> so that
+			<md>T(P)-T(Q) = P-Q=\mathbf{u}.</md>
+			Taking the magnitude of <m>\mathbf{u}</m>, we get
+			<md>||T(P)-T(Q)||=||P-Q||=||\mathbf{u}||.</md>
+			By definition, <m>T</m> is an isometry.
+			</p>
+		</proof>
+		<proof>
+		<p>
+			We have two points <m>P</m> and <m>Q</m> that is rotated around the point <m>C</m> making the new points <m>T(P)</m> and <m>T(Q)</m>. 
+			<image source="images/geogebra-export-20"/>
+			By the definition of rotation, <m>m\angle PCT(P) = m\angle QCT(Q)</m>. We can make triangles <m>\triangle T(Q)CT(P)</m> and <m>\triangle QCP</m>
+			<image source="images/geogebra-export-21"/>
+			With angle addition postulate, <m>m\angle T(Q)CT(P) = m\angle T(Q)CQ + m\angle QCT(P)</m> and <m>m\angle QCP = m\angle QCT(P) + m\angle T(P)CP</m>. Since <m>m\angle T(Q)CQ = m\angle T(P)CP</m>, we have that <m>\angle T(Q)CT(P) \cong \angle QCP</m> and by SAS, <m>\triangle T(Q)CT(P) \cong \triangle QCP</m>, making <m>\overline{T(Q)T(P)} \cong \overline{QP}</m>. Meaning their distance are equal making it an isometry.
+		</p>
+		</proof>
+		<proof>
+			<p>
+			Take points <m>A,\ B</m> and a reflection <m>T</m> about the line
+			<m>h</m>. We then have two cases:
+			</p>
+
+			<p>
+			Case 1: <m>A</m> and <m>B</m> are colinear.
+			</p>
+
+			<p><image source="images/geometries-4-3-4-image-1"/></p>
+
+			<p>
+			Then, calling <m>h\cap\overleftrightarrow{AB}=C</m>, we have in the image above and from the definition of a reflection
+			<m>\overline{AC}=\overline{A^{\prime}C}</m>,
+			<m>\overline{BC}=\overline{B^{\prime}C}</m>, so:
+			</p>
+
+			<p>
+			<md>
+				<mrow>|\overline{AB}|=|\overline{AC}|-|\overline{BC}| = </mrow>
+				<mrow>|\overline{A^{\prime}C}|-|\overline{B^{\prime}C}| =</mrow>
+				<mrow>|\overline{A^{\prime}B^{\prime}}|</mrow>
+			</md>
+			</p>
+
+			<p>
+			Case 2: <m>A</m> and <m>B</m> are not colinear.
+			</p>
+
+			<p><image source="images/geometries-4-3-4-image-2"/></p>
+
+			<p>
+			By the definition of a reflection,
+			<m>|\overline{AC}|=|\overline{A^{\prime}C}|</m> and
+			<m>|\overline{BD}|=|\overline{B^{\prime}D}|</m>. We know from the
+			definition of a reflection that
+			<m>\overline{AA^{\prime}},\ \overline{BB^{\prime}}\perp\overline{CD}</m>.
+			From these, we know that <m>\triangle{BCD}\cong\triangle{B^{\prime}CD}</m>
+			by SAS. Hence <m>|\overline{BC}|=|\overline{B^{\prime}C}|</m>. We can also
+			know that <m>\angle{ACB}\cong\angle{A^{\prime}CB^{\prime}}</m> from the
+			following:
+			</p>
+
+			<p>
+			<md>
+				<mrow>90= \amp m(\angle{ACD})</mrow>
+				<mrow>= \amp m(\angle{ACB})+m(\angle{BCD})</mrow>
+				<intertext>and</intertext>
+				<mrow>90= \amp m(\angle{A^{\prime}CD})</mrow>
+				<mrow>= \amp m(\angle{A^{\prime}CB^{\prime}})+m(\angle{B^{\prime}CD}).</mrow>
+			</md>
+			</p>
+
+			<p>
+			These two give:
+			<md>
+				m(\angle{ACB})+m(\angle{BCD})=m(\angle{A^{\prime}CB^{\prime}})+m(\angle{B^{\prime}CD}).
+			</md>
+			Applying our triangle congruence shows:
+			<md>
+				m(\angle{ACB})=m(\angle{A^{\prime}CB^{\prime}}).
+			</md>
+			Therefore <m>\triangle{ACB}\cong\triangle{A^{\prime}CB^{\prime}}</m> by
+			SAS.
+			</p>
+
+			<p>
+			Hence <m>\overline{AB}\cong\overline{A^{\prime}B^{\prime}}</m> and we have
+			proven that reflections are isometries.
+			</p>
+		</proof>
 	</theorem>
 
 	<exercise>
 		<statement>
 			<p>Draw an arbitrary triangle <m>ABC.</m> Draw the result <m>\triangle A'B'C'</m> of some translation. Draw the result <m>\triangle A''B''C''</m> of some translation applied to <m>\triangle A'B'C'.</m> Determine which type of isometry would transform <m>\triangle ABC </m> to <m>\triangle A''B''C''.</m></p>
 		</statement>
+			<solution>
+				<p><image width="75%" source="images/triangle_transform_identify.png"/></p>
+				<p>
+				The transformation from <m>\triangle ABC</m> to <m>\triangle A''B''C''</m> would require a translation with the vector as pictured (vector addition). There is a special case when the translation vector for <m>\triangle ABC</m> to <m>\triangle A'B'C'</m> is <m>\vec{v}</m> and the translation vector for <m>\triangle A'B'C'</m> to <m>\triangle A''B''C''</m> is <m>-\vec{v}</m>. The vector for the transformation from <m>\triangle ABC</m> to <m>\triangle A''B''C''</m> is the zero vector and the transformation is the identity. 
+				</p>
+			</solution>
 	</exercise>
 
 	<exercise>
 		<statement>
 			<p>Complete the following table of composition of isometries.</p>
 		</statement>
+	</exercise>
+
+	<exercise>
+		<statement>
+			<p>What is the composition of a reflection and a rotation?</p>
+		</statement>
+		<solution>
+			<p><image source="images/ref-rot"/></p>
+
+			<p>
+			First, rotate <m>\triangle ABC</m> about point <m>X</m> with rotation
+			angle <m>\alpha</m> counterclockwise to obtain the rotated triangle
+			<m>\triangle A'B'C'</m>. Then, reflect <m>\triangle A'B'C'</m> across line
+			<m>\overleftrightarrow{YZ}</m> to get triangle <m>\triangle A''B''C''</m>.
+			To get from the original triangle <m>\triangle ABC</m> to the result under
+			the two isometries <m>\triangle A''B''C''</m>, we must notice a few
+			things.
+			</p>
+
+			<p>
+			First, we cannot get from <m>\triangle ABC</m> to
+			<m>\triangle A''B''C''</m> from a single translation since it is not
+			always the case that <m>||\overline{AA''}||=||\overline{BB''}||</m>.
+			Second, we cannot get from the original triangle to the resultant triangle
+			with a single reflection since the perpendicular bisector of
+			<m>\overline{AA''}</m> is not the perpendicular bisector of
+			<m>\overline{BB''}</m>. Third, we cannot get from the first triangle to
+			the final triangle with a single rotation since the chirality of each do
+			not match. That is, the vertices of the first triangle are ABC clockwise
+			but are <m>A''C''B''</m> on the final triangle.
+			</p>
+
+			<p>
+			To get from the final triangle to the initial triangle, we first reflect
+			<m>\triangle A''B''C''</m> across line <m>\overleftrightarrow{DZ'}</m>,
+			where <m>m\angle ZDZ'=\alpha/2</m> clockwise. Then, we translate up the
+			resultant triangle <m>\triangle A'''B'''C'''</m> to get back to the
+			initial triangle <m>\triangle ABC</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise>
+		<statement>
+			<p>What is the composition of a reflection and a translation?</p>
+		</statement>
+		<solution>
+			<p>
+				Doing the isometries Translation then Rotation is equivalent to doing a single rotation around a different point
+			</p>
+			<p>
+			From observations in GeoGebra, we can easily show that unless the
+			reflecting line is perpendicular to the translating vector, the
+			translation and reflection do not commute.
+			</p>
+		</solution>
 	</exercise>
 
 	<table label="table-composition-isometries">
