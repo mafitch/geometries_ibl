@@ -39,7 +39,7 @@
 
 <lemma>
 	<statement>
-		<p>Consider the following illustrated in <xref ref="figure-alsoleft" />. <m>\ell</m> is the right sensed parallel to <m>n</m> at <m>P.</m> Let <m>S</m> be on <m>\ell</m> to the left of <m>P.</m> Suppose line <m>m</m> through <m>S</m> is the sensed parallel to <m>n</m> at <m>S.</m> Show that if <m>T</m> is on <m>m</m> to the left of <m>S</m> then <m>m</m> must be below <m>\stackrel{\longleftrightarrow}{TP}</m> to the right of <m>T.</m> Further if <m>U</m> on <m>\ell</m> such that <m>U-S-P</m> and <m>A=\stackrel{\longleftrightarrow}{TP} \cap n</m>, then sensed parallel <m>m</m> must be above <m>\stackrel{\longleftrightarrow}{SA}</m> to the right of <m>A</m> and above <m>\stackrel{\longleftrightarrow}{UA}.</m> </p>
+		<p>Consider the following configuration of points and lines which is illustrated in <xref ref="figure-alsoleft" />. <m>\ell</m> is the right sensed parallel to <m>n</m> at <m>P.</m> Let <m>S</m> be on <m>\ell</m> to the left of <m>P.</m> Suppose line <m>m</m> through <m>S</m> is the sensed parallel to <m>n</m> at <m>S.</m> Show that if <m>T</m> is on <m>m</m> to the left of <m>S</m> then <m>m</m> must be below <m>\stackrel{\longleftrightarrow}{TP}</m> to the right of <m>T.</m> Further if <m>U</m> on <m>\ell</m> such that <m>U-S-P</m> and <m>A=\stackrel{\longleftrightarrow}{TP} \cap n</m>, then sensed parallel <m>m</m> must be above <m>\stackrel{\longleftrightarrow}{SA}</m> to the right of <m>A</m> and above <m>\stackrel{\longleftrightarrow}{UA}.</m> </p>
 	</statement>
 </lemma>
 
@@ -52,7 +52,7 @@
 
 <lemma>
 	<statement>
-		<p>Consider the following illustrated in <xref ref="figure-alsoright" />. <m>\ell</m> is the right sensed parallel to <m>n</m> at <m>P.</m> Let <m>S</m> be on <m>\ell</m> to the right of <m>P.</m> Suppose line <m>m</m> through <m>S</m> is the sensed parallel to <m>n</m> at <m>S.</m> Show that if <m>U</m> and <m>T</m> are on <m>m</m> such that <m>U-S-T</m> and <m>A=\stackrel{\longleftrightarrow}{PT} \cap n</m> then <m>m</m> is below <m>\stackrel{\longleftrightarrow}{UA}</m> to the right of <m>U</m> and above <m>\stackrel{\longleftrightarrow}{PA}.</m></p>
+		<p>Consider the following configuration of points and lines which is illustrated in <xref ref="figure-alsoright" />. <m>\ell</m> is the right sensed parallel to <m>n</m> at <m>P.</m> Let <m>S</m> be on <m>\ell</m> to the right of <m>P.</m> Suppose line <m>m</m> through <m>S</m> is the sensed parallel to <m>n</m> at <m>S.</m> Show that if <m>U</m> and <m>T</m> are on <m>m</m> such that <m>U-S-T</m> and <m>A=\stackrel{\longleftrightarrow}{PT} \cap n</m> then <m>m</m> is below <m>\stackrel{\longleftrightarrow}{UA}</m> to the right of <m>U</m> and above <m>\stackrel{\longleftrightarrow}{PA}.</m></p>
 	</statement>
 </lemma>
 
