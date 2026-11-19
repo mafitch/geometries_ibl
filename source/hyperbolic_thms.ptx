@@ -7,24 +7,24 @@
 
 <p>When working on these problems the model may be useful in figuring out why something works. However the proofs should be based on the axioms of hyperbolic geometry rather than on the model properties. It is legitimate to prove a statement using the model properties if the model has been proven to be equivalent to the axioms. For this course, proofs using the model will be worth fewer points than proofs directly from the axioms.</p>
 
-<lemma>
-	<title>Hyperbolic Parallel Corollary</title>
+<corollary>
+	<title>Hyperbolic Parallel</title>
 	<statement><p>Given a line and a point not on that line there exists infinitely many lines through that point parallel to the given line.</p></statement>
-</lemma>
+</corollary>
 
 <lemma>
 	<title>Sensed Parallel</title>
-	<statement><p>Given a line and a point not on that line there exists a first line through that point parallel to the given line.</p></statement>
+	<statement><p>Given a line and a point not on that line there exists a first line through that point parallel to the given line on that side.</p></statement>
 </lemma>
 
 <definition>
 	<title>Sensed Parallel</title>
-	<statement><p>A line is a <term>sensed parallel</term> if and only if it is the first line parallel to a given line on that side through a given point.</p></statement>
+	<statement><p>A line is a <term>sensed parallel</term> if and only if it is the first line parallel to a given line through a given point on that side.</p></statement>
 </definition>
 
 <definition>
 	<title>Angle of Parallelism</title>
-	<statement><p>The smaller angle formed by a sensed parallel and a transversal through the given point is the <term>angle of parallelism</term> if and only if the transversal is perpendicular to the given line.</p></statement>
+	<statement><p>The smaller angle from the sensed parallel to the line segment connecting the given point and the foot of the perpendicular from that point is the <term>angle of parallelism</term>.</p></statement>
 </definition>
 
 <corollary>
